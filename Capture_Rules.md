@@ -226,6 +226,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Features Excluded** | n/a |
 | **Feature View** | ![Cooling Towers](Images/FeatureViews/CoolingTower.JPG) |
 | **Photo** | ![](Images/Photos/) |
+
 [Back to Table of Contents](#table-of-contents)
 
 
