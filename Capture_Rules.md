@@ -41,34 +41,34 @@ Based on the stereo models developed from the raw imagery and aerotriangulation,
 | 2016 | 2014 | [download] (https://data.cityofnewyork.us/Transportation/NYC-Planimetrics/wt4d-p43d) |
 
 #### Table of Contents
-&nbsp;&nbsp;&nbsp;&nbsp;[Imagery and Data Specifications](# imagery-and-data-specifications)
-&nbsp;&nbsp;&nbsp;&nbsp;[General Attribute Information](# general-attribute-information)
+[Imagery and Data Specifications](# imagery-and-data-specifications)
+[General Attribute Information](# general-attribute-information)
 
-&nbsp;&nbsp;&nbsp;&nbsp;**FEATURE CLASSES**
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Boardwalk**](# boardwalk)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Building Footprint**](# building-footprint)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Cooling Towers**](# cooling-towers)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Curb**](# curb)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Elevation**](# elevation)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Hydro Structure**](# hydro-structure)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Hydrography**](# hydrography)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Median**](# median)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Misc Struct Poly**](# misc-struct-poly)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Open Space**](# open-space)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Park**](# park)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Parking Lot**](# parking-lot)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Pavement Edge**](# pavement-edge)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Plaza**](# plaza)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Railroad**](# railroad)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Railroad Structure**](# railroad-structure)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Retaining Wall**](# retaining-wall)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Roadbed**](# roadbed)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Shoreline**](# shoreline)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Sidewalk**](# sidewalk)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Sidewalk Centerline**](# sidewalk-centerline)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Swimming Pool**](# swimming-pool)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Transport Structure**](# transport-structure)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**Under Construction**](# under-construction)
+**FEATURE CLASSES**
+[**Boardwalk**](# boardwalk)
+[**Building Footprint**](# building-footprint)
+[**Cooling Towers**](# cooling-towers)
+[**Curb**](# curb)
+[**Elevation**](# elevation)
+[**Hydro Structure**](# hydro-structure)
+[**Hydrography**](# hydrography)
+[**Median**](# median)
+[**Misc Struct Poly**](# misc-struct-poly)
+[**Open Space**](# open-space)
+[**Park**](# park)
+[**Parking Lot**](# parking-lot)
+[**Pavement Edge**](# pavement-edge)
+[**Plaza**](# plaza)
+[**Railroad**](# railroad)
+[**Railroad Structure**](# railroad-structure)
+[**Retaining Wall**](# retaining-wall)
+[**Roadbed**](# roadbed)
+[**Shoreline**](# shoreline)
+[**Sidewalk**](# sidewalk)
+[**Sidewalk Centerline**](# sidewalk-centerline)
+[**Swimming Pool**](# swimming-pool)
+[**Transport Structure**](# transport-structure)
+[**Under Construction**](# under-construction)
 
 
 # Imagery and Data Specifications
@@ -523,7 +523,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | All medians that physically divide a roadbed were collected; which includes medians, traffic islands, "Jersey Barriers", and painted areas that are used to separate traffic flow. |
 | **Capture Notes** | Medians are sometimes paved, are normally elevated (have a curb), or have dirt or grass.Medians can have sidewalks crossing them. In those cases, the outline of the largest area was incorporated into a single median feature.The NYC online <a href="https://data.cityofnewyork.us/Transportation/Bike-Routes/umu5-zyd3">Bike Routes</a> data was used as a reference to identify potential new medians. Areas where the column ALLCLASSES is equal to I and "I,II" most often contained new medians. New Medians exist throughout the City regardless of these bike lane classifications. Thus, this was considered a supplemental source only. |
-| **Features Excluded** | The following features were not captured as medians:&nbsp;&nbsp;&nbsp;• Barriers in front of buildings,&nbsp;&nbsp;&nbsp;• Jersey Barriers used to regulate traffic in construction areas, or&nbsp;&nbsp;&nbsp;• Jersey Barriers used to block-off road access. |
+| **Features Excluded** | The following features were not captured as medians:• Barriers in front of buildings,• Jersey Barriers used to regulate traffic in construction areas, or• Jersey Barriers used to block-off road access. |
 [Back to Table of Contents](# table-of-contents)
 
 
@@ -698,7 +698,7 @@ The following attribute information applies to all feature classes.  Additional 
 |     |     |
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
-| **Features Captured** | Outline of recreational areas which may be used for picnic or other recreational activities. Recreational areas must contain at least one of the following:&nbsp;&nbsp;&nbsp;a) Benches,&nbsp;&nbsp;&nbsp;b) Swings, or&nbsp;&nbsp;&nbsp;c) Play areaHardscape recreational areas were collected differently than softscape recreational areas, as follows:• Hardscape recreational areas have either hard surfaces or sand. These areas were captured as discrete polygons following the edges of these areas precisely.• Softscape recreational areas are grassy areas for football/baseball/other. These areas were captured as a single polygon (i.e., not discrete polygons) and snapped to other features (e.g. sidewalks, roadbed, hydro, etc.) where applicable.When hardscapes and softscapes exists adjacent to one another, the entire area was captured by a single polygon. |
+| **Features Captured** | Outline of recreational areas which may be used for picnic or other recreational activities. Recreational areas must contain at least one of the following:a) Benches,b) Swings, orc) Play areaHardscape recreational areas were collected differently than softscape recreational areas, as follows:• Hardscape recreational areas have either hard surfaces or sand. These areas were captured as discrete polygons following the edges of these areas precisely.• Softscape recreational areas are grassy areas for football/baseball/other. These areas were captured as a single polygon (i.e., not discrete polygons) and snapped to other features (e.g. sidewalks, roadbed, hydro, etc.) where applicable.When hardscapes and softscapes exists adjacent to one another, the entire area was captured by a single polygon. |
 | **Capture Notes** | These features are entirely outside of NYC designated parks. |
 | **Features Excluded** | Medians with either benches, swings, or play areas were captured as a median and not a recreational area. |
 | **Feature Views** | ![Recreation_Area_2](Images/FeatureViews/Recreation_Area_2.JPG)This screenshot represents a hardscape recreational area.![Recreation_Area_2](Images/FeatureViews/Recreation_Area_3.JPG)This screenshot represents a softscape recreational area.![Recreation_Area](Images/FeatureViews/Recreation_Area.JPG)This screenshot represents a combined hardscape / softscape recreational area. |
@@ -1478,7 +1478,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database<a href="https://data.cityofnewyork.us/Housing-Development/Map-of-NYCHA-Developments/i9rv-hdr5/about">NYCHA Development</a><a href="https://data.cityofnewyork.us/City-Government/Parks-Properties/rjaj-zgq7/about">DPR Parks Properties</a><a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about">CSCL</a>Forts<a href="https://data.cityofnewyork.us/Health/NYC-Health-and-Hospitals-Corporation-Facilities/ymhw-9cz9/about">Hospitals</a>School |
 | **Features Captured** | All paved sidewalks that are located outside of the ROW. |
-| **Capture Notes** | Interior sidewalks followed the same general capture rules as other sidewalk features. These features were captured in the following areas: &nbsp;&nbsp;&nbsp;1. NYC Parks&nbsp;&nbsp;&nbsp;2.  NYCHA Properties&nbsp;&nbsp;&nbsp;3.  Other Residential areas&nbsp;&nbsp;&nbsp;4.  Hospital campuses&nbsp;&nbsp;&nbsp;5.  School campuses&nbsp;&nbsp;&nbsp;6.  Federal FortsThe business use of this feature is to identify potential areas, outside of the public Right of Way (ROW), that could permit emergency vehicles through travel. |
+| **Capture Notes** | Interior sidewalks followed the same general capture rules as other sidewalk features. These features were captured in the following areas: 1. NYC Parks2.  NYCHA Properties3.  Other Residential areas4.  Hospital campuses5.  School campuses6.  Federal FortsThe business use of this feature is to identify potential areas, outside of the public Right of Way (ROW), that could permit emergency vehicles through travel. |
 | **Features Excluded** | Openings in sidewalk (for landscaping and trees) were ignored.Since the intended purpose of such features is to support emergency through travel, any spurs or dead-ends (e.g., walkways leading to a building) were not captured.These features were not captured in office parks or other similar commercial areas. |
 | **Feature View** | ![Sidewalk_2](Images/FeatureViews/Sidewalk_2.png) |
 | **Photo** | ![](Images/Photos/) |
