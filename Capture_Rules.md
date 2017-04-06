@@ -88,6 +88,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **FEATURE_CODE** | Indicates the type of feature.  |
 | **SUB_FEATURE_CODE** | (where applicable) indicates a subset of features within a given “Feature_Code” set.  |
 | **STATUS** | Field indicating the feature status as it fits into one of the following categories:a) NEW. A feature captured for the first time during the 2014 planimetrics update project.b) UPDATED. The feature existed previously but has been updated during the 2014 planimetrics update project.c) UNCHANGED. The feature is unchanged from the source planimetrics database. |
+
 [Back to Table of Contents](#table-of-contents)
 
 
@@ -103,6 +104,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Features Excluded** | n/a |
 | **Feature View** | ![Boardwalk](Images/FeatureViews/Boardwalk.png) |
 | **Photo** | ![](Images/Photos/) |
+
 [Back to Table of Contents](#table-of-contents)
 
 
@@ -132,6 +134,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Features Excluded** | The following features were not captured:•  temporary trailers, tents, or roofs at gas stations (over pumps).• roofs (overhang) to gas stations, unless connected to building.• movable jet bridge for access to aircraft.• awnings, scaffolds, or sidewalk sheds. |
 | **Feature View** | ![Build_Foot](Images/FeatureViews/Build_Foot.png) |
 | **Photo** | ![](Images/Photos/) |
+
 [Back to Table of Contents](#table-of-contents)
 
 
@@ -145,6 +148,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Features Excluded** | Small tool or storage sheds in backyards which have no visible car access were not captured. |
 | **Feature View** | ![Garages](Images/FeatureViews/Garages.png) |
 | **Photo** | ![](Images/Photos/) |
+
 [Back to Table of Contents](#table-of-contents)
 
 
@@ -158,6 +162,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Features Excluded** | Under construction buildings were not captured when only the foundation was visible or if the building was being destroyed. |
 | **Feature View** | ![Build_UC](Images/FeatureViews/Build_UC.png) |
 | **Photo** | ![](Images/Photos/) |
+
 [Back to Table of Contents](#table-of-contents)
 
 
@@ -171,6 +176,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Features Excluded** | n/a |
 | **Feature View** | ![Skybridge](Images/FeatureViews/Skybridge.png) |
 | **Photo** | ![](Images/Photos/skybridge.jpg) |
+
 [Back to Table of Contents](#table-of-contents)
 
 
