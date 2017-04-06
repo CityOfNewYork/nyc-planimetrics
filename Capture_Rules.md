@@ -42,8 +42,8 @@ Based on the stereo models developed from the raw imagery and aerotriangulation,
 | 2016 | 2014 | [download](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics/wt4d-p43d) |
 
 #### Table of Contents
-[Imagery and Data Specifications](#imagery-and-data-specifications)
-[General Attribute Information](#general-attribute-information)
+* [Imagery and Data Specifications](#imagery-and-data-specifications)
+* [General Attribute Information](#general-attribute-information)
 
 **FEATURE CLASSES**
 
