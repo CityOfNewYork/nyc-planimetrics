@@ -103,7 +103,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | Maintain beach outline/shoreline (do not adjust for tidal differences between imagery flyover dates). |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Boardwalk](Images/FeatureViews/Boardwalk.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -147,7 +147,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | Special care was applied to ensure sheds were not confused with garages. In general, standard dimensions for detached garages are approximately 12’x20’ or 14’x20’.The Parcel layer was used to place garages within parcel or at parcel boundary – being sure to check for special cases where parcel boundary clearly crosses a garage. In these cases, either the garage was split using physical features, or the property line was used where there was no distinguishing physical feature.An “million" BIN was assigned to garages not existing in the source database. For more information regarding BIN, see [Building Footprint Attributes](#building-footprint-attributes). |
 | **Features Excluded** | Small tool or storage sheds in backyards which have no visible car access were not captured. |
 | **Feature View** | ![Garages](Images/FeatureViews/Garages.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -161,7 +161,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | n/a |
 | **Features Excluded** | Under construction buildings were not captured when only the foundation was visible or if the building was being destroyed. |
 | **Feature View** | ![Build_UC](Images/FeatureViews/Build_UC.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -225,7 +225,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | Only cooling towers greater than four (4) ft in diameter were captured. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Cooling Towers](Images/FeatureViews/CoolingTower.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -241,7 +241,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | This is a new feature class in the 2014 collection.  Prior to the 2014 capture, Curbs were a subset of the Pavement Edge feature class but have been broken out into a seperate feature class in 2014. |
 | **Features Excluded** | Curbs inside Parking lots were not captured. |
 | **Feature View** | ![Curb](Images/FeatureViews/Curb.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -273,7 +273,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | Elevation of the highest portion of the roof of a building, excluding antennas and roof fixtures such as air conditioning (AC), elevator shafts, chimneys, etc.Elevation values were transferred to each building footprint to calculate the building height attribute. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Elevation_Build](Images/FeatureViews/Elevation_Build.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -287,7 +287,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Elevation_Water](Images/FeatureViews/Elevation_Water.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -301,7 +301,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | In areas where the [PAVEMENT_EDGE](#pavement_edge) feature class has been updated, any existing Spot elevations were updated.For new streets, new spot elevations were created in the center of the roadbed according to the following rules:1) Placed at Intersections (might not necessarily be at the same location as the node from the centerline, one point per intersection even on complex intersections).2) Placed Every 200 feet when midpoint of bridge or city block exceeds distance.3) Placed on paved, unpaved, alley subtypes in <a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about">CSCL</a> centerline features class and all of the Interior Sidewalk Centerline feature class.  Spot elevation were not added to a CSCL feature if no roadbed exists (e,g, area is under construction).4) Mid-Street segment – at the approximate mid-point of a street segment. |
 | **Features Excluded** | Spot elevations were not captured on a <a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about">CSCL</a> feature if no roadbed exists. |
 | **Feature View** | ![Elevation_Spot](Images/FeatureViews/Elevation_Spot.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -315,7 +315,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | This is a subset of spot elevations.  These points were captured at the beginning, middle, and end of length of visible bridges and overpasses.  Additional elevation points were added at 200’ spacing when the distance between the beginning, middle, or end was greater than 200 linear feet. |
 | **Features Excluded** | Elevation points were not collected for pedestrian/bike bridges. |
 | **Feature View** | ![Elevation_Bridge](Images/FeatureViews/Elevation_Bridge.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -358,7 +358,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | Updated piers, commercial piers, and docks. Used existing planimetrics data as guide. |
 | **Features Excluded** | Individual/private docks for recreational watercraft were not captured, unless they had already been captured as such in existing planimetric data. |
 | **Feature View** | ![Pier](Images/FeatureViews/Pier.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -372,7 +372,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | Delineated at the water level. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Jetty](Images/FeatureViews/Jetty.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -386,7 +386,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Seawall](Images/FeatureViews/Seawall.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -427,7 +427,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | Updated all Lake/Reservoirs when general shape had changed. Existing features were not updated due to different water level. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Lake](Images/FeatureViews/Lake.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -441,7 +441,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | Updated pond outline when general shape had changed. Existing features were not updated due to different water level. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Pond](Images/FeatureViews/Pond.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -455,7 +455,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | Updated all river edges whenever new conditions were encountered (e.g., due to piers, etc.).  Maintained internal divisions of river due to name change(s).  Existing hydrographic centerlines were used as reference but were not updated. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![River](Images/FeatureViews/River.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -469,7 +469,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | Updated all streams found to be wider than eight (8) feet if bank had changed.  Maintained internal divisions of stream due to name change(s). |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Stream](Images/FeatureViews/Stream.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -483,7 +483,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | Update wetland and marsh boundaries only when changed due to drainage, change in surface, or if covered by buildings. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Wetland](Images/FeatureViews/Wetland.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -497,7 +497,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | Updated beach and shoreline whenever feature had changed due to construction or erosion.  DoITT designation in existing files was maintained. Maintained interior divisions.  Did not update due to different water level (high/low tide). |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Beach](Images/FeatureViews/Beach.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -511,7 +511,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | Updated bay/ocean shoreline whenever feature had changed due to construction or erosion.  DoITT designation in existing files was maintained. Maintained interior divisions.  Did not update due to different water level (high/low tide). |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Bay](Images/FeatureViews/Bay.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -563,7 +563,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | n/a |
 | **Features Excluded** | Double yellow lines in the middle of a road were not captured as median.Single independent white medians hatching used to direct traffic were not captured as median. |
 | **Feature View** | ![Median_Painted](Images/FeatureViews/Median_Painted.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -577,7 +577,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Median_Curb](Images/FeatureViews/Median_Curb.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -591,7 +591,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | These features incorporate a fixed width of three (3) feet centered on the fence. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Median_Rail](Images/FeatureViews/Median_Rail.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -605,7 +605,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | n/a |
 | **Features Excluded** | If feature represents a Jersey Barrier with fencing, the feature was collected as a Jersey barrier. |
 | **Feature View** | ![Median_Fence](Images/FeatureViews/Median_Fence.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -619,7 +619,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Median_Grass](Images/FeatureViews/Median_Grass.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -633,7 +633,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | Whenever two jersey barriers were placed next to or in short distance of each other, the outer-most edge of both were used to determine the outline of a single feature. |
 | **Features Excluded** | Barrier medians which are moved on a daily basis, (e.g., at Manhattan entrances to Lincoln Tunnel) were not captured. |
 | **Feature View** | ![Median_Barrier](Images/FeatureViews/Median_Barrier.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -660,7 +660,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | These features are represented with multiple shapes (triangle, V- shaped, etc.). |
 | **Features Excluded** | Support structures were not included as part of these features. |
 | **Feature View** | ![Billboard](Images/FeatureViews/Billboard.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -674,7 +674,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | These features were digitized end-to-end, with seven (7) foot standard width. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Sign_Gantry](Images/FeatureViews/Sign_Gantry.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -688,7 +688,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Toll_Plaza](Images/FeatureViews/Toll_Plaza.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -725,7 +725,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | Individual headstones, graves, or interior boundaries were not partitioned. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Cemetery](Images/FeatureViews/Cemetery.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -739,7 +739,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | These features are entirely outside of NYC designated parks. |
 | **Features Excluded** | Medians with either benches, swings, or play areas were captured as a median and not a recreational area. |
 | **Feature Views** | ![Recreation_Area_2](Images/FeatureViews/Recreation_Area_2.JPG "This screenshot represents a hardscape recreational area.")<p>This screenshot represents a hardscape recreational area.</p>![Recreation_Area_3](Images/FeatureViews/Recreation_Area_3.JPG)<p>This screenshot represents a softscape recreational area.</p>![Recreation_Area](Images/FeatureViews/Recreation_Area.JPG)<p>This screenshot represents a combined hardscape / softscape recreational area.</p> |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -753,7 +753,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | "Vacant" is defined herein as an area containing no structures.The Digital Tax Map (DTM) and currently captured planimetrics ([Building Footprints](#building-footprints)) were used to determine the location of the vacant areas.The actual shape of each vacant aras was captured using physical features that typically form the boundary of a property such as fences, hedgerow, etc.Vacant Areas extend to sidewalk or roadbed edge.As a general rule of thumb, vacant lots were required to have roadway frontage, and not actively used for private or public entities (e.g., backyard or commmunity garden). |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Vacant_Area](Images/FeatureViews/Vacant_Area.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -801,7 +801,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | When the source data had a single boundary polygon extending across other planimetric features (e.g. roads), the planimetric park boundary follows the source data.When there was no apparent physical boundary feature to delineate the Park boundary, the feature was copied “as is” from the source database.Park names (SIGNNAME and source column) and park numbers (GISPROPNUM source column) were transferred from source databases to park boundaries and special features.Interior road systems and special features within parks were not partitioned. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Park](Images/FeatureViews/Park.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -815,7 +815,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** |  These features can have different sizes and can be also be represented as painted areas on hard surfaces.These features extend back to the backstop of the field and include the 1st and 3rd base coaching boxes. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Baseball](Images/FeatureViews/Baseball.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -829,7 +829,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** |  These features can be represented as full or half courts. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Basketball](Images/FeatureViews/Basketball.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -843,7 +843,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | The hard surface wall was incorporated witin each court. When multiple courts are adjacent to one another, a  division line was digitized to partition individual courts. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Handball](Images/FeatureViews/Handball.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -857,7 +857,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** |  These features are composed of mostly hard surface areas with different markings for different activities. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Court_Multipurpose](Images/FeatureViews/Court_Multipurpose.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -871,7 +871,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | In cases of multiple courts, a division line was digitized along outer painted line (baseline and sideline) to partition individual courts.The extent of these features only includes "in-bounds areas", they do not extend to the fence surrounding the tennis court area (or related "out-of-bounds areas"). |
 | **Features Excluded** | Individual tennis courts within NYC Parks were not captured.Private tennis courts (e.g., on roofs or hotels, etc.) were not captured. |
 | **Feature View** | ![Tennis](Images/FeatureViews/Tennis.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -885,7 +885,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Volleyball](Images/FeatureViews/Volleyball.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -899,7 +899,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Football](Images/FeatureViews/Football.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -913,7 +913,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** |  Outline is represent by extent of grassy surface. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Soccer](Images/FeatureViews/Soccer.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -927,7 +927,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | n/a |
 | **Features Excluded** | The outline of greens, tees, fairways, sand traps, shelters, or cart paths were not captured. |
 | **Feature View** | ![Golf](Images/FeatureViews/Golf.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -941,7 +941,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Pool](Images/FeatureViews/Pool.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -955,7 +955,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | n/a |
 | **Features Excluded** | Tracks painted upon concrete surfaces were not captured. |
 | **Feature View** | ![Track](Images/FeatureViews/Track.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -969,7 +969,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Skating_Rink](Images/FeatureViews/Skating_Rink_2.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -983,7 +983,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | All the rules for defining park boundaries were applied for defining Greenstreet limits. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Greenstreet](Images/FeatureViews/Greenstreet.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1013,7 +1013,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | These features connect to road edge ([Curb](#curb) or [Edge of Pavement](#subtype-edge-of-pavement)) only at entrances and exits. |
 | **Features Excluded** | Traffic islands within parking lot were not captured.When a building of > 400 sq. feet was present, the building area was excluded from the parking lot polygon.Parking areas adjacent to the travel-way, but not separated from the travel-way by a curb or other obstruction, were not captured.  Instead, those parking areas were included as part of the Roadbed and the Pavement Edge extends to the outside edge of such area.Gas stations, private parking areas (e.g., for condos), and storage areas (e.g., for boats) were not captured.  |
 | **Feature View** | ![Parking_Lot](Images/FeatureViews/Parking_Lot.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1042,7 +1042,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | Each segment was captured as a continuous feature across a blockface (typically from one intersection to the next – along that side of the road). The vertex between two segments was often located at the street corner. Edge of Pavement features are continuous across driveways, alleys, or access to parking. The one exception to this rule is where a street segment changes names (as determined by <a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about">CSCL</a> Centerline names) outside of any street intersections.  In these cases, the existing CSCL break (node) was used to create corresponding breaks in Pavement Edge segments.For cul-de-sacs, two segments were created. The CSCL centerline was used to define the breakpoints of the Pavement Edge segments.Dead end streets were terminatde where the tax map crosses the road.  Two segments were created on left and right sides of CSCL.On highways, Pavement Edge corresponds to the ‘roadbed’ sub-feature class in [Roadbed](#roadbed), and does not include the shoulder. |
 | **Features Excluded** | n/a |
 | **Feature Views** | ![Road_Edge](Images/FeatureViews/Road_Edge.JPG)This screenshot represents pavement edges at a large intersection.![PE_culdesac](Images/FeatureViews/PE_culdesac.JPG)In a cul-de-sac, two segments would be required for the edge of pavement. One on either side of the roadbed assigned a left or right side based on the CSCL.![PE_T_int](Images/FeatureViews/PE_T_int.JPG)Example of a 'T' intersection, one segment would be captured for edge at the top of 'T'.![PE_name_change](Images/FeatureViews/PE_name_change.JPG)For roadbeds whose street name changes, the edge of pavement should be broken/split. The Node features from CSCL can be used as a guide.![PE_interchange](Images/FeatureViews/PE_interchange.JPG)For interchanges, one segment that runs between the intersections would be captured for the edge of pavement. Note that one roadbed crosses over the other as it does in reality.![PE_Alley](Images/FeatureViews/PE_Alley.JPG) In the image above there are two alleys. The edge of pavement is captured as one segment between the intersections, extending over the alleys in question. |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1056,7 +1056,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | The features often share an edge with a building feature. Airport features were collected up to the surrounding fence or gates. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Airport](Images/FeatureViews/Airport.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1070,7 +1070,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | These feature typically allow access to the interior of a block or to the back of a house.  As a general rule of thumb, the <a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about">CSCL</a> value of: RW_TYPE=10 was used to determine the alley pavement edge.  However, there were still alleys captured that did not have this field attribute value from the CSCL. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Alley](Images/FeatureViews/Alley.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1177,7 +1177,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | All public space plazas were captured or updated.  Where a plaza is connected to a sidewalk by steps, the steps were considered to be part of the plaza polygon. Planters at the edge of plaza were included as part of the plaza boundary.  Plazas cannot overlap medians or sidewalks. Walkways within the plaza were captured as part of the overall plaza polygon and were not considered a separate polygon. Additionally, potential plazas were also identified using <a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about/">CSCL</a> (TRAFDIR=NV and BIKE_LANE<>1), to find plazas in and around greenways. |
 | **Features Excluded** | Private plazas were not captured using maps showing <a href="http://www1.nyc.gov/assets/planning/download/pdf/plans/pops-inventory/pops-inventory.pdf">Privately Owned Public Space ("POPS")</a>. |
 | **Feature View** | ![Plaza_2](Images/FeatureViews/Plaza_2.JPG)Example of Plaza showing vegetated area captured – adjacent to sidewalk.![Plaza_3](Images/FeatureViews/Plaza_3.JPG)Example of large Pedestrian Plaza that was formerly a roadbed. |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1208,7 +1208,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | All visible railroad centerlines were collected/updated.Hidden railroad centerlines (in tunnels) were copied from existing data with no elevation value or change. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![RR](Images/FeatureViews/RR.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1222,7 +1222,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | No elevation value was calculated. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Elevated_RR](Images/FeatureViews/Elevated_RR.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1236,7 +1236,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Embankment_RR](Images/FeatureViews/Embankment_RR.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1250,7 +1250,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Viaduct_RR](Images/FeatureViews/Viaduct_RR.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1264,7 +1264,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Depression_RR](Images/FeatureViews/Depression_RR.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1278,7 +1278,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Railway_Fence](Images/FeatureViews/Railway_Fence.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1292,7 +1292,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Abandoned_RR](Images/FeatureViews/Abandoned_RR.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1331,7 +1331,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | Roof outlines were delineated to include any underlying stairways. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![RR_sta](Images/FeatureViews/RR_sta.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1345,7 +1345,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | Roof outlines were delineated to include any underlying stairways. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![RR_Elev_sta](Images/FeatureViews/RR_Elev_sta.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1359,7 +1359,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | These locations are not dependent on vicinity to subway centerline or subway entrance / exit. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![RR_Vent](Images/FeatureViews/RR_Vent.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1373,7 +1373,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | Usually identified as painted yellow plates/grates for subways. Used ROW of existing subway centerlines as guide. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![RR_Exit](Images/FeatureViews/RR_Exit.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1387,7 +1387,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | Usually identified as painted stairs for subways.  Used ROW of existing subway centerlines as guide. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![RR_Entrance](Images/FeatureViews/RR_Entrance.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1422,7 +1422,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | n/a |
 | **Features Excluded** | Walls in backyards used for landscape were not captured.Walls in areas under construction (excavation) were not captured. |
 | **Feature View** | ![Retaining_Wall_1](Images/FeatureViews/Retaining_Wall_1.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1436,7 +1436,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Retaining_Wall_2](Images/FeatureViews/Retaining_Wall_2.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1463,7 +1463,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | Converging roadbeds were not split when it crossing one another at different elevations (e.g. on ramps that cross each other). Roadbed was usually cut by [Median](#median) features (e.g., curb & grass) with the exception of painted, barrier and fence medians.Special care was applied to ensure that highway shoulders were not confused as sidewalk features. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Roadbed](Images/FeatureViews/Roadbed.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1477,7 +1477,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | Special care was applied at intersections with a slight offset to ensure that such areas were captured and attributed as an intersection.The location where two alleys meet is considered an intersection and was captured as intersection roadbed.Intersection polygons were created by establishing the shortest distance from the intersection node to [**Pavement Edge**](#pavement-edge). |
 | **Features Excluded** | When two (2) roadways form a “T”, the ending road was closed off so that the continuing roadbed edge forms a straight line (in [Pavement Edge](#pavement-edge)). Note, these "T" locations were not captured as intersection roadbed. |
 | **Feature View** | ![Intersection](Images/FeatureViews/Intersection.JPG)The image above represents a typical, four (4) way intersection.![Intersection_3way](Images/FeatureViews/Intersection_3way.JPG)The image above represents a three (3) way intersection. |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1491,7 +1491,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | These driveways may service one or multiple buildings and there is no distiction between paved or unpaved surfaces. Driveways were compiled from [Pavement Edge](#pavement-edge).Since Driveways have centerlines, if the corresponding <a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about">CSCL</a> has a name, that name is part of the main roadbed feature code. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Driveway](Images/FeatureViews/Driveway.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1505,7 +1505,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | Shoulders were collected along highways (as determined by <a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about">CSCL</a> “RW_TYPE” = 2, 3, or 9 and excluding “SEGMENT_TYPE" = G or F.) only. A curb separating an elevated paved surface from the roadway and between the roadway and a barrier median is a shoulder. Painted areas are considered shoulders. Should a painted shoulder area be tapered, the entire shoulder was captured as long as the shape was at least 8 feet wide. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Shoulder](Images/FeatureViews/Shoulder.JPG)The image above represents shoulder alonge the north side of a highway.![Shoulder_2](Images/FeatureViews/Shoulder_2.JPG)Example of Shoulder separated from the primary roadbed by a curb (top) and a gravel break-down area (bottom).![Shoulder_3](Images/FeatureViews/Shoulder_3.JPG)Example of roadways with a shoulder and roadways with an extended roadbed.![Shoulder_4](Images/FeatureViews/Shoulder_4.JPG)Examples of Shoulders separated by the travel way by pavement markings. Shoulder must be as wide as a car. |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1521,7 +1521,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | Not updated when existing shoreline follows the general shape of the shoreline in the imagery, but is offset due to tidal conditions.Streams greater than 8 feet that intersect bay/ocean were considered as part of the shoreline.  When such conditions exist, those features were used and combined with [Hydrography](#hydrography). |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Shoreline](Images/FeatureViews/Shoreline.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1546,7 +1546,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | In areas of construction, sidewalks were collected along an imaginary line to complete polygon.In areas where equipment is stored or installed on sidewalk, the full extent of sidewalk was approximated.In areas where protection or scaffolding (pedestrian protection from overhead construction) is placed over sidewalk, sidewalk remained unchanged from existing data (not updated).Sidewalks were collected when crossing large medians or traffic islands.Sidewalks overlap the exit and entrance portion(s) of parking lot features.Sidewalks overlap driveways, but not alleys. Sidewalk will be continued under bridges and overpasses if they are visible on both sides of the structure. |
 | **Features Excluded** | Openings in sidewalk (for landscaping and trees) were ignored.Large, paved open spaces in front of buildings and outside of the public ROW (may have trees and landscaping) will be included in [Plaza](#plaza) and were not captured as sidewalk. |
 | **Feature View** | ![Sidewalk_1](Images/FeatureViews/Sidewalk_1.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1560,7 +1560,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | Interior sidewalks followed the same general capture rules as other sidewalk features. These features were captured in the following areas: 1. NYC Parks2.  NYCHA Properties3.  Other Residential areas4.  Hospital campuses5.  School campuses6.  Federal FortsThe business use of this feature is to identify potential areas, outside of the public Right of Way (ROW), that could permit emergency vehicles through travel. |
 | **Features Excluded** | Openings in sidewalk (for landscaping and trees) were ignored.Since the intended purpose of such features is to support emergency through travel, any spurs or dead-ends (e.g., walkways leading to a building) were not captured.These features were not captured in office parks or other similar commercial areas. |
 | **Feature View** | ![Sidewalk_2](Images/FeatureViews/Sidewalk_2.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1576,7 +1576,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | The business use of this feature is to identify potential areas, outside of the public Right of Way (ROW), that could permit emergency vehicles through travel. Interior Sidewalk Centerlines were extended beyond the Interior Sidewalk Polygons when connecting to a <a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about">CSCL</a> feature. |
 | **Features Excluded** | [ROW Sidewalks.](#subtype-row-sidewalk) |
 | **Feature View** | ![Sidewalk_ln](Images/FeatureViews/Sidewalk_ln.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1593,7 +1593,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | n/a |
 | **Features Excluded** | Round above-ground swimming pools and pools on buildings were not captured.Fish ponds,  landscape ponds of irregular shape, and low-sided kiddie pools were not collected.  |
 | **Feature View** | ![Swimming_Pool](Images/FeatureViews/Swimming_Pool.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1623,7 +1623,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | Features can overlap so that bridge is not split where it crosses another bridge feature. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Bridge](Images/FeatureViews/Bridge.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1637,7 +1637,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | Maintained delineation from existing data when available. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Tunnel](Images/FeatureViews/Tunnel.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1651,7 +1651,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Rail_Bridge](Images/FeatureViews/Rail_Bridge.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1665,7 +1665,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | Where applicable, outline includes stairs.  Can connect between buildings (snapped to building footprint). |
 | **Features Excluded** | Skybridges connecting buildings were collected as buildings. |
 | **Feature View** | ![Ped_Bridge](Images/FeatureViews/Ped_Bridge.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1679,7 +1679,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | Visible changeover from solid ground to viaduct is outlined. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![RR_Viaduct](Images/FeatureViews/RR_Viaduct.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1693,7 +1693,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | Overpass is at terrain level. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Overpass](Images/FeatureViews/Overpass.JPG) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1719,6 +1719,6 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Capture Notes** | Entrance to construction site was ignored and not snapped to sidewalk nor pavement edge. |
 | **Features Excluded** | Building foundations or partially demolished buildings were not collected.Individual excavation or deposit areas were not partitioned. |
 | **Feature View** | ![Unk_Construction](Images/FeatureViews/Unk_Construction.png) |
-| **Photo** | ![](Images/Photos/) |
+
 
 [Back to Table of Contents](#table-of-contents)
