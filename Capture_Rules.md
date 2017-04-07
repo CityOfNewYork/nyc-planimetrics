@@ -129,8 +129,8 @@ The following attribute information applies to all feature classes.  Additional 
 |     |     |
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.Buildng footprint database. |
-| **Features Captured** | All buildings with well-defined walls and roofs that are >400 square feet and taller than 12 feet were captured.Buildings with <12 feet height but with BIN were captured.Buildings with BIN but <400 square feet were also captured. |
-| **Capture Notes** | Buildings with flat roofs were captured on roof outline, capturing the largest outline (excluding overhangs, awnings, construction features, etc.).Buildings with pitched roofs were captured on the building footprint.Carports, when attached to main building, were included in the outline. Interior divisions within buildings were not captured (used existing building layer and BIN as guide).Parcel data and BIN was used as guidance for collection. Where the parcel data indicated that a building should be two or more geometries AND there was NO physical indication, the building was split using the parcel lines. Where the parcel data indicated that a building should be two or more geometries AND there was a physical indication, the building was split using the physical indications. If an existing building was split into several new buildings, the original BIN was retained in only one of the new buildings (ideally the largest) and the new buildings were assigned an "million" BIN (as a placeholder). BINs can not be duplicated. Building Footprints abutting one another on a single tax lot, but each having a unique BIN, were flagged and verified during review.If a building was demolished (i.e., as evidenced in the imagery), the BIN was also deleted and was not used for any new building geometry.Small triangles denote a permit is out to construct a new building at the location.  These small triangles were added by DoITT building editors. These triangles should be removed when new buildings are added. Therefore if a new building was constructed in the new orthos, the building was captured,  the attributes from triangle to building were transferred to the new building, and the triangle was deleted. If no new building was visible on the orthos, the triangles were left in the data. A “million" BIN was assigned to buildings not existing in the source database.For more information regarding BIN, see [Building Footprint Attributes](#building-footprint-attributes). |
+| **Features Captured** | All buildings with well-defined walls and roofs that are >400 square feet and taller than 12 feet were captured. Buildings with <12 feet height but with BIN were captured. Buildings with BIN but <400 square feet were also captured. |
+| **Capture Notes** | Buildings with flat roofs were captured on roof outline, capturing the largest outline (excluding overhangs, awnings, construction features, etc.). Buildings with pitched roofs were captured on the building footprint. Carports, when attached to main building, were included in the outline. Interior divisions within buildings were not captured (used existing building layer and BIN as guide). Parcel data and BIN was used as guidance for collection. Where the parcel data indicated that a building should be two or more geometries AND there was NO physical indication, the building was split using the parcel lines. Where the parcel data indicated that a building should be two or more geometries AND there was a physical indication, the building was split using the physical indications. If an existing building was split into several new buildings, the original BIN was retained in only one of the new buildings (ideally the largest) and the new buildings were assigned an "million" BIN (as a placeholder). BINs can not be duplicated. Building Footprints abutting one another on a single tax lot, but each having a unique BIN, were flagged and verified during review. If a building was demolished (i.e., as evidenced in the imagery), the BIN was also deleted and was not used for any new building geometry. Small triangles denote a permit is out to construct a new building at the location.  These small triangles were added by DoITT building editors. These triangles should be removed when new buildings are added. Therefore if a new building was constructed in the new orthos, the building was captured,  the attributes from triangle to building were transferred to the new building, and the triangle was deleted. If no new building was visible on the orthos, the triangles were left in the data. A “million" BIN was assigned to buildings not existing in the source database.For more information regarding BIN, see [Building Footprint Attributes](#building-footprint-attributes). |
 | **Features Excluded** | The following features were not captured:<br>•  temporary trailers, tents, or roofs at gas stations (over pumps).<br>• roofs (overhang) to gas stations, unless connected to building.<br>• movable jet bridge for access to aircraft.<br>• awnings, scaffolds, or sidewalk sheds. |
 | **Feature View** | ![Build_Foot](Images/FeatureViews/Build_Foot.png) |
 
@@ -142,9 +142,9 @@ The following attribute information applies to all feature classes.  Additional 
 
 |     |     |
 | --- | --- |
-| **Sources** | Current imagery - see intro for specific dates.Buildng footprint database.  DOF Digital Tax Map database |
+| **Sources** | Current imagery - see intro for specific dates. Building footprint database.  DOF Digital Tax Map database |
 | **Features Captured** | All garages were captured, regardless of size.  To be considered a garage, the structure must have a driveway (paved or unpaved) for road  access, and be able to store one or more cars. |
-| **Capture Notes** | Special care was applied to ensure sheds were not confused with garages. In general, standard dimensions for detached garages are approximately 12’x20’ or 14’x20’.The Parcel layer was used to place garages within parcel or at parcel boundary – being sure to check for special cases where parcel boundary clearly crosses a garage. In these cases, either the garage was split using physical features, or the property line was used where there was no distinguishing physical feature.An “million" BIN was assigned to garages not existing in the source database. For more information regarding BIN, see [Building Footprint Attributes](#building-footprint-attributes). |
+| **Capture Notes** | Special care was applied to ensure sheds were not confused with garages. In general, standard dimensions for detached garages are approximately 12’x20’ or 14’x20’. The Parcel layer was used to place garages within parcel or at parcel boundary – being sure to check for special cases where parcel boundary clearly crosses a garage. In these cases, either the garage was split using physical features, or the property line was used where there was no distinguishing physical feature.An “million" BIN was assigned to garages not existing in the source database. For more information regarding BIN, see [Building Footprint Attributes](#building-footprint-attributes). |
 | **Features Excluded** | Small tool or storage sheds in backyards which have no visible car access were not captured. |
 | **Feature View** | ![Garages](Images/FeatureViews/Garages.png) |
 
@@ -156,8 +156,8 @@ The following attribute information applies to all feature classes.  Additional 
 
 |     |     |
 | --- | --- |
-| **Sources** | Current imagery - see intro for specific dates.Buildng footprint database.  DOF Digital Tax Map database |
-| **Features Captured** | Buildings that were under construction in the imagery and had outside walls that clearly indicated the shape of the building were captured.An “million" BIN was assigned to buildings (under construction) not existing in the source database.  For more information regarding BIN, see [Building Footprint Attributes](#building-footprint-attributes). |
+| **Sources** | Current imagery - see intro for specific dates. Building footprint database.  DOF Digital Tax Map database |
+| **Features Captured** | Buildings that were under construction in the imagery and had outside walls that clearly indicated the shape of the building were captured. A “million" BIN was assigned to buildings (under construction) not existing in the source database.  For more information regarding BIN, see [Building Footprint Attributes](#building-footprint-attributes). |
 | **Capture Notes** | n/a |
 | **Features Excluded** | Under construction buildings were not captured when only the foundation was visible or if the building was being destroyed. |
 | **Feature View** | ![Build_UC](Images/FeatureViews/Build_UC.png) |
@@ -186,7 +186,7 @@ The following attribute information applies to all feature classes.  Additional 
 | --- | --- |
 | **Attribute** | **Description** |
 | **HEIGHT_ROOF** | Building roof height was calculated as the difference between ground elevation of the building and the roof elevation value.  The roof elevation is the highest point of the roof itself (see [BUILDING ELEVATION](#subtype-building-elevation) in the [ELEVATION](#elevation) Feature Class). See [Building Footprint Diagrams](#building-footprint-diagrams) below for additional details. |
-| **GROUND_ELEVATION** | Represents an interpolated elevation value at the centroid (center point) of the building. The process for capturing this is as follows:<br>1. A bare-earth surface is generated from the 2010 LiDAR by first removing any points that fall within a building polygon. These points are removed to eliminate any data anomalies (e.g., points captured at the roof level). A Digital Terrain Model (DTM) is then generated from the remaining points by interpolating the elevations around the building edges to develop a continuous surface.<br>2. Building centroids (i.e., the center point within each building) are then draped over the  DTM generated from step 1.  The bare-earth elevation value at that building centroid is then transferred to the ground elevation attribute of the building footprint.<br>The purpose is to determine a single elevation value that is representative of the elevation values surrounding each building.  |
+| **GROUND_ELEVATION** | Represents an interpolated elevation value at the centroid (center point) of the building. The process for capturing this is as follows:<br>1. A bare-earth surface is generated from the 2010 LiDAR by first removing any points that fall within a building polygon. These points are removed to eliminate any data anomalies (e.g., points captured at the roof level). A Digital Terrain Model (DTM) is then generated from the remaining points by interpolating the elevations around the building edges to develop a continuous surface.<br>2. Building centroids (i.e., the center point within each building) are then draped over the  DTM generated from step 1.  The bare-earth elevation value at that building centroid is then transferred to the ground elevation attribute of the building footprint.<br><br>The purpose is to determine a single elevation value that is representative of the elevation values surrounding each building.  |
 | **NAME** | Name of building. |
 | **BIN** | A Building Identification Number (BIN) is a unique identifier assigned by the Department of City Planning (DCP) for buildings in Geosupport. DoITT inserts assigned BINs into their respective footprints on an ongoing basis through interagency coordination. For cases where a BIN has not been assigned or cannot be determined, a "million” BIN is inserted as follows:<br>• 1000000 for Manhattan<br>• 2000000 for Bronx<br>• 3000000 for Brooklyn<br>• 4000000 for Queens<br>• 5000000 for Staten Island |
 | **CONSTURCTION_YEAR** | Derived from PLUTO. The year construction of the building was completed. See "BuiltCode" field for details on accuracy. |
@@ -548,7 +548,7 @@ The following attribute information applies to all feature classes.  Additional 
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | All medians that physically divide a roadbed were collected; which includes medians, traffic islands, "Jersey Barriers", and painted areas that are used to separate traffic flow. |
-| **Capture Notes** | Medians are sometimes paved, are normally elevated (have a curb), or have dirt or grass.Medians can have sidewalks crossing them. In those cases, the outline of the largest area was incorporated into a single median feature.The NYC online <a href="https://data.cityofnewyork.us/Transportation/Bike-Routes/umu5-zyd3">Bike Routes</a> data was used as a reference to identify potential new medians. Areas where the column ALLCLASSES is equal to I and "I,II" most often contained new medians. New Medians exist throughout the City regardless of these bike lane classifications. Thus, this was considered a supplemental source only. |
+| **Capture Notes** | Medians are sometimes paved, are normally elevated (have a curb), or have dirt or grass. Medians can have sidewalks crossing them. In those cases, the outline of the largest area was incorporated into a single median feature. The NYC online <a href="https://data.cityofnewyork.us/Transportation/Bike-Routes/umu5-zyd3">Bike Routes</a> data was used as a reference to identify potential new medians. Areas where the column ALLCLASSES is equal to I and "I,II" most often contained new medians. New Medians exist throughout the City regardless of these bike lane classifications. Thus, this was considered a supplemental source only. |
 | **Features Excluded** | The following features were not captured as medians:<br>• Barriers in front of buildings<br>• Jersey Barriers used to regulate traffic in construction areas, or<br>• Jersey Barriers used to block-off road access. |
 
 [Back to Table of Contents](#table-of-contents)
@@ -750,7 +750,7 @@ The following attribute information applies to all feature classes.  Additional 
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database DOF Digital Tax Map |
 | **Features Captured** | These features represent a vacant lot where a building could potentially be built and is associated with a tax lot polygon. |
-| **Capture Notes** | "Vacant" is defined herein as an area containing no structures.The Digital Tax Map (DTM) and currently captured planimetrics ([Building Footprints](#building-footprints)) were used to determine the location of the vacant areas.The actual shape of each vacant aras was captured using physical features that typically form the boundary of a property such as fences, hedgerow, etc.Vacant Areas extend to sidewalk or roadbed edge.As a general rule of thumb, vacant lots were required to have roadway frontage, and not actively used for private or public entities (e.g., backyard or commmunity garden). |
+| **Capture Notes** | "Vacant" is defined herein as an area containing no structures. The Digital Tax Map (DTM) and currently captured planimetrics ([Building Footprints](#building-footprints)) were used to determine the location of the vacant areas. The actual shape of each vacant aras was captured using physical features that typically form the boundary of a property such as fences, hedgerow, etc. Vacant Areas extend to sidewalk or roadbed edge. As a general rule of thumb, vacant lots were required to have roadway frontage, and not actively used for private or public entities (e.g., backyard or commmunity garden). |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Vacant_Area](Images/FeatureViews/Vacant_Area.JPG) |
 
@@ -797,8 +797,8 @@ The following attribute information applies to all feature classes.  Additional 
 |     |     |
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  Department of Parks and Recreation (DPR) Parks Properties |
-| **Features Captured** | Outline the outer perimeter of any park from <a href="https://data.cityofnewyork.us/City-Government/Parks-Properties/rjaj-zgq7/about">DPR Parks Properties</a>.The boundary encompasses the entire park as a single polygon feature, regardless of special features such as baseball diamonds or tennis courts.The delineation of the outer edge of each park boundary is coincident with the “intended” boundary feature, as determined by the Parks Department. Intended boundary feature are curbs, green areas, sidewalks, etc. and vary from park to park.  At times, the intended boundary feature varies within the same park.  |
-| **Capture Notes** | When the source data had a single boundary polygon extending across other planimetric features (e.g. roads), the planimetric park boundary follows the source data.When there was no apparent physical boundary feature to delineate the Park boundary, the feature was copied “as is” from the source database.Park names (SIGNNAME and source column) and park numbers (GISPROPNUM source column) were transferred from source databases to park boundaries and special features.Interior road systems and special features within parks were not partitioned. |
+| **Features Captured** | Outline the outer perimeter of any park from <a href="https://data.cityofnewyork.us/City-Government/Parks-Properties/rjaj-zgq7/about">DPR Parks Properties</a>. The boundary encompasses the entire park as a single polygon feature, regardless of special features such as baseball diamonds or tennis courts. The delineation of the outer edge of each park boundary is coincident with the “intended” boundary feature, as determined by the Parks Department. Intended boundary feature are curbs, green areas, sidewalks, etc. and vary from park to park.  At times, the intended boundary feature varies within the same park.  |
+| **Capture Notes** | When the source data had a single boundary polygon extending across other planimetric features (e.g. roads), the planimetric park boundary follows the source data. When there was no apparent physical boundary feature to delineate the Park boundary, the feature was copied “as is” from the source database. Park names (SIGNNAME and source column) and park numbers (GISPROPNUM source column) were transferred from source databases to park boundaries and special features. Interior road systems and special features within parks were not partitioned. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Park](Images/FeatureViews/Park.JPG) |
 
@@ -812,7 +812,7 @@ The following attribute information applies to all feature classes.  Additional 
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database DPR Parks Properties |
 | **Features Captured** | Outline of the sandy area (diamond) in softball/baseball fields. |
-| **Capture Notes** |  These features can have different sizes and can be also be represented as painted areas on hard surfaces.These features extend back to the backstop of the field and include the 1st and 3rd base coaching boxes. |
+| **Capture Notes** |  These features can have different sizes and can be also be represented as painted areas on hard surfaces. These features extend back to the backstop of the field and include the 1st and 3rd base coaching boxes. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Baseball](Images/FeatureViews/Baseball.JPG) |
 
@@ -868,8 +868,8 @@ The following attribute information applies to all feature classes.  Additional 
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database DPR Parks Properties |
 | **Features Captured** | Outline of tennis courts (hard surface only). |
-| **Capture Notes** | In cases of multiple courts, a division line was digitized along outer painted line (baseline and sideline) to partition individual courts.The extent of these features only includes "in-bounds areas", they do not extend to the fence surrounding the tennis court area (or related "out-of-bounds areas"). |
-| **Features Excluded** | Individual tennis courts within NYC Parks were not captured.Private tennis courts (e.g., on roofs or hotels, etc.) were not captured. |
+| **Capture Notes** | In cases of multiple courts, a division line was digitized along outer painted line (baseline and sideline) to partition individual courts. The extent of these features only includes "in-bounds areas", they do not extend to the fence surrounding the tennis court area (or related "out-of-bounds areas"). |
+| **Features Excluded** | Individual tennis courts within NYC Parks were not captured. Private tennis courts (e.g., on roofs or hotels, etc.) were not captured. |
 | **Feature View** | ![Tennis](Images/FeatureViews/Tennis.JPG) |
 
 
@@ -1011,7 +1011,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | All parking lots (paved or unpaved) greater than 2,000 sq. feet. Parking areas adjacent to the travel-way and separated from the travel-way by a curb or other obstruction were captured as parking lots. In these cases, the [Roadbed](#roadbed) and [Pavement Edge](#pavement-edge) end or wrap around the parking lot. The parking lot is not included as part of the Roadbed. |
 | **Capture Notes** | These features connect to road edge ([Curb](#curb) or [Edge of Pavement](#subtype-edge-of-pavement)) only at entrances and exits. |
-| **Features Excluded** | Traffic islands within parking lot were not captured.When a building of > 400 sq. feet was present, the building area was excluded from the parking lot polygon.Parking areas adjacent to the travel-way, but not separated from the travel-way by a curb or other obstruction, were not captured.  Instead, those parking areas were included as part of the Roadbed and the Pavement Edge extends to the outside edge of such area.Gas stations, private parking areas (e.g., for condos), and storage areas (e.g., for boats) were not captured.  |
+| **Features Excluded** | Traffic islands within parking lot were not captured.When a building of > 400 sq. feet was present, the building area was excluded from the parking lot polygon. Parking areas adjacent to the travel-way, but not separated from the travel-way by a curb or other obstruction, were not captured. Instead, those parking areas were included as part of the Roadbed and the Pavement Edge extends to the outside edge of such area. Gas stations, private parking areas (e.g., for condos), and storage areas (e.g., for boats) were not captured.  |
 | **Feature View** | ![Parking_Lot](Images/FeatureViews/Parking_Lot.png) |
 
 
@@ -1080,7 +1080,7 @@ The following attribute information applies to all feature classes.  Additional 
 |     |     |
 | --- | --- |
 | **Attribute** | **Description** |
-| **BLOCKFACEID** | Field indicates the Unique ID generated automatically.This ID was conflated to the corresponding L/R BLOCKFACEID in <a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about">CSCL</a>.See [Pavement Edge Diagrams](#pavement-edge-diagrams) for more details on conflation with special/complex scenarios. |
+| **BLOCKFACEID** | Field indicates the Unique ID generated automatically. This ID was conflated to the corresponding L/R BLOCKFACEID in <a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about">CSCL</a>.See [Pavement Edge Diagrams](#pavement-edge-diagrams) for more details on conflation with special/complex scenarios. |
 | **CONFLATED** | Field indicates whether or not the BLOCKFACEID value was conflated to a CSCL segment.Values are Y or N. |
 
 [Back to Table of Contents](#table-of-contents)
@@ -1205,7 +1205,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | Updated railroad centerlines. |
-| **Capture Notes** | All visible railroad centerlines were collected/updated.Hidden railroad centerlines (in tunnels) were copied from existing data with no elevation value or change. |
+| **Capture Notes** | All visible railroad centerlines were collected/updated. Hidden railroad centerlines (in tunnels) were copied from existing data with no elevation value or change. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![RR](Images/FeatureViews/RR.JPG) |
 
@@ -1474,7 +1474,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | Portion of roadbed where three (3) or more roadways meet up with one another.  Intersections were composed using features compiled and updated in [Pavement Edge](#pavement-edge). |
-| **Capture Notes** | Special care was applied at intersections with a slight offset to ensure that such areas were captured and attributed as an intersection.The location where two alleys meet is considered an intersection and was captured as intersection roadbed.Intersection polygons were created by establishing the shortest distance from the intersection node to [**Pavement Edge**](#pavement-edge). |
+| **Capture Notes** | Special care was applied at intersections with a slight offset to ensure that such areas were captured and attributed as an intersection. The location where two alleys meet is considered an intersection and was captured as intersection roadbed. Intersection polygons were created by establishing the shortest distance from the intersection node to [**Pavement Edge**](#pavement-edge). |
 | **Features Excluded** | When two (2) roadways form a “T”, the ending road was closed off so that the continuing roadbed edge forms a straight line (in [Pavement Edge](#pavement-edge)). Note, these "T" locations were not captured as intersection roadbed. |
 | **Feature View** | ![Intersection](Images/FeatureViews/Intersection.JPG)The image above represents a typical, four (4) way intersection.![Intersection_3way](Images/FeatureViews/Intersection_3way.JPG)The image above represents a three (3) way intersection. |
 
@@ -1488,7 +1488,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | All driveways > 200 feet in length and a minimum width of eight feet.  |
-| **Capture Notes** | These driveways may service one or multiple buildings and there is no distiction between paved or unpaved surfaces. Driveways were compiled from [Pavement Edge](#pavement-edge).Since Driveways have centerlines, if the corresponding <a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about">CSCL</a> has a name, that name is part of the main roadbed feature code. |
+| **Capture Notes** | These driveways may service one or multiple buildings and there is no distiction between paved or unpaved surfaces. Driveways were compiled from [Pavement Edge](#pavement-edge). Since Driveways have centerlines, if the corresponding <a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about">CSCL</a> has a name, that name is part of the main roadbed feature code. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Driveway](Images/FeatureViews/Driveway.JPG) |
 
@@ -1518,7 +1518,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | Significant changes (longer than 10 feet) along shorelines were updated to reflect new conditions. |
-| **Capture Notes** | Not updated when existing shoreline follows the general shape of the shoreline in the imagery, but is offset due to tidal conditions.Streams greater than 8 feet that intersect bay/ocean were considered as part of the shoreline.  When such conditions exist, those features were used and combined with [Hydrography](#hydrography). |
+| **Capture Notes** | Not updated when existing shoreline follows the general shape of the shoreline in the imagery, but is offset due to tidal conditions. Streams greater than 8 feet that intersect bay/ocean were considered as part of the shoreline.  When such conditions exist, those features were used and combined with [Hydrography](#hydrography). |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Shoreline](Images/FeatureViews/Shoreline.png) |
 
@@ -1543,8 +1543,8 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | All paved sidewalks that are located within the ROW (i.e. building to building). |
-| **Capture Notes** | In areas of construction, sidewalks were collected along an imaginary line to complete polygon.In areas where equipment is stored or installed on sidewalk, the full extent of sidewalk was approximated. In areas where protection or scaffolding (pedestrian protection from overhead construction) is placed over sidewalk, sidewalk remained unchanged from existing data (not updated).Sidewalks were collected when crossing large medians or traffic islands. Sidewalks overlap the exit and entrance portion(s) of parking lot features. Sidewalks overlap driveways, but not alleys. Sidewalk will be continued under bridges and overpasses if they are visible on both sides of the structure. |
-| **Features Excluded** | Openings in sidewalk (for landscaping and trees) were ignored.Large, paved open spaces in front of buildings and outside of the public ROW (may have trees and landscaping) will be included in [Plaza](#plaza) and were not captured as sidewalk. |
+| **Capture Notes** | In areas of construction, sidewalks were collected along an imaginary line to complete polygon. In areas where equipment is stored or installed on sidewalk, the full extent of sidewalk was approximated. In areas where protection or scaffolding (pedestrian protection from overhead construction) is placed over sidewalk, sidewalk remained unchanged from existing data (not updated).Sidewalks were collected when crossing large medians or traffic islands. Sidewalks overlap the exit and entrance portion(s) of parking lot features. Sidewalks overlap driveways, but not alleys. Sidewalk will be continued under bridges and overpasses if they are visible on both sides of the structure. |
+| **Features Excluded** | Openings in sidewalk (for landscaping and trees) were ignored. Large, paved open spaces in front of buildings and outside of the public ROW (may have trees and landscaping) will be included in [Plaza](#plaza) and were not captured as sidewalk. |
 | **Feature View** | ![Sidewalk_1](Images/FeatureViews/Sidewalk_1.png) |
 
 
@@ -1557,7 +1557,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database<a href="https://data.cityofnewyork.us/Housing-Development/Map-of-NYCHA-Developments/i9rv-hdr5/about">NYCHA Development</a><a href="https://data.cityofnewyork.us/City-Government/Parks-Properties/rjaj-zgq7/about">DPR Parks Properties</a><a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about">CSCL</a>Forts<a href="https://data.cityofnewyork.us/Health/NYC-Health-and-Hospitals-Corporation-Facilities/ymhw-9cz9/about">Hospitals</a>School |
 | **Features Captured** | All paved sidewalks that are located outside of the ROW. |
-| **Capture Notes** | Interior sidewalks followed the same general capture rules as other sidewalk features. These features were captured in the following areas:<br> 1. NYC Parks<br>2.  NYCHA Properties<br>3.  Other Residential areas<br>4.  Hospital campuses<br>5.  School campuses<br>6.  Federal FortsThe business use of this feature is to identify potential areas, outside of the public Right of Way (ROW), that could permit emergency vehicles through travel. |
+| **Capture Notes** | Interior sidewalks followed the same general capture rules as other sidewalk features. These features were captured in the following areas:<br> 1. NYC Parks<br>2.  NYCHA Properties<br>3.  Other Residential areas<br>4.  Hospital campuses<br>5.  School campuses<br>6.  Federal Forts<br>The business use of this feature is to identify potential areas, outside of the public Right of Way (ROW), that could permit emergency vehicles through travel. |
 | **Features Excluded** | Openings in sidewalk (for landscaping and trees) were ignored.Since the intended purpose of such features is to support emergency through travel, any spurs or dead-ends (e.g., walkways leading to a building) were not captured.These features were not captured in office parks or other similar commercial areas. |
 | **Feature View** | ![Sidewalk_2](Images/FeatureViews/Sidewalk_2.png) |
 
@@ -1717,7 +1717,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | All areas under construction (excavation) or deposits of material (storage) at their outer boundary. |
 | **Capture Notes** | Entrance to construction site was ignored and not snapped to sidewalk nor pavement edge. |
-| **Features Excluded** | Building foundations or partially demolished buildings were not collected.Individual excavation or deposit areas were not partitioned. |
+| **Features Excluded** | Building foundations or partially demolished buildings were not collected. Individual excavation or deposit areas were not partitioned. |
 | **Feature View** | ![Unk_Construction](Images/FeatureViews/Unk_Construction.png) |
 
 
