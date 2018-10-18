@@ -76,7 +76,11 @@ Based on the stereo models developed from the raw imagery and aerotriangulation,
 # Imagery and Data Specifications
 Digital planimetrics were derived using the imagery products delivered with the 2014 New York Statewide Flyover (see Introduction for specific flight dates), which includes raw imagery collected to support the generation of 0.5 Ft Ground Sample Distance (GSD) natural color imagery. The images were captured with 80% forward lap and side lap to support 1”=100’ mapping and meet the distortion free requirements within New York City. Planimetrics are developed to meet American Society for Photogrammetry and Remote Sensing (ASPRS) Class 1 (one) horizontal mapping standards and ASPRS vertical Class 2 (two) accuracy specifications. 
 
-Planimetrics are delivered via an ESRI geodatabase in New York State Plane Coordinates, Long Island East Zone, NAD83, US foot. Therefore, all unit measurements in feature attribute tables recorded in US foot. More information on the coordinate reference system used may be found on the [EPSG definition page](https://epsg.io/2263). 
+Planimetrics are delivered via an ESRI geodatabase in New York State Plane Coordinates, Long Island East Zone, NAD83, US foot. Therefore, all unit measurements in feature attribute tables are recorded in US foot. 
+
+For more information on the coordinate reference system used, see the following EPSG definition pages:
+[Planimetrics](https://epsg.io/2263)
+[Orthoimagery](https://epsg.io/6539)
 
 # General Attribute Information
 
