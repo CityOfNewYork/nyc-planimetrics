@@ -25,11 +25,13 @@ With each subsequent update, refinements have been made. New features and domain
 #### Current Imagery
 The source imagery for the current planimetric update was captured on the following dates:
 
-* Manhattan - June 24, 2014
-* The Bronx, Brooklyn, Queens and Staten Island - April 1st through April 25th, 2014
-* Final delivery of all imagery – April 10, 2015
+* Manhattan - March 18, 2022
+* Bronx - March 16, 2022
+* Brooklyn - March 16 and 30, 2022
+* Queens - March 16 and 30, 2022
+* Staten Island – March 16, 2022
 
-Based on the stereo models developed from the raw imagery and aerotriangulation, the planimetric features were updated or new features captured for the entire City. The project began March 2015 and was completed February 2016.
+Using this orthoimagery, the planimetric base layers were updated city wide starting in November 2022 and were completed in October 2023
 
 #### Previous Captures
 |     |     |     |
