@@ -95,7 +95,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **SOURCE_ID** | Unique feature Identification Number. |
 | **FEATURE_CODE** | Indicates the type of feature.  |
 | **SUB_FEATURE_CODE** | (where applicable) indicates a subset of features within a given “Feature_Code” set.  |
-| **STATUS** | Field indicating the feature status as it fits into one of the following categories:<br>a) NEW. A feature captured for the first time during the 2014 planimetrics update project.<br>b) UPDATED. The feature existed previously but has been updated during the 2014 planimetrics update project.<br>c) UNCHANGED. The feature is unchanged from the source planimetrics database. |
+| **STATUS** | Field indicating the feature status as it fits into one of the following categories:<br>a) NEW. A feature captured for the first time during the 2022 planimetrics update project.<br>b) UPDATED. The feature existed previously but has been updated during the 2022 planimetrics update project.<br>c) UNCHANGED. The feature is unchanged from the source planimetrics database. |
 
 [Back to Table of Contents](#table-of-contents)
 
