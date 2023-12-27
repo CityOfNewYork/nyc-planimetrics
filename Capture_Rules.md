@@ -42,7 +42,7 @@ Using this orthoimagery, the planimetric base layers were updated city wide star
 | 2008 | 2006 | [download](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics-2008/dja4-zgtf) |
 | 2012 | 2010 | [download](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics-2012/3nr6-bnks) |
 | 2016 | 2014 | [download](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics/wt4d-p43d) |
-| 2022 | 2020 | [download](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics/wt4d-p43d) |
+| 2022 | 2020 | [download](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics/wt4d-p43d) Update URL|
 
 #### Table of Contents
 * [Imagery and Data Specifications](#imagery-and-data-specifications)
