@@ -255,6 +255,16 @@ The following attribute information applies to all feature classes.  Additional 
 [Back to Table of Contents](#table-of-contents)
 
 
+#### COOLING TOWERS Attributes
+
+|     |     |
+| --- | --- |
+| **Attribute** | **Description** |
+| **BIN** | A Building Identification Number (BIN) is a unique identifier assigned by the Department of City Planning (DCP) for buildings in Geosupport. DoITT inserts assigned BINs into their respective footprints on an ongoing basis through interagency coordination. For cases where a BIN has not been assigned or cannot be determined, a "million” BIN is inserted as follows:<br>• 1000000 for Manhattan<br>• 2000000 for Bronx<br>• 3000000 for Brooklyn<br>• 4000000 for Queens<br>• 5000000 for Staten Island |
+
+[Back to Table of Contents](#table-of-contents)
+
+
 # CURB
 
 **Geometry Type:** Polyline
