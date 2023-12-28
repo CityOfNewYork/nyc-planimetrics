@@ -42,7 +42,7 @@ Using this orthoimagery, the planimetric base layers were updated city wide star
 | 2008 | 2006 | [download](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics-2008/dja4-zgtf) |
 | 2012 | 2010 | [download](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics-2012/3nr6-bnks) |
 | 2016 | 2014 | [download](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics/wt4d-p43d) |
-| 2022 | 2020 | [download](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics/wt4d-p43d) Update URL|
+| 2022 | 2022 | [download](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics/wt4d-p43d) Update URL|
 
 #### Table of Contents
 * [Imagery and Data Specifications](#imagery-and-data-specifications)
@@ -77,7 +77,7 @@ Using this orthoimagery, the planimetric base layers were updated city wide star
 
 
 # Imagery and Data Specifications
-Digital planimetrics were derived using the imagery products delivered with the 2020 New York Statewide Flyover (see Introduction for specific flight dates), which includes raw imagery collected to support the generation of 0.5 Ft Ground Sample Distance (GSD) natural color imagery. The images were captured with 80% forward lap and side lap to support 1”=100’ mapping and meet the distortion free requirements within New York City. Planimetrics are developed to meet American Society for Photogrammetry and Remote Sensing (ASPRS) Class 1 (one) horizontal mapping standards and ASPRS vertical Class 2 (two) accuracy specifications. 
+Digital planimetrics were derived using the imagery products delivered with the 2022 New York Statewide Flyover (see Introduction for specific flight dates), which includes raw imagery collected to support the generation of 0.5 Ft Ground Sample Distance (GSD) natural color imagery. The images were captured with 80% forward lap and side lap to support 1”=100’ mapping and meet the distortion free requirements within New York City. Planimetrics are developed to meet American Society for Photogrammetry and Remote Sensing (ASPRS) Class 1 (one) horizontal mapping standards and ASPRS vertical Class 2 (two) accuracy specifications. 
 
 Planimetrics are delivered via an ESRI geodatabase in New York State Plane Coordinates, Long Island East Zone, NAD83, US foot. The vertical datum for all features is NAVD88.  
 
