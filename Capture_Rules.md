@@ -198,7 +198,8 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
 | **Feature View** | |
-| **Photo** | ![](Images/Photos/cantilevered_building.jpg) |
+| **Photo** | ![](Images/Photos/cantilevered_building.png) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
