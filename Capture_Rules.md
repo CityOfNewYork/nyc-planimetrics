@@ -197,7 +197,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Features Captured** | This is for buildings where some portion of the footprint overhangs another building footprint, but is not a Skybridge, which is typically narrow and serves solely as an aerial bridge between two structures. |
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
-| **Feature View** | ![cantilevered_building](Images/FeatureViews/cantilevered_building.png) |
+| **Feature View** | |
 | **Photo** | ![](Images/Photos/cantilevered_building.jpg) |
 
 [Back to Table of Contents](#table-of-contents)
