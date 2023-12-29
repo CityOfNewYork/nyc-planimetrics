@@ -108,7 +108,7 @@ The following attribute information applies to all feature classes.  Additional 
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | Boardwalks along beachfront. |
-| **Capture Notes** | Maintain beach outline/shoreline (do not adjust for tidal differences between imagery flyover dates). |
+| **Capture Notes** | Edge of boardwalks along beachfront.  Maintain beach outline/shoreline (do not adjust for tidal differences between imagery flyover dates). |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Boardwalk](Images/FeatureViews/Boardwalk.png) |
 
@@ -124,9 +124,10 @@ The following attribute information applies to all feature classes.  Additional 
 | --- | --- |
 | **Subtype** | **Feature Code** |
 | **[Building](#subtype-building)** | 2100 |
-| **[Sky Bridge](#subtype-skybridge)** | 2110 |
-| **[Building Under Construction](#subtype-building-uc-building-under-construction)** | 5100 |
 | **[Garage](#subtype-garage)** | 5110 |
+| **[Building Under Construction](#subtype-building-uc-building-under-construction)** | 5100 |
+| **[Sky Bridge](#subtype-skybridge)** | 2110 |
+| **[Cantilevered Building](#subtype-cantilevered-building)** | 5110 |
 
 [**Attributes**](#building-footprint-attributes)
 
@@ -136,7 +137,7 @@ The following attribute information applies to all feature classes.  Additional 
 
 |     |     |
 | --- | --- |
-| **Sources** | Current imagery - see intro for specific dates.Buildng footprint database. |
+| **Sources** | Current imagery - see intro for specific dates. Buildng footprint database. |
 | **Features Captured** | All buildings with well-defined walls and roofs that are >400 square feet and taller than 12 feet were captured. Buildings with <12 feet height but with BIN were captured. Buildings with BIN but <400 square feet were also captured. |
 | **Capture Notes** | Buildings with flat roofs were captured on roof outline, capturing the largest outline (excluding overhangs, awnings, construction features, etc.). Buildings with pitched roofs were captured on the building footprint. Carports, when attached to main building, were included in the outline. Interior divisions within buildings were not captured (used existing building layer and BIN as guide). Parcel data and BIN was used as guidance for collection. Where the parcel data indicated that a building should be two or more geometries AND there was NO physical indication, the building was split using the parcel lines. Where the parcel data indicated that a building should be two or more geometries AND there was a physical indication, the building was split using the physical indications. If an existing building was split into several new buildings, the original BIN was retained in only one of the new buildings (ideally the largest) and the new buildings were assigned an "million" BIN (as a placeholder). BINs can not be duplicated. Building Footprints abutting one another on a single tax lot, but each having a unique BIN, were flagged and verified during review. If a building was demolished (i.e., as evidenced in the imagery), the BIN was also deleted and was not used for any new building geometry. Small triangles denote a permit is out to construct a new building at the location.  These small triangles were added by DoITT building editors. These triangles should be removed when new buildings are added. Therefore if a new building was constructed in the new orthos, the building was captured,  the attributes from triangle to building were transferred to the new building, and the triangle was deleted. If no new building was visible on the orthos, the triangles were left in the data. A “million" BIN was assigned to buildings not existing in the source database. For more information regarding BIN, see [Building Footprint Attributes](#building-footprint-attributes). |
 | **Features Excluded** | The following features were not captured:<br>•  temporary trailers, tents, or roofs at gas stations (over pumps).<br>• roofs (overhang) to gas stations, unless connected to building.<br>• movable jet bridge for access to aircraft.<br>• awnings, scaffolds, or sidewalk sheds. |
@@ -180,12 +181,28 @@ The following attribute information applies to all feature classes.  Additional 
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  PLUTO |
 | **Features Captured** | Elevated walkways that connect buildings were captured as separate building polygons and coded as “Skybridge”. |
-| **Capture Notes** | Skybridges were populated with the “HEIGHT_ROOF” attribute only (not Ground Elevation).These were assigned an “million" BIN during capture. For more information regarding BIN, see [Building Footprint Attributes](#building-footprint-attributes). |
+| **Capture Notes** | Skybridges were populated with the “HEIGHT_ROOF” attribute only (not Ground Elevation).These were assigned an “million" BIN during capture (Borough code, 1-5, plus 6 zeros).  For more information regarding BIN, see [Building Footprint Attributes](#building-footprint-attributes). |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Skybridge](Images/FeatureViews/Skybridge.png) |
 | **Photo** | ![](Images/Photos/skybridge.jpg) |
 
 [Back to Table of Contents](#table-of-contents)
+
+
+### Subtype: CANTILEVERED BUILDING
+
+|     |     |
+| --- | --- |
+| **Sources** | Current imagery - see intro for specific dates.  Building footprint database. |
+| **Features Captured** | This is for buildings where some portion of the footprint overhangs another building footprint, but is not a Skybridge, which is typically narrow and serves solely as an aerial bridge between two structures. |
+| **Capture Notes** | n/a |
+| **Features Excluded** | n/a |
+| **Feature View** | |
+| **Photo** | ![](Images/Photos/cantilevered_building.png) |
+
+
+[Back to Table of Contents](#table-of-contents)
+
 
 
 #### Building Footprint Attributes
@@ -235,6 +252,16 @@ The following attribute information applies to all feature classes.  Additional 
 | **Features Excluded** | n/a |
 | **Feature View** | ![Cooling Towers](Images/FeatureViews/CoolingTower.JPG) |
 
+
+[Back to Table of Contents](#table-of-contents)
+
+
+#### COOLING TOWERS Attributes
+
+|     |     |
+| --- | --- |
+| **Attribute** | **Description** |
+| **BIN** | A Building Identification Number (BIN) is a unique identifier assigned by the Department of City Planning (DCP) for buildings in Geosupport. DoITT inserts assigned BINs into their respective footprints on an ongoing basis through interagency coordination. For cases where a BIN has not been assigned or cannot be determined, a "million” BIN is inserted as follows:<br>• 1000000 for Manhattan<br>• 2000000 for Bronx<br>• 3000000 for Brooklyn<br>• 4000000 for Queens<br>• 5000000 for Staten Island |
 
 [Back to Table of Contents](#table-of-contents)
 
