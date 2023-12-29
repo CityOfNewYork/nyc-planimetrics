@@ -306,7 +306,7 @@ The following attribute information applies to all feature classes.  Additional 
 |     |     |
 | --- | --- |
 | **Attribute** | **Description** |
-| **SUB_FEATURE_CODE** | Field that indicates feature type::<br>a) MIDBLOCK_CURBCUT -  Break CURB features at extents of curbcuts located along block edgesf<br>b) CORNER_CURBCUT - Break CURB features at extents of curbcuts located along block corners or street intersections |
+| **SUB_FEATURE_CODE** | Field that indicates feature type:<br>a) MIDBLOCK_CURBCUT -  Break CURB features at extents of curbcuts located along block edges<br>b) CORNER_CURBCUT - Break CURB features at extents of curbcuts located along block corners or street intersections |
 
 
 [Back to Table of Contents](#table-of-contents)
