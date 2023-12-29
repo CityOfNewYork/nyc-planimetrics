@@ -600,6 +600,7 @@ The following attribute information applies to all feature classes.  Additional 
 |     |     |
 | --- | --- |
 | **Subtype** | **Feature Code** |
+| **[Median_Traffic Island](#subtype-median_traffic-island)** | 360010 CHECK !!! |
 | **[Median_Painted](#subtype-median_painted)** | 360010 |
 | **[Median_Curb](#subtype-median_curb)** | 360020 |
 | **[Median_Rail](#subtype-median_rail)** | 360030 |
@@ -620,6 +621,19 @@ The following attribute information applies to all feature classes.  Additional 
 
 [Back to Table of Contents](#table-of-contents)
 
+
+### Subtype: MEDIAN_TRAFFIC ISLAND
+
+|     |     |
+| --- | --- |
+| **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
+| **Features Captured** | Medians occuring at an intersection |
+| **Capture Notes** | n/a |
+| **Features Excluded** | n/a |
+| **Feature View** | ![Median_Traffic Island](Images/FeatureViews/Median_TrafficIsland.png) |
+
+
+[Back to Table of Contents](#table-of-contents)
 
 ### Subtype: MEDIAN_PAINTED
 
