@@ -600,13 +600,14 @@ The following attribute information applies to all feature classes.  Additional 
 |     |     |
 | --- | --- |
 | **Subtype** | **Feature Code** |
-| **[Median_Traffic Island](#subtype-median_traffic-island)** | 360010 CHECK !!! |
+| **[Median_Traffic Island](#subtype-median_traffic-island)** | ??? |
 | **[Median_Painted](#subtype-median_painted)** | 360010 |
 | **[Median_Curb](#subtype-median_curb)** | 360020 |
 | **[Median_Rail](#subtype-median_rail)** | 360030 |
 | **[Median_Fence](#subtype-median_fence)** | 360040 |
 | **[Median_Grass](#subtype-median_grass)** | 360050 |
 | **[Median_Barrier](#subtype-median_barrier)** | 360060 |
+| **[Median_Other](#subtype-median_other)** | ??? |
 
 *Rule: Medians were not intersected by <a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about">CSCL</a> on the same road except in some rare occasions (e.g. at street intersections with medians). Median type hierarchy is as follows: barrier, rail, fence, curb, grass and painted.*
 
@@ -634,6 +635,7 @@ The following attribute information applies to all feature classes.  Additional 
 
 
 [Back to Table of Contents](#table-of-contents)
+
 
 ### Subtype: MEDIAN_PAINTED
 
@@ -714,6 +716,20 @@ The following attribute information applies to all feature classes.  Additional 
 | **Capture Notes** | Whenever two jersey barriers were placed next to or in short distance of each other, the outer-most edge of both were used to determine the outline of a single feature. |
 | **Features Excluded** | Barrier medians which are moved on a daily basis, (e.g., at Manhattan entrances to Lincoln Tunnel) were not captured. |
 | **Feature View** | ![Median_Barrier](Images/FeatureViews/Median_Barrier.png) |
+
+
+[Back to Table of Contents](#table-of-contents)
+
+
+### Subtype: MEDIAN_OTHER
+
+|     |     |
+| --- | --- |
+| **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
+| **Features Captured** | Other medians |
+| **Capture Notes** | n/a |
+| **Features Excluded** | n/a |
+| **Feature View** | ![Median_Other](Images/FeatureViews/Median_Other.png) |
 
 
 [Back to Table of Contents](#table-of-contents)
