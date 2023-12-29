@@ -336,7 +336,8 @@ The following attribute information applies to all feature classes.  Additional 
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | Elevation points were captured for all building footprint features. |
-| **Capture Notes** | Elevation of the highest portion of the roof of a building, excluding antennas and roof fixtures such as air conditioning (AC), elevator shafts, chimneys, etc.Elevation values were transferred to each building footprint to calculate the building height attribute. |
+| **Capture Notes** | Elevation of the highest portion of the roof of a building, excluding antennas and roof fixtures such as air conditioning (AC), elevator shafts, chimneys, etc. 
+ Elevation values were transferred to each building footprint to calculate the building height attribute. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Elevation_Build](Images/FeatureViews/Elevation_Build.png) |
 
