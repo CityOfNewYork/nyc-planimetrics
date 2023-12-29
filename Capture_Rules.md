@@ -884,11 +884,13 @@ The following attribute information applies to all feature classes.  Additional 
 | **Subtype** | **Feature Code** |
 | **[Park Boundary](#subtype-park-boundary)** | 4980 |
 | **[Baseball/Softball Field](#subtype-baseballsoftball-field)** | 4900 |
-| **[Basketball Court](#subtype-basketball-court)** | 491010 |
-| **[Handball](#subtype-handball)** | 491030 |
-| **[Multipurpose Court](#subtype-multipurpose-court)** | 491050 |
-| **[Tennis Court](#subtype-tennis-court)** | 491060 |
-| **[Volleyball](#subtype-volleyball)** | 491070 |
+| **[Court](#subtype-court)** | 491000 |
+| **[Basketball Court](#subtype-court)** | 491010 |
+| **[Handball](#subtype-court)** | 491030 |
+| **[Hockey](#subtype-court)** | 491040 |
+| **[Multipurpose Court](#subtype-court)** | 491050 |
+| **[Tennis Court](#subtype-court)** | 491060 |
+| **[Volleyball](#subtype-court)** | 491070 |
 | **[Football Field](#subtype-football-field)** | 4920 |
 | **[Soccer Field](#subtype-soccer-field)** | 4930 |
 | **[Golf Course](#subtype-golf-course)** | 4940 |
@@ -933,7 +935,7 @@ The following attribute information applies to all feature classes.  Additional 
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database DPR Parks Properties |
 | **Features Captured** | Outline of individual courts. |
-| **Capture Notes** |  Varoius kinds of courts are captured within Court :<br>a) Basketball courts- These features can be represented as full or half courts. <br>b) Handball courts - The hard surface wall was incorporated witin each court. When multiple courts are adjacent to one another, a division line was digitized to partition individual courts.<br>c) Multipurpose courts - These features are composed of mostly hard surface areas with different markings for different activities.<br>d) Tennis court - Outline of tennis courts (hard surface only).In cases of multiple courts, a division line was digitized along outer painted line (baseline and sideline) to partition individual courts. The extent of these features only includes "in-bounds areas", they do not extend to the fence surrounding the tennis court area (or related "out-of-bounds areas").<br>e) Volleyball - Outline of volleyball courts using distinct markings on observed hard surface.|
+| **Capture Notes** |  Varoius kinds of courts are captured within Court :<br>a) Basketball courts- These features can be represented as full or half courts. <br>b) Handball courts - The hard surface wall was incorporated witin each court. When multiple courts are adjacent to one another, a division line was digitized to partition individual courts.<br>c) Hockey - Outline of hockey court. <br> d) Multipurpose courts - These features are composed of mostly hard surface areas with different markings for different activities.<br>e) Tennis court - Outline of tennis courts (hard surface only).In cases of multiple courts, a division line was digitized along outer painted line (baseline and sideline) to partition individual courts. The extent of these features only includes "in-bounds areas", they do not extend to the fence surrounding the tennis court area (or related "out-of-bounds areas").<br>f) Volleyball - Outline of volleyball courts using distinct markings on observed hard surface.|
 | **Features Excluded** | Tennis courts - Individual tennis courts within NYC Parks were not captured. Private tennis courts (e.g., on roofs or hotels, etc.) were not captured. |
 | **Feature View** | ![Basketball](Images/FeatureViews/Basketball.JPG) <br>Basketball court<br> <br>![Handball](Images/FeatureViews/Handball.JPG) <br>Handball court<br> <br>![Court_Multipurpose](Images/FeatureViews/Court_Multipurpose.JPG) <br>Multipurpose court<br> <br> ![Tennis](Images/FeatureViews/Tennis.JPG) <br>Tennis Court<br> <br>![Volleyball](Images/FeatureViews/Volleyball.JPG) <br> Volleyball court|
 
