@@ -127,7 +127,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **[Garage](#subtype-garage)** | 5110 |
 | **[Building Under Construction](#subtype-building-uc-building-under-construction)** | 5100 |
 | **[Sky Bridge](#subtype-skybridge)** | 2110 |
-| **[Cantilevered Building](#subtype-cantilevered-building)** | 5110 |
+| **[Cantilevered Building](#subtype-cantilevered-building)** | 1006 |
 
 [**Attributes**](#building-footprint-attributes)
 
