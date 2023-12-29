@@ -735,6 +735,16 @@ The following attribute information applies to all feature classes.  Additional 
 [Back to Table of Contents](#table-of-contents)
 
 
+#### Median Attributes
+
+|     |     |
+| --- | --- |
+| **Attribute** | **Description** |
+| **STREET NAME** | Name of street. |
+
+[Back to Table of Contents](#table-of-contents)
+
+
 # MISC STRUCT POLY
 
 **Geometry Type:** Polygon
