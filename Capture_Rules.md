@@ -927,71 +927,15 @@ The following attribute information applies to all feature classes.  Additional 
 [Back to Table of Contents](#table-of-contents)
 
 
-### Subtype: BASKETBALL COURT
+### Subtype: COURT
 
 |     |     |
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database DPR Parks Properties |
-| **Features Captured** | Outline of individual basketball courts. |
-| **Capture Notes** |  These features can be represented as full or half courts. |
-| **Features Excluded** | n/a |
-| **Feature View** | ![Basketball](Images/FeatureViews/Basketball.JPG) |
-
-
-[Back to Table of Contents](#table-of-contents)
-
-
-### Subtype: HANDBALL
-
-|     |     |
-| --- | --- |
-| **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database DPR Parks Properties |
-| **Features Captured** | Outline of handball courts. |
-| **Capture Notes** | The hard surface wall was incorporated witin each court. When multiple courts are adjacent to one another, a  division line was digitized to partition individual courts. |
-| **Features Excluded** | n/a |
-| **Feature View** | ![Handball](Images/FeatureViews/Handball.JPG) |
-
-
-[Back to Table of Contents](#table-of-contents)
-
-
-### Subtype: MULTIPURPOSE COURT
-
-|     |     |
-| --- | --- |
-| **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database DPR Parks Properties |
-| **Features Captured** | Outline of multipurpose fields. |
-| **Capture Notes** |  These features are composed of mostly hard surface areas with different markings for different activities. |
-| **Features Excluded** | n/a |
-| **Feature View** | ![Court_Multipurpose](Images/FeatureViews/Court_Multipurpose.JPG) |
-
-
-[Back to Table of Contents](#table-of-contents)
-
-
-### Subtype: TENNIS COURT
-
-|     |     |
-| --- | --- |
-| **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database DPR Parks Properties |
-| **Features Captured** | Outline of tennis courts (hard surface only). |
-| **Capture Notes** | In cases of multiple courts, a division line was digitized along outer painted line (baseline and sideline) to partition individual courts. The extent of these features only includes "in-bounds areas", they do not extend to the fence surrounding the tennis court area (or related "out-of-bounds areas"). |
-| **Features Excluded** | Individual tennis courts within NYC Parks were not captured. Private tennis courts (e.g., on roofs or hotels, etc.) were not captured. |
-| **Feature View** | ![Tennis](Images/FeatureViews/Tennis.JPG) |
-
-
-[Back to Table of Contents](#table-of-contents)
-
-
-### Subtype: VOLLEYBALL
-
-|     |     |
-| --- | --- |
-| **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database DPR Parks Properties |
-| **Features Captured** | Outline of volleyball courts using distinct markings on observed hard surface. |
-| **Capture Notes** | n/a |
-| **Features Excluded** | n/a |
-| **Feature View** | ![Volleyball](Images/FeatureViews/Volleyball.JPG) |
+| **Features Captured** | Outline of individual courts. |
+| **Capture Notes** |  Varoius kinds of courts are captured within Court :<br>a) Basketball courts- These features can be represented as full or half courts. <br>b) Handball courts - The hard surface wall was incorporated witin each court. When multiple courts are adjacent to one another, a division line was digitized to partition individual courts.<br>c) Multipurpose court - These features are composed of mostly hard surface areas with different markings for different activities.<br>d) Tennis court - Outline of tennis courts (hard surface only).In cases of multiple courts, a division line was digitized along outer painted line (baseline and sideline) to partition individual courts. The extent of these features only includes "in-bounds areas", they do not extend to the fence surrounding the tennis court area (or related "out-of-bounds areas").<br>e) Volleyball - Outline of volleyball courts using distinct markings on observed hard surface.|
+| **Features Excluded** | Tennis courts - Individual tennis courts within NYC Parks were not captured. Private tennis courts (e.g., on roofs or hotels, etc.) were not captured. |
+| **Feature View** | ![Basketball](Images/FeatureViews/Basketball.JPG) <br> ![Handball](Images/FeatureViews/Handball.JPG) <br>  ![Court_Multipurpose](Images/FeatureViews/Court_Multipurpose.JPG) <br> ![Tennis](Images/FeatureViews/Tennis.JPG) <br>  ![Volleyball](Images/FeatureViews/Volleyball.JPG) |
 
 
 [Back to Table of Contents](#table-of-contents)
