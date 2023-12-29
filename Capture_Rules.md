@@ -54,6 +54,7 @@ Using this orthoimagery, the planimetric base layers were updated city wide star
 * [**Building Footprint**](#building-footprint)
 * [**Cooling Towers**](#cooling-towers)
 * [**Curb**](#curb)
+* [**Curb Cut**](#curb-cut)
 * [**Elevation**](#elevation)
 * [**Hydro Structure**](#hydro-structure)
 * [**Hydrography**](#hydrography)
@@ -246,7 +247,7 @@ The following attribute information applies to all feature classes.  Additional 
 
 |     |     |
 | --- | --- |
-| **Sources** | Current imagery - see intro for specific dates.  New capture. |
+| **Sources** | Current imagery - see intro for specific dates. |
 | **Features Captured** | Cooling Towers typically found on the roofs of large buildings that enclose large fans used for ventilation and cooling. |
 | **Capture Notes** | Only cooling towers greater than four (4) ft in diameter were captured. |
 | **Features Excluded** | n/a |
@@ -276,8 +277,36 @@ The following attribute information applies to all feature classes.  Additional 
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database |
 | **Features Captured** | All curbs between roadbed pavement and other surfaces (i.e., within the street right-of-way) were captured. |
 | **Capture Notes** | This was a new feature class in the 2016 collection.  Prior to the 2016 capture, Curbs were a subset of the Pavement Edge feature class but were broken out into a seperate feature class in 2016. |
-| **Features Excluded** | Curbs inside Parking lots were not captured. |
+| **Features Excluded** | n/a |
 | **Feature View** | ![Curb](Images/FeatureViews/Curb.png) |
+
+
+[Back to Table of Contents](#table-of-contents)
+
+
+
+# CURB CUT
+
+**Geometry Type:** Polyline
+
+|     |     |
+| --- | --- |
+| **Sources** | Current imagery - see intro for specific dates. New capture. |
+| **Features Captured** | An opening in the curb created to allow a driveway or a right of way to enter from the roadbed. Captured in alignment with the Curb feature class. |
+| **Capture Notes** | This was a new feature class in the 2022 collection. |
+| **Features Excluded** | n/a |
+| **Feature View** | ![Curb Cut](Images/FeatureViews/Curb_cut.png) |
+
+
+[Back to Table of Contents](#table-of-contents)
+
+
+#### CURB CUT Attributes
+
+|     |     |
+| --- | --- |
+| **Attribute** | **Description** |
+| **SUB_FEATURE_CODE** | Field that indicates feature type::<br>a) MIDBLOCK_CURBCUT -  Break CURB features at extents of curbcuts located along block edgesf<br>b) CORNER_CURBCUT - Break CURB features at extents of curbcuts located along block corners or street intersections |
 
 
 [Back to Table of Contents](#table-of-contents)
