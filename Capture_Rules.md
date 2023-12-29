@@ -740,7 +740,7 @@ The following attribute information applies to all feature classes.  Additional 
 |     |     |
 | --- | --- |
 | **Attribute** | **Description** |
-| **STREET NAME** | Name of street. |
+| **STREET NAME** | Name of adjacent street. |
 
 [Back to Table of Contents](#table-of-contents)
 
