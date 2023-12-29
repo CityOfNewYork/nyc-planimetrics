@@ -295,7 +295,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **Features Captured** | An opening in the curb created to allow a driveway or a right of way to enter from the roadbed. Captured in alignment with the Curb feature class. |
 | **Capture Notes** | This was a new feature class in the 2022 collection. |
 | **Features Excluded** | n/a |
-| **Feature View** | ![Curb Cut](Images/FeatureViews/Curb_cut.png) |
+| **Feature View** | ![Curb Cut](Images/FeatureViews/curb_cut.png) <br> Examples of MIDBLOCK_CURBCUT (yellow arrows) and CORNER_CURBCUT (red arrows) |
 
 
 [Back to Table of Contents](#table-of-contents)
