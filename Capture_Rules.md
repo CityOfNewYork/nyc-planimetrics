@@ -64,6 +64,7 @@ Using this orthoimagery, the planimetric base layers were updated city wide star
 * [**Park**](#park)
 * [**Parking Lot**](#parking-lot)
 * [**Pavement Edge**](#pavement-edge)
+* [**Pavement Edge Carto**](#pavement-edge-carto)
 * [**Plaza**](#plaza)
 * [**Railroad**](#railroad)
 * [**Railroad Structure**](#railroad-structure)
@@ -75,6 +76,7 @@ Using this orthoimagery, the planimetric base layers were updated city wide star
 * [**Swimming Pool**](#swimming-pool)
 * [**Transport Structure**](#transport-structure)
 * [**Under Construction**](#under-construction)
+* [**Water Tank**](#water-tank)
 
 
 # Imagery and Data Specifications
