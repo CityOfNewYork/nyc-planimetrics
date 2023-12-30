@@ -1808,3 +1808,34 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 
 
 [Back to Table of Contents](#table-of-contents)
+
+
+# WATER TANK
+
+**Geometry Type:** Polygon
+
+|     |     |
+| --- | --- |
+| **Sources** | Current imagery - see intro for specific dates.  New capture  |
+| **Features Captured** | Capture all rooftop water tanks as polygon features. All buildings over 6 stories are required to have a water tank. |
+| **Capture Notes** | n/a |
+| **Features Excluded** | n/a  |
+| **Feature View** | |
+
+
+[Back to Table of Contents](#table-of-contents)
+
+
+#### Water Tank Attributes
+
+|     |     |
+| --- | --- |
+| **Attribute** | **Description** |
+| **BIN** | Building Information Number of the structure the water tank is located on. Obtain from building footprints polygon feature that contains the water tank shape. |
+| **BASE ELEVATION** | Elevation at the base of the water tank, taken at the lowest point along the tank’s circumference. |
+| **TOP ELEVATION** | Elevation at the top of the tank, taken at the highest point along the tank’s circumference. |
+| **HEIGHT** | TOP ELEVATION minus BASE ELEVATION |
+
+[Back to Table of Contents](#table-of-contents)
+
+
