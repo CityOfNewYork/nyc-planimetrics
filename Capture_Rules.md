@@ -1694,7 +1694,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **[Bridge](#subtype-bridge)** | 2300 |
 | **[Tunnel](#subtype-tunnel)** | 2310 |
 | **[Rail Bridge](#subtype-rail-bridge)** | 2320 |
-| **[Pedestrian/Bike Bridge](#subtype-pedestrianbike-bridge)** | 2330 |
+| **[Pedestrian Bridge](#subtype-pedestrian-bridge)** | 2330 |
 | **[Railroad Viaduct](#subtype-railroad-viaduct)** | 2340 |
 | **[Overpass](#subtype-overpass)** | 2350 |
 
@@ -1742,7 +1742,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 [Back to Table of Contents](#table-of-contents)
 
 
-### Subtype: PEDESTRIAN/BIKE BRIDGE
+### Subtype: PEDESTRIAN BRIDGE
 
 |     |     |
 | --- | --- |
