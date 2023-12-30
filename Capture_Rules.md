@@ -894,7 +894,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **[Football Field](#subtype-football-field)** | 4920 |
 | **[Soccer Field](#subtype-soccer-field)** | 4930 |
 | **[Golf Course](#subtype-golf-course)** | 4940 |
-| **[Pool](#subtype-pools)** | 4950 |
+| **[Pool](#subtype-pool)** | 4950 |
 | **[Running Track](#subtype-running-track)** | 4960 |
 | **[Skating Rink](#subtype-skating-rink)** | 4970 |
 | **[Greenstreets](#subtype-greenstreets)** | 4985 |
