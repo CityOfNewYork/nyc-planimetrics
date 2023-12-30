@@ -1223,6 +1223,35 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 [Back to Table of Contents](#table-of-contents)
 
 
+# PAVEMENT EDGE CARTO
+
+**Geometry Type:** Polyline
+
+|     |     |
+| --- | --- |
+| **Sources** | Current imagery - see intro for specific dates.  New capture.  |
+| **Features Captured** | This feature class will be a copy of PAVEMENTEDGE that has segments broken where they cross a building footprint or another pavement edge feature. It will be used for creating basemap symbology to show or hide lines depending on their visibility from above. Each segment shall be broken where these features cross a building footprint or another pavement edge feature.|
+| **Capture Notes** | n/a |
+| **Features Excluded** | n/a |
+| **Feature Views** |  |
+
+
+[Back to Table of Contents](#table-of-contents)
+
+
+#### Pavement Edge Carto Attributes
+
+|     |     |
+| --- | --- |
+| **Attribute** | **Description** |
+| **Z CENTER** |  |
+| **Z START** |  |
+| **Z END** |  |
+| **POS YITZ** |  |
+
+[Back to Table of Contents](#table-of-contents)
+
+
 # PLAZA
 
 **Geometry Type:** Polygon
