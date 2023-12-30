@@ -91,7 +91,9 @@ For more information on the coordinate reference system used, see the following 
 
 # General Attribute Information
 
-The following attribute information applies to all feature classes.  Additional attributes specific to a given feature class are listed within the details for that feature class. <br> NYC DoITT publishes multiple formats of the planimetric data where different formats might have abbreviated attributes due to format restraints.  Where applicable, these abbreviated attributes are provided below in parentheses.
+The following attribute information applies to all feature classes.  Additional attributes specific to a given feature class are listed within the details for that feature class. 
+
+NYC DoITT publishes multiple file formats of the planimetric data where different formats might have abbreviated attributes due to file format restraints.  Where applicable, these abbreviated attributes are provided below in parentheses.
 
 |     |     |
 | --- | --- |
