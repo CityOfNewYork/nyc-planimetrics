@@ -1677,7 +1677,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | All in-ground swimming pools, regardless of the shape, on the inside (water) of the pool. |
 | **Capture Notes** | n/a |
-| **Features Excluded** | Round above-ground swimming pools and pools on buildings were not captured.  Fish ponds, landscape ponds of irregular shape, and low-sided kiddie pools were not collected.  |
+| **Features Excluded** | Round, above-ground swimming pools, and pools on buildings were not captured.  Fish ponds, landscape ponds of irregular shape, and low-sided kiddie pools were not collected.  |
 | **Feature View** | ![Swimming_Pool](Images/FeatureViews/Swimming_Pool.png) |
 
 
