@@ -73,6 +73,7 @@ Using this orthoimagery, the planimetric base layers were updated city wide star
 * [**Shoreline**](#shoreline)
 * [**Sidewalk**](#sidewalk)
 * [**Sidewalk Centerline**](#sidewalk-centerline)
+* [**Street Centerline**](#street-centerline)
 * [**Swimming Pool**](#swimming-pool)
 * [**Transport Structure**](#transport-structure)
 * [**Under Construction**](#under-construction)
@@ -1666,6 +1667,39 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 
 [Back to Table of Contents](#table-of-contents)
 
+# STREET CENTERLINE
+
+**Geometry Type:** Polyline
+
+|     |     |
+| --- | --- |
+| **Sources** | Current imagery - see intro for specific dates. Latest CSCL.Centerline features in GDB feature class format. SEGMENTID will be used as a key to transfer tabular data updates to the production CSCL.Centerline features. |
+| **Features Captured** | These featuers represent street centerlines. |
+| **Capture Notes** | CSCL geometry will not be edited; edits made to CSCL (Centerline) will be limited to attributes. As a general rule, no attributes will be assigned to the “generic” or “faux” CSCL centerline segments.  SEGMENT_TYPE NOT IN (‘F’, ‘G’) All other types of segments will get attributes when they have corresponding PavementEdge/Roadbed features. In some cases this will include adding attributes to driveways, alleys, etc If no roadbed exists, these attributes will not be captured. |
+| **Features Excluded** |  |
+| **Feature View** | |
+
+
+[Back to Table of Contents](#table-of-contents)
+
+
+#### Street Centerline Attributes
+
+|     |     |
+| --- | --- |
+| **Attribute** | **Description** |
+| **SEGMENTID** | SEGMENTID column from CSCL.Centerline will be used as a key so that DoITT can transfer the attribute updates back to the production CSCL database. |
+| **L_BLOCKFACEID** | Left Blockface ID will be conflated from the corresponding pavement edge EOPID field. The determination of “left” will be made based on the digitized direction of CSCL rather than any visual “left”. In cases where the CSCL is broken into smaller segments along the blockface, than each of these segments will be assigned the same blockface ID. (see [Pavement Edge](#pavement-edge) for more details on BlockfaceID conflation rules). |
+| **R_BLOCKFACEID** | Right Blockface ID will be conflated from the corresponding pavement edge EOPID field. The determination n of “right” will be made based on the digitized direction of CSCL rather than any visual “right”. In cases where the CSCL is broken into smaller segments along the blockface, than each of these segments will be assigned the same blockface ID. (see [Pavement Edge](#pavement-edge) for more details on BlockfaceID conflation rules).|
+| **STNAME_LABEL** | The name of the corresponding street. |
+| **RW_TYPE** | Type of roadway. |
+| **NUMBER_TRAVEL_LANES** | The total number of travel lanes. |
+| **NUMBER_PARK_LANES** | The total number of parking lanes. |
+| **NUMBER_TOTAL_LANES** | NUMBER_TRAVEL_LANES plus NUMBER_PARK_LANES. |
+| **STREETWIDTH_MAX** | The maximum measured street width. |
+| **STREETWIDTH_MIN** | The minimum measured street width. |
+
+[Back to Table of Contents](#table-of-contents)
 
 
 # SWIMMING POOL
