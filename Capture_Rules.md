@@ -1067,7 +1067,7 @@ The following attribute information applies to all feature classes.  Additional 
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | All parking lots (paved or unpaved) greater than 2,000 sq. feet. Parking areas adjacent to the travel-way and separated from the travel-way by a curb or other obstruction were captured as parking lots. In these cases, the [Roadbed](#roadbed) and [Pavement Edge](#pavement-edge) end or wrap around the parking lot. The parking lot is not included as part of the Roadbed. |
-| **Capture Notes** | These features connect to road edge ([Curb](#curb) or [Edge of Pavement](#subtype-edge-of-pavement)) only at entrances and exits. |
+| **Capture Notes** | These features connect to road edge ([Curb](#curb) or [Road Edge](#subtype-road-edge)) only at entrances and exits. |
 | **Features Excluded** | Traffic islands within parking lot were not captured.When a building of > 400 sq. feet was present, the building area was excluded from the parking lot polygon. Parking areas adjacent to the travel-way, but not separated from the travel-way by a curb or other obstruction, were not captured. Instead, those parking areas were included as part of the Roadbed and the Pavement Edge extends to the outside edge of such area. Gas stations, private parking areas (e.g., for condos), and storage areas (e.g., for boats) were not captured.  |
 | **Feature View** | ![Parking_Lot](Images/FeatureViews/Parking_Lot.png) |
 
