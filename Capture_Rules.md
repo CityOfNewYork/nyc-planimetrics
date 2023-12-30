@@ -885,17 +885,17 @@ The following attribute information applies to all feature classes.  Additional 
 | **[Park Boundary](#subtype-park-boundary)** | 4980 |
 | **[Baseball/Softball Field](#subtype-baseballsoftball-field)** | 4900 |
 | **[Court](#subtype-court)** | 491000 |
-| **[Basketball Court](#subtype-court)** | 491010 |
-| **[Handball](#subtype-court)** | 491030 |
-| **[Hockey](#subtype-court)** | 491040 |
-| **[Multipurpose Court](#subtype-court)** | 491050 |
-| **[Tennis Court](#subtype-court)** | 491060 |
-| **[Volleyball](#subtype-court)** | 491070 |
+| **[Court, Basketball](#subtype-court)** | 491010 |
+| **[Court, Handball](#subtype-court)** | 491030 |
+| **[Court, Hockey](#subtype-court)** | 491040 |
+| **[Court, Multipurpose](#subtype-court)** | 491050 |
+| **[Court, Tennis](#subtype-court)** | 491060 |
+| **[Court, Volleyball](#subtype-court)** | 491070 |
 | **[Football Field](#subtype-football-field)** | 4920 |
 | **[Soccer Field](#subtype-soccer-field)** | 4930 |
 | **[Golf Course](#subtype-golf-course)** | 4940 |
-| **[Pools](#subtype-pools)** | 4950 |
-| **[Track](#subtype-track)** | 4960 |
+| **[Pool](#subtype-pools)** | 4950 |
+| **[Running Track](#subtype-running-track)** | 4960 |
 | **[Skating Rink](#subtype-skating-rink)** | 4970 |
 | **[Greenstreets](#subtype-greenstreets)** | 4985 |
 
@@ -985,7 +985,7 @@ The following attribute information applies to all feature classes.  Additional 
 [Back to Table of Contents](#table-of-contents)
 
 
-### Subtype: POOLS
+### Subtype: POOL
 
 |     |     |
 | --- | --- |
@@ -999,7 +999,7 @@ The following attribute information applies to all feature classes.  Additional 
 [Back to Table of Contents](#table-of-contents)
 
 
-### Subtype: TRACK
+### Subtype: RUNNING TRACK
 
 |     |     |
 | --- | --- |
@@ -1047,7 +1047,9 @@ The following attribute information applies to all feature classes.  Additional 
 | --- | --- |
 | **Attribute** | **Description** |
 | **PARK_NAME** | Name of Park |
+| **LANDUSE** | Land use type. |
 | **PARKNUM** | Unique park identification number corresponding with PARK_NAME. |
+| **SYSTEM** | Park identification number. |
 
 
 [Back to Table of Contents](#table-of-contents)
