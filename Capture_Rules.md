@@ -1644,7 +1644,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database, <a href="https://data.cityofnewyork.us/Housing-Development/Map-of-NYCHA-Developments/i9rv-hdr5/about"> NYCHA Development,</a><a href="https://data.cityofnewyork.us/City-Government/Parks-Properties/rjaj-zgq7/about"> DPR Parks Properties,</a><a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about"> CSCL,</a> Forts,<a href="https://data.cityofnewyork.us/Health/NYC-Health-and-Hospitals-Corporation-Facilities/ymhw-9cz9/about"> Hospitals,</a> School |
 | **Features Captured** | All paved sidewalks that are located outside of the ROW. |
 | **Capture Notes** | Interior sidewalks followed the same general capture rules as other sidewalk features. These features were captured in the following areas:<br>1. NYC Parks<br>2.  NYCHA Properties<br>3.  Other Residential areas<br>4.  Hospital campuses<br>5.  School campuses<br>6.  Federal Forts<br><br>The business use of this feature is to identify potential areas, outside of the public Right of Way (ROW), that could permit emergency vehicles through travel. |
-| **Features Excluded** | Openings in sidewalk (for landscaping and trees) were ignored.Since the intended purpose of such features is to support emergency through travel, any spurs or dead-ends (e.g., walkways leading to a building) were not captured.These features were not captured in office parks or other similar commercial areas. |
+| **Features Excluded** | Openings in sidewalk (for landscaping and trees) were ignored.  Since the intended purpose of such features is to support emergency through travel, any spurs or dead-ends (e.g., walkways leading to a building) were not captured.  These features were not captured in office parks or other similar commercial areas. |
 | **Feature View** | ![Sidewalk_2](Images/FeatureViews/Sidewalk_2.png) |
 
 
@@ -1677,7 +1677,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | All in-ground swimming pools, regardless of the shape, on the inside (water) of the pool. |
 | **Capture Notes** | n/a |
-| **Features Excluded** | Round above-ground swimming pools and pools on buildings were not captured.Fish ponds,  landscape ponds of irregular shape, and low-sided kiddie pools were not collected.  |
+| **Features Excluded** | Round above-ground swimming pools and pools on buildings were not captured.  Fish ponds, landscape ponds of irregular shape, and low-sided kiddie pools were not collected.  |
 | **Feature View** | ![Swimming_Pool](Images/FeatureViews/Swimming_Pool.png) |
 
 
