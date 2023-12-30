@@ -1082,7 +1082,7 @@ The following attribute information applies to all feature classes.  Additional 
 |     |     |
 | --- | --- |
 | **Subtype** | **Feature Code** |
-| **[Road Edge](#subtype-edge-of-pavement)** | 2260 |
+| **[Road Edge](#subtype-road-edge)** | 2260 |
 | **[Airport Runway](#subtype-airport-runway)** | 2230 |
 | **[Alley](#subtype-alley)** | 2270 |
 
