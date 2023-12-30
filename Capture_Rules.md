@@ -91,14 +91,14 @@ For more information on the coordinate reference system used, see the following 
 
 # General Attribute Information
 
-The following attribute information applies to all feature classes.  Additional attributes specific to a given feature class are listed within the details for that feature class.
+The following attribute information applies to all feature classes.  Additional attributes specific to a given feature class are listed within the details for that feature class. <br> NYC DoITT publishes multiple formats of the planimetric data where different formats might have abbreviated attributes due to format restraints.  Where applicable, these abbreviated attributes are provided below in parentheses.
 
 |     |     |
 | --- | --- |
 | **Attribute** | **Description** |
 | **SOURCE_ID** | Unique feature Identification Number. |
-| **FEATURE_CODE** | Indicates the type of feature.  |
-| **SUB_FEATURE_CODE** | (where applicable) indicates a subset of features within a given “Feature_Code” set.  |
+| **FEATURE_CODE (FEAT_CODE)** | Indicates the type of feature.  |
+| **SUB_FEATURE_CODE (SUB_CODE)** | (where applicable) indicates a subset of features within a given “Feature_Code” set.  |
 | **STATUS** | Field indicating the feature status as it fits into one of the following categories:<br>a) Newly collected in 2022 - feature captured for the first time during the 2022 planimetrics update project.<br>b) Feature has changed in 2022 collection - feature existed previously but has been updated during the 2022 planimetrics update project.<br>c) No change in 2022 collection - feature is unchanged from the source planimetrics database. |
 
 [Back to Table of Contents](#table-of-contents)
@@ -217,16 +217,13 @@ The following attribute information applies to all feature classes.  Additional 
 | **NAME** | Name of building. |
 | **BIN_NUMBER** | A Building Identification Number (BIN) is a unique identifier assigned by the Department of City Planning (DCP) for buildings in Geosupport. DoITT inserts assigned BINs into their respective footprints on an ongoing basis through interagency coordination. For cases where a BIN has not been assigned or cannot be determined, a "million” BIN is inserted as follows:<br>• 1000000 for Manhattan<br>• 2000000 for Bronx<br>• 3000000 for Brooklyn<br>• 4000000 for Queens<br>• 5000000 for Staten Island |
 | **BBL** | Borough-Block-Lot (BBL) or parcel numbers identify the location of buildings or properties |
-| **CONSTURCTION_YEAR** | Derived from PLUTO. The year construction of the building was completed. See "BuiltCode" field for details on accuracy. |
-| **GEOM_SOURCE** | Source for the construction of the building geometry.   |
-| **LAST_MODIFY_BY** | User that last updated the geometry or attributes of a building feature. |
-| **LAST_MODIFY_DATE** | Date that a building feature's geometry or attributes was last modified. |
-| **LAST_STATUS_TYPE** | The status of a building - "Constructed", "Marked for Construction", or "Marked for Demolition".  |
+| **CONSTURCTION_YEAR (CNSTRCT_YR)** | Derived from PLUTO. The year construction of the building was completed. See "BuiltCode" field for details on accuracy. |
+| **GEOM_SOURCE (GEOMSOURCE)** | Source for the construction of the building geometry.   |
+| **LAST_MODIFY_DATE (LSTMODDATE)** | Date that a building feature's geometry or attributes was last modified. |
+| **LAST_STATUS_TYPE (LSTSTATYPE)** | The status of a building - "Constructed", "Marked for Construction", or "Marked for Demolition".  |
 | **DOITT_ID** | Unique numeric ID assigned by DoITT.  |
-| **LAST_STATUS_DATE** | Most recent date that a building status was changed. |
-| **HEIGHT_ROOF** | Building roof height was calculated as the difference between ground elevation of the building and the roof elevation value.  The roof elevation is the highest point of the roof itself (see [BUILDING ELEVATION](#subtype-building-elevation) in the [ELEVATION](#elevation) Feature Class). See [Building Footprint Diagrams](#building-footprint-diagrams) below for additional details. |
-| **DOB_JOB_NUM** | Job number from DOB_JOB table obtained from milestone reports.  |
-| **GROUND_ELEVATION** | Represents an interpolated elevation value at the centroid (center point) of the building. The process for capturing this is as follows:<br>1. A bare-earth surface is generated from the 2010 LiDAR by first removing any points that fall within a building polygon. These points are removed to eliminate any data anomalies (e.g., points captured at the roof level). A Digital Terrain Model (DTM) is then generated from the remaining points by interpolating the elevations around the building edges to develop a continuous surface.<br>2. Building centroids (i.e., the center point within each building) are then draped over the  DTM generated from step 1.  The bare-earth elevation value at that building centroid is then transferred to the ground elevation attribute of the building footprint.<br><br>The purpose is to determine a single elevation value that is representative of the elevation values surrounding each building.  |
+| **HEIGHT_ROOF (HEIGHTROOF)** | Building roof height was calculated as the difference between ground elevation of the building and the roof elevation value.  The roof elevation is the highest point of the roof itself (see [BUILDING ELEVATION](#subtype-building-elevation) in the [ELEVATION](#elevation) Feature Class). See [Building Footprint Diagrams](#building-footprint-diagrams) below for additional details. |
+| **GROUND_ELEVATION (GROUNDELEV)** | Represents an interpolated elevation value at the centroid (center point) of the building. The process for capturing this is as follows:<br>1. A bare-earth surface is generated from the 2010 LiDAR by first removing any points that fall within a building polygon. These points are removed to eliminate any data anomalies (e.g., points captured at the roof level). A Digital Terrain Model (DTM) is then generated from the remaining points by interpolating the elevations around the building edges to develop a continuous surface.<br>2. Building centroids (i.e., the center point within each building) are then draped over the  DTM generated from step 1.  The bare-earth elevation value at that building centroid is then transferred to the ground elevation attribute of the building footprint.<br><br>The purpose is to determine a single elevation value that is representative of the elevation values surrounding each building.  |
 | **NUM_FLOORS** | Derived from PLUTO. Indicates the number of full and partial stories starting from the ground floor. For cases where a lot has more than one building, the number of stories in the primary building on the tax lot is applied to all buildings on the lot.|
 | **BUILT_CODE** | Derived from PLUTO. A code indicating whether the year the building was built (CONSTRUCTION_YEAR) is an estimate. E = Estimate; Blank = Year Built is not an Estimate |
 | **COMMENT** | Comment field- if necessary |
@@ -265,7 +262,7 @@ The following attribute information applies to all feature classes.  Additional 
 |     |     |
 | --- | --- |
 | **Attribute** | **Description** |
-| **SUB_FEATURE_CODE** | Field that indicates where the structure is located::<br>a) Roof level -  located on the building roof<br>b) Ground level - located on the ground at street grade level |
+| **SUB_FEATURE_CODE (SUB_CODE)** | Field that indicates where the structure is located::<br>a) Roof level -  located on the building roof<br>b) Ground level - located on the ground at street grade level |
 | **BIN** | Building Information Number of the structure the water tank is located on. Obtain from building footprints polygon feature that contains the water tank shape |
 
 [Back to Table of Contents](#table-of-contents)
@@ -309,7 +306,7 @@ The following attribute information applies to all feature classes.  Additional 
 |     |     |
 | --- | --- |
 | **Attribute** | **Description** |
-| **SUB_FEATURE_CODE** | Field that indicates feature type:<br>a) MIDBLOCK_CURBCUT -  Break CURB features at extents of curbcuts located along block edges<br>b) CORNER_CURBCUT - Break CURB features at extents of curbcuts located along block corners or street intersections |
+| **SUB_FEATURE_CODE (SUB_CODE)** | Field that indicates feature type:<br>a) MIDBLOCK_CURBCUT -  Break CURB features at extents of curbcuts located along block edges<br>b) CORNER_CURBCUT - Break CURB features at extents of curbcuts located along block corners or street intersections |
 
 
 [Back to Table of Contents](#table-of-contents)
@@ -743,7 +740,7 @@ The following attribute information applies to all feature classes.  Additional 
 |     |     |
 | --- | --- |
 | **Attribute** | **Description** |
-| **STREET NAME** | Name of adjacent street. |
+| **STREET NAME (STREET_NAM)** | Name of adjacent street. |
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -808,7 +805,7 @@ The following attribute information applies to all feature classes.  Additional 
 |     |     |
 | --- | --- |
 | **Attribute** | **Description** |
-| **DESCRIPTION** | Field characterizing the miscellaneous structure. |
+| **DESCRIPTION (DESCRIPTIO)** | Field characterizing the miscellaneous structure. |
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1138,7 +1135,7 @@ The following attribute information applies to all feature classes.  Additional 
 |     |     |
 | --- | --- |
 | **Attribute** | **Description** |
-| **BLOCKFACEID** | Field indicates the Unique ID generated automatically. This ID was conflated to the corresponding L/R BLOCKFACEID in <a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about">CSCL</a>. See [Pavement Edge Diagrams](#pavement-edge-diagrams) for more details on conflation with special/complex scenarios. |
+| **BLOCKFACEID (BLOCKF_ID)** | Field indicates the Unique ID generated automatically. This ID was conflated to the corresponding L/R BLOCKFACEID in <a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about">CSCL</a>. See [Pavement Edge Diagrams](#pavement-edge-diagrams) for more details on conflation with special/complex scenarios. |
 | **CONFLATED** | Field indicates whether or not the BLOCKFACEID value was conflated to a CSCL segment. Values are Y or N. |
 
 [Back to Table of Contents](#table-of-contents)
@@ -1866,8 +1863,8 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | --- | --- |
 | **Attribute** | **Description** |
 | **BIN** | Building Information Number of the structure the water tank is located on. Obtain from building footprints polygon feature that contains the water tank shape. |
-| **BASE ELEVATION** | Elevation at the base of the water tank, taken at the lowest point along the tank’s circumference. |
-| **TOP ELEVATION** | Elevation at the top of the tank, taken at the highest point along the tank’s circumference. |
+| **BASE ELEVATION (BASE_ELEV)** | Elevation at the base of the water tank, taken at the lowest point along the tank’s circumference. |
+| **TOP ELEVATION (TOP_ELEV)** | Elevation at the top of the tank, taken at the highest point along the tank’s circumference. |
 | **HEIGHT** | TOP ELEVATION minus BASE ELEVATION |
 
 [Back to Table of Contents](#table-of-contents)
