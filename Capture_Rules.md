@@ -1,5 +1,7 @@
 ### NYC Planimetric Database
 
+Looking for older capture rules? See the [2014 rules](https://github.com/CityOfNewYork/nyc-planimetrics/tree/planimetrics-2014)
+
 #### Purpose
 The purpose of this document is twofold. First, it is intended to define the capture rules for each planimetric feature collected as part of the planimetric update project. As such, this document is meant to clarify questions regarding how the features were captured, provide feature descriptions, and illustrate any exceptions that may apply. Second, since this document provides a wealth of information that would benefit users working with the data, we decided to make it accessible as a secondary source of documentation. This document is not intended to replace the metadata included with the planimetric features but rather to function as an additional source of information. Lastly, the documentation originated from previous planimetric updates. The documentation has evolved and has been refined over each successive planimetric update cycle; and will continue to be extended and maintained over the course of future updates.
 
@@ -54,6 +56,7 @@ Using this orthoimagery, the planimetric base layers were updated city wide star
 * [**Building Footprint**](#building-footprint)
 * [**Cooling Towers**](#cooling-towers)
 * [**Curb**](#curb)
+* [**Curb Cut**](#curb-cut)
 * [**Elevation**](#elevation)
 * [**Hydro Structure**](#hydro-structure)
 * [**Hydrography**](#hydrography)
@@ -63,6 +66,7 @@ Using this orthoimagery, the planimetric base layers were updated city wide star
 * [**Park**](#park)
 * [**Parking Lot**](#parking-lot)
 * [**Pavement Edge**](#pavement-edge)
+* [**Pavement Edge Carto**](#pavement-edge-carto)
 * [**Plaza**](#plaza)
 * [**Railroad**](#railroad)
 * [**Railroad Structure**](#railroad-structure)
@@ -71,9 +75,11 @@ Using this orthoimagery, the planimetric base layers were updated city wide star
 * [**Shoreline**](#shoreline)
 * [**Sidewalk**](#sidewalk)
 * [**Sidewalk Centerline**](#sidewalk-centerline)
+* [**Street Centerline**](#street-centerline)
 * [**Swimming Pool**](#swimming-pool)
 * [**Transport Structure**](#transport-structure)
 * [**Under Construction**](#under-construction)
+* [**Water Tank**](#water-tank)
 
 
 # Imagery and Data Specifications
@@ -87,14 +93,16 @@ For more information on the coordinate reference system used, see the following 
 
 # General Attribute Information
 
-The following attribute information applies to all feature classes.  Additional attributes specific to a given feature class are listed within the details for that feature class.
+The following attribute information applies to all feature classes.  Additional attributes specific to a given feature class are listed within the details for that feature class. 
+
+NYC DoITT publishes multiple file formats of the planimetric data where different formats might have abbreviated attributes due to file format restraints.  Where applicable, these abbreviated attributes are provided below in parentheses.
 
 |     |     |
 | --- | --- |
 | **Attribute** | **Description** |
 | **SOURCE_ID** | Unique feature Identification Number. |
-| **FEATURE_CODE** | Indicates the type of feature.  |
-| **SUB_FEATURE_CODE** | (where applicable) indicates a subset of features within a given “Feature_Code” set.  |
+| **FEATURE_CODE (FEAT_CODE)** | Indicates the type of feature.  |
+| **SUB_FEATURE_CODE (SUB_CODE)** | (where applicable) indicates a subset of features within a given “Feature_Code” set.  |
 | **STATUS** | Field indicating the feature status as it fits into one of the following categories:<br>a) Newly collected in 2022 - feature captured for the first time during the 2022 planimetrics update project.<br>b) Feature has changed in 2022 collection - feature existed previously but has been updated during the 2022 planimetrics update project.<br>c) No change in 2022 collection - feature is unchanged from the source planimetrics database. |
 
 [Back to Table of Contents](#table-of-contents)
@@ -127,7 +135,7 @@ The following attribute information applies to all feature classes.  Additional 
 | **[Garage](#subtype-garage)** | 5110 |
 | **[Building Under Construction](#subtype-building-uc-building-under-construction)** | 5100 |
 | **[Sky Bridge](#subtype-skybridge)** | 2110 |
-| **[Cantilevered Building](#subtype-cantilevered-building)** | 5110 |
+| **[Cantilevered Building](#subtype-cantilevered-building)** | 1006 |
 
 [**Attributes**](#building-footprint-attributes)
 
@@ -195,7 +203,7 @@ The following attribute information applies to all feature classes.  Additional 
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Building footprint database. |
 | **Features Captured** | This is for buildings where some portion of the footprint overhangs another building footprint, but is not a Skybridge, which is typically narrow and serves solely as an aerial bridge between two structures. |
-| **Capture Notes** | n/a |
+| **Capture Notes** | This was a new subtype in the 2022 collection.|
 | **Features Excluded** | n/a |
 | **Feature View** | |
 | **Photo** | ![](Images/Photos/cantilevered_building.png) |
@@ -213,16 +221,13 @@ The following attribute information applies to all feature classes.  Additional 
 | **NAME** | Name of building. |
 | **BIN_NUMBER** | A Building Identification Number (BIN) is a unique identifier assigned by the Department of City Planning (DCP) for buildings in Geosupport. DoITT inserts assigned BINs into their respective footprints on an ongoing basis through interagency coordination. For cases where a BIN has not been assigned or cannot be determined, a "million” BIN is inserted as follows:<br>• 1000000 for Manhattan<br>• 2000000 for Bronx<br>• 3000000 for Brooklyn<br>• 4000000 for Queens<br>• 5000000 for Staten Island |
 | **BBL** | Borough-Block-Lot (BBL) or parcel numbers identify the location of buildings or properties |
-| **CONSTURCTION_YEAR** | Derived from PLUTO. The year construction of the building was completed. See "BuiltCode" field for details on accuracy. |
-| **GEOM_SOURCE** | Source for the construction of the building geometry.   |
-| **LAST_MODIFY_BY** | User that last updated the geometry or attributes of a building feature. |
-| **LAST_MODIFY_DATE** | Date that a building feature's geometry or attributes was last modified. |
-| **LAST_STATUS_TYPE** | The status of a building - "Constructed", "Marked for Construction", or "Marked for Demolition".  |
+| **CONSTURCTION_YEAR (CNSTRCT_YR)** | Derived from PLUTO. The year construction of the building was completed. See "BuiltCode" field for details on accuracy. |
+| **GEOM_SOURCE (GEOMSOURCE)** | Source for the construction of the building geometry.   |
+| **LAST_MODIFY_DATE (LSTMODDATE)** | Date that a building feature's geometry or attributes was last modified. |
+| **LAST_STATUS_TYPE (LSTSTATYPE)** | The status of a building - "Constructed", "Marked for Construction", or "Marked for Demolition".  |
 | **DOITT_ID** | Unique numeric ID assigned by DoITT.  |
-| **LAST_STATUS_DATE** | Most recent date that a building status was changed. |
-| **HEIGHT_ROOF** | Building roof height was calculated as the difference between ground elevation of the building and the roof elevation value.  The roof elevation is the highest point of the roof itself (see [BUILDING ELEVATION](#subtype-building-elevation) in the [ELEVATION](#elevation) Feature Class). See [Building Footprint Diagrams](#building-footprint-diagrams) below for additional details. |
-| **DOB_JOB_NUM** | Job number from DOB_JOB table obtained from milestone reports.  |
-| **GROUND_ELEVATION** | Represents an interpolated elevation value at the centroid (center point) of the building. The process for capturing this is as follows:<br>1. A bare-earth surface is generated from the 2010 LiDAR by first removing any points that fall within a building polygon. These points are removed to eliminate any data anomalies (e.g., points captured at the roof level). A Digital Terrain Model (DTM) is then generated from the remaining points by interpolating the elevations around the building edges to develop a continuous surface.<br>2. Building centroids (i.e., the center point within each building) are then draped over the  DTM generated from step 1.  The bare-earth elevation value at that building centroid is then transferred to the ground elevation attribute of the building footprint.<br><br>The purpose is to determine a single elevation value that is representative of the elevation values surrounding each building.  |
+| **HEIGHT_ROOF (HEIGHTROOF)** | Building roof height was calculated as the difference between ground elevation of the building and the roof elevation value.  The roof elevation is the highest point of the roof itself (see [BUILDING ELEVATION](#subtype-building-elevation) in the [ELEVATION](#elevation) Feature Class). See [Building Footprint Diagrams](#building-footprint-diagrams) below for additional details. |
+| **GROUND_ELEVATION (GROUNDELEV)** | Represents an interpolated elevation value at the centroid (center point) of the building. The process for capturing this is as follows:<br>1. A bare-earth surface is generated from the 2010 LiDAR by first removing any points that fall within a building polygon. These points are removed to eliminate any data anomalies (e.g., points captured at the roof level). A Digital Terrain Model (DTM) is then generated from the remaining points by interpolating the elevations around the building edges to develop a continuous surface.<br>2. Building centroids (i.e., the center point within each building) are then draped over the  DTM generated from step 1.  The bare-earth elevation value at that building centroid is then transferred to the ground elevation attribute of the building footprint.<br><br>The purpose is to determine a single elevation value that is representative of the elevation values surrounding each building.  |
 | **NUM_FLOORS** | Derived from PLUTO. Indicates the number of full and partial stories starting from the ground floor. For cases where a lot has more than one building, the number of stories in the primary building on the tax lot is applied to all buildings on the lot.|
 | **BUILT_CODE** | Derived from PLUTO. A code indicating whether the year the building was built (CONSTRUCTION_YEAR) is an estimate. E = Estimate; Blank = Year Built is not an Estimate |
 | **COMMENT** | Comment field- if necessary |
@@ -246,8 +251,8 @@ The following attribute information applies to all feature classes.  Additional 
 
 |     |     |
 | --- | --- |
-| **Sources** | Current imagery - see intro for specific dates.  New capture. |
-| **Features Captured** | Cooling Towers found on the roofs of large buildings that enclose large fans used for ventilation and cooling. |
+| **Sources** | Current imagery - see intro for specific dates. |
+| **Features Captured** | Cooling Towers typically found on the roofs of large buildings that enclose large fans used for ventilation and cooling. |
 | **Capture Notes** | Only cooling towers greater than four (4) ft in diameter were captured. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Cooling Towers](Images/FeatureViews/CoolingTower.JPG) |
@@ -261,7 +266,8 @@ The following attribute information applies to all feature classes.  Additional 
 |     |     |
 | --- | --- |
 | **Attribute** | **Description** |
-| **BIN** | A Building Identification Number (BIN) is a unique identifier assigned by the Department of City Planning (DCP) for buildings in Geosupport. DoITT inserts assigned BINs into their respective footprints on an ongoing basis through interagency coordination. For cases where a BIN has not been assigned or cannot be determined, a "million” BIN is inserted as follows:<br>• 1000000 for Manhattan<br>• 2000000 for Bronx<br>• 3000000 for Brooklyn<br>• 4000000 for Queens<br>• 5000000 for Staten Island |
+| **SUB_FEATURE_CODE (SUB_CODE)** | Field that indicates where the structure is located::<br>a) Roof level -  located on the building roof<br>b) Ground level - located on the ground at street grade level |
+| **BIN** | Building Information Number of the structure the water tank is located on. Obtain from building footprints polygon feature that contains the water tank shape |
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -275,8 +281,36 @@ The following attribute information applies to all feature classes.  Additional 
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database |
 | **Features Captured** | All curbs between roadbed pavement and other surfaces (i.e., within the street right-of-way) were captured. |
 | **Capture Notes** | This was a new feature class in the 2016 collection.  Prior to the 2016 capture, Curbs were a subset of the Pavement Edge feature class but were broken out into a seperate feature class in 2016. |
-| **Features Excluded** | Curbs inside Parking lots were not captured. |
+| **Features Excluded** | n/a |
 | **Feature View** | ![Curb](Images/FeatureViews/Curb.png) |
+
+
+[Back to Table of Contents](#table-of-contents)
+
+
+
+# CURB CUT
+
+**Geometry Type:** Polyline
+
+|     |     |
+| --- | --- |
+| **Sources** | Current imagery - see intro for specific dates. New capture. |
+| **Features Captured** | An opening in the curb created to allow a driveway or a right of way to enter from the roadbed. Captured in alignment with the Curb feature class. |
+| **Capture Notes** | This was a new feature class in the 2022 collection. |
+| **Features Excluded** | n/a |
+| **Feature View** | ![Curb Cut](Images/FeatureViews/Curb_Cut.png) <br> Examples of MIDBLOCK_CURBCUT (yellow arrows) and CORNER_CURBCUT (red arrows) |
+
+
+[Back to Table of Contents](#table-of-contents)
+
+
+#### CURB CUT Attributes
+
+|     |     |
+| --- | --- |
+| **Attribute** | **Description** |
+| **SUB_FEATURE_CODE (SUB_CODE)** | Field that indicates feature type:<br>a) MIDBLOCK_CURBCUT -  Break CURB features at extents of curbcuts located along block edges<br>b) CORNER_CURBCUT - Break CURB features at extents of curbcuts located along block corners or street intersections |
 
 
 [Back to Table of Contents](#table-of-contents)
@@ -306,7 +340,8 @@ The following attribute information applies to all feature classes.  Additional 
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | Elevation points were captured for all building footprint features. |
-| **Capture Notes** | Elevation of the highest portion of the roof of a building, excluding antennas and roof fixtures such as air conditioning (AC), elevator shafts, chimneys, etc.Elevation values were transferred to each building footprint to calculate the building height attribute. |
+| **Capture Notes** | Elevation of the highest portion of the roof of a building, excluding antennas and roof fixtures such as air conditioning (AC), elevator shafts, chimneys, etc. 
+ Elevation values were transferred to each building footprint to calculate the building height attribute. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Elevation_Build](Images/FeatureViews/Elevation_Build.png) |
 
@@ -569,12 +604,14 @@ The following attribute information applies to all feature classes.  Additional 
 |     |     |
 | --- | --- |
 | **Subtype** | **Feature Code** |
+| **[Median_Traffic Island](#subtype-median_traffic-island)** | 360080 |
 | **[Median_Painted](#subtype-median_painted)** | 360010 |
 | **[Median_Curb](#subtype-median_curb)** | 360020 |
 | **[Median_Rail](#subtype-median_rail)** | 360030 |
 | **[Median_Fence](#subtype-median_fence)** | 360040 |
 | **[Median_Grass](#subtype-median_grass)** | 360050 |
 | **[Median_Barrier](#subtype-median_barrier)** | 360060 |
+| **[Median_Other](#subtype-median_other)** | 360070 |
 
 *Rule: Medians were not intersected by <a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about">CSCL</a> on the same road except in some rare occasions (e.g. at street intersections with medians). Median type hierarchy is as follows: barrier, rail, fence, curb, grass and painted.*
 
@@ -586,6 +623,20 @@ The following attribute information applies to all feature classes.  Additional 
 | **Features Captured** | All medians that physically divide a roadbed were collected; which includes medians, traffic islands, "Jersey Barriers", and painted areas that are used to separate traffic flow. |
 | **Capture Notes** | Medians are sometimes paved, are normally elevated (have a curb), or have dirt or grass. Medians can have sidewalks crossing them. In those cases, the outline of the largest area was incorporated into a single median feature. The NYC online <a href="https://data.cityofnewyork.us/Transportation/Bike-Routes/umu5-zyd3">Bike Routes</a> data was used as a reference to identify potential new medians. Areas where the column ALLCLASSES is equal to I and "I,II" most often contained new medians. New Medians exist throughout the City regardless of these bike lane classifications. Thus, this was considered a supplemental source only. |
 | **Features Excluded** | The following features were not captured as medians:<br>• Barriers in front of buildings<br>• Jersey Barriers used to regulate traffic in construction areas, or<br>• Jersey Barriers used to block-off road access. |
+
+[Back to Table of Contents](#table-of-contents)
+
+
+### Subtype: MEDIAN_TRAFFIC ISLAND
+
+|     |     |
+| --- | --- |
+| **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
+| **Features Captured** | Medians occuring at an intersection |
+| **Capture Notes** | n/a |
+| **Features Excluded** | n/a |
+| **Feature View** | ![Median_Traffic Island](Images/FeatureViews/Median_TrafficIsland.png) |
+
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -674,6 +725,30 @@ The following attribute information applies to all feature classes.  Additional 
 [Back to Table of Contents](#table-of-contents)
 
 
+### Subtype: MEDIAN_OTHER
+
+|     |     |
+| --- | --- |
+| **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
+| **Features Captured** | Other medians |
+| **Capture Notes** | n/a |
+| **Features Excluded** | n/a |
+| **Feature View** | ![Median_Other](Images/FeatureViews/Median_Other.png) |
+
+
+[Back to Table of Contents](#table-of-contents)
+
+
+#### Median Attributes
+
+|     |     |
+| --- | --- |
+| **Attribute** | **Description** |
+| **STREET NAME (STREET_NAM)** | Name of adjacent street. |
+
+[Back to Table of Contents](#table-of-contents)
+
+
 # MISC STRUCT POLY
 
 **Geometry Type:** Polygon
@@ -734,7 +809,7 @@ The following attribute information applies to all feature classes.  Additional 
 |     |     |
 | --- | --- |
 | **Attribute** | **Description** |
-| **DESCRIPTION** | Field characterizing the miscellaneous structure. |
+| **DESCRIPTION (DESCRIPTIO)** | Field characterizing the miscellaneous structure. |
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -813,16 +888,18 @@ The following attribute information applies to all feature classes.  Additional 
 | **Subtype** | **Feature Code** |
 | **[Park Boundary](#subtype-park-boundary)** | 4980 |
 | **[Baseball/Softball Field](#subtype-baseballsoftball-field)** | 4900 |
-| **[Basketball Court](#subtype-basketball-court)** | 491010 |
-| **[Handball](#subtype-handball)** | 491030 |
-| **[Multipurpose Court](#subtype-multipurpose-court)** | 491050 |
-| **[Tennis Court](#subtype-tennis-court)** | 491060 |
-| **[Volleyball](#subtype-volleyball)** | 491070 |
+| **[Court](#subtype-court)** | 491000 |
+| **[Court, Basketball](#subtype-court)** | 491010 |
+| **[Court, Handball](#subtype-court)** | 491030 |
+| **[Court, Hockey](#subtype-court)** | 491040 |
+| **[Court, Multipurpose](#subtype-court)** | 491050 |
+| **[Court, Tennis](#subtype-court)** | 491060 |
+| **[Court, Volleyball](#subtype-court)** | 491070 |
 | **[Football Field](#subtype-football-field)** | 4920 |
 | **[Soccer Field](#subtype-soccer-field)** | 4930 |
 | **[Golf Course](#subtype-golf-course)** | 4940 |
-| **[Pools](#subtype-pools)** | 4950 |
-| **[Track](#subtype-track)** | 4960 |
+| **[Pool](#subtype-pool)** | 4950 |
+| **[Running Track](#subtype-running-track)** | 4960 |
 | **[Skating Rink](#subtype-skating-rink)** | 4970 |
 | **[Greenstreets](#subtype-greenstreets)** | 4985 |
 
@@ -856,71 +933,15 @@ The following attribute information applies to all feature classes.  Additional 
 [Back to Table of Contents](#table-of-contents)
 
 
-### Subtype: BASKETBALL COURT
+### Subtype: COURT
 
 |     |     |
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database DPR Parks Properties |
-| **Features Captured** | Outline of individual basketball courts. |
-| **Capture Notes** |  These features can be represented as full or half courts. |
-| **Features Excluded** | n/a |
-| **Feature View** | ![Basketball](Images/FeatureViews/Basketball.JPG) |
-
-
-[Back to Table of Contents](#table-of-contents)
-
-
-### Subtype: HANDBALL
-
-|     |     |
-| --- | --- |
-| **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database DPR Parks Properties |
-| **Features Captured** | Outline of handball courts. |
-| **Capture Notes** | The hard surface wall was incorporated witin each court. When multiple courts are adjacent to one another, a  division line was digitized to partition individual courts. |
-| **Features Excluded** | n/a |
-| **Feature View** | ![Handball](Images/FeatureViews/Handball.JPG) |
-
-
-[Back to Table of Contents](#table-of-contents)
-
-
-### Subtype: MULTIPURPOSE COURT
-
-|     |     |
-| --- | --- |
-| **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database DPR Parks Properties |
-| **Features Captured** | Outline of multipurpose fields. |
-| **Capture Notes** |  These features are composed of mostly hard surface areas with different markings for different activities. |
-| **Features Excluded** | n/a |
-| **Feature View** | ![Court_Multipurpose](Images/FeatureViews/Court_Multipurpose.JPG) |
-
-
-[Back to Table of Contents](#table-of-contents)
-
-
-### Subtype: TENNIS COURT
-
-|     |     |
-| --- | --- |
-| **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database DPR Parks Properties |
-| **Features Captured** | Outline of tennis courts (hard surface only). |
-| **Capture Notes** | In cases of multiple courts, a division line was digitized along outer painted line (baseline and sideline) to partition individual courts. The extent of these features only includes "in-bounds areas", they do not extend to the fence surrounding the tennis court area (or related "out-of-bounds areas"). |
-| **Features Excluded** | Individual tennis courts within NYC Parks were not captured. Private tennis courts (e.g., on roofs or hotels, etc.) were not captured. |
-| **Feature View** | ![Tennis](Images/FeatureViews/Tennis.JPG) |
-
-
-[Back to Table of Contents](#table-of-contents)
-
-
-### Subtype: VOLLEYBALL
-
-|     |     |
-| --- | --- |
-| **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database DPR Parks Properties |
-| **Features Captured** | Outline of volleyball courts using distinct markings on observed hard surface. |
-| **Capture Notes** | n/a |
-| **Features Excluded** | n/a |
-| **Feature View** | ![Volleyball](Images/FeatureViews/Volleyball.JPG) |
+| **Features Captured** | Outline of individual courts. |
+| **Capture Notes** |  Varoius kinds of courts are captured within Court :<br>a) Basketball courts- These features can be represented as full or half courts. <br>b) Handball courts - The hard surface wall was incorporated witin each court. When multiple courts are adjacent to one another, a division line was digitized to partition individual courts.<br>c) Hockey - Outline of hockey court. <br> d) Multipurpose courts - These features are composed of mostly hard surface areas with different markings for different activities.<br>e) Tennis court - Outline of tennis courts (hard surface only).In cases of multiple courts, a division line was digitized along outer painted line (baseline and sideline) to partition individual courts. The extent of these features only includes "in-bounds areas", they do not extend to the fence surrounding the tennis court area (or related "out-of-bounds areas").<br>f) Volleyball - Outline of volleyball courts using distinct markings on observed hard surface.|
+| **Features Excluded** | Tennis courts - Individual tennis courts within NYC Parks were not captured. Private tennis courts (e.g., on roofs or hotels, etc.) were not captured. |
+| **Feature View** | ![Basketball](Images/FeatureViews/Basketball.JPG) <br>Basketball court<br> <br>![Handball](Images/FeatureViews/Handball.JPG) <br>Handball court<br> <br>![Court_Multipurpose](Images/FeatureViews/Court_Multipurpose.JPG) <br>Multipurpose court<br> <br> ![Tennis](Images/FeatureViews/Tennis.JPG) <br>Tennis Court<br> <br>![Volleyball](Images/FeatureViews/Volleyball.JPG) <br> Volleyball court|
 
 
 [Back to Table of Contents](#table-of-contents)
@@ -968,7 +989,7 @@ The following attribute information applies to all feature classes.  Additional 
 [Back to Table of Contents](#table-of-contents)
 
 
-### Subtype: POOLS
+### Subtype: POOL
 
 |     |     |
 | --- | --- |
@@ -982,7 +1003,7 @@ The following attribute information applies to all feature classes.  Additional 
 [Back to Table of Contents](#table-of-contents)
 
 
-### Subtype: TRACK
+### Subtype: RUNNING TRACK
 
 |     |     |
 | --- | --- |
@@ -1030,7 +1051,9 @@ The following attribute information applies to all feature classes.  Additional 
 | --- | --- |
 | **Attribute** | **Description** |
 | **PARK_NAME** | Name of Park |
+| **LANDUSE** | Land use type. |
 | **PARKNUM** | Unique park identification number corresponding with PARK_NAME. |
+| **SYSTEM** | Park identification number. |
 
 
 [Back to Table of Contents](#table-of-contents)
@@ -1046,7 +1069,7 @@ The following attribute information applies to all feature classes.  Additional 
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | All parking lots (paved or unpaved) greater than 2,000 sq. feet. Parking areas adjacent to the travel-way and separated from the travel-way by a curb or other obstruction were captured as parking lots. In these cases, the [Roadbed](#roadbed) and [Pavement Edge](#pavement-edge) end or wrap around the parking lot. The parking lot is not included as part of the Roadbed. |
-| **Capture Notes** | These features connect to road edge ([Curb](#curb) or [Edge of Pavement](#subtype-edge-of-pavement)) only at entrances and exits. |
+| **Capture Notes** | These features connect to road edge ([Curb](#curb) or [Road Edge](#subtype-road-edge)) only at entrances and exits. |
 | **Features Excluded** | Traffic islands within parking lot were not captured.When a building of > 400 sq. feet was present, the building area was excluded from the parking lot polygon. Parking areas adjacent to the travel-way, but not separated from the travel-way by a curb or other obstruction, were not captured. Instead, those parking areas were included as part of the Roadbed and the Pavement Edge extends to the outside edge of such area. Gas stations, private parking areas (e.g., for condos), and storage areas (e.g., for boats) were not captured.  |
 | **Feature View** | ![Parking_Lot](Images/FeatureViews/Parking_Lot.png) |
 
@@ -1061,7 +1084,7 @@ The following attribute information applies to all feature classes.  Additional 
 |     |     |
 | --- | --- |
 | **Subtype** | **Feature Code** |
-| **[Edge Of Pavement](#subtype-edge-of-pavement)** | 2260 |
+| **[Road Edge](#subtype-road-edge)** | 2260 |
 | **[Airport Runway](#subtype-airport-runway)** | 2230 |
 | **[Alley](#subtype-alley)** | 2270 |
 
@@ -1069,7 +1092,7 @@ The following attribute information applies to all feature classes.  Additional 
 
 [**Diagrams**](#pavement-edge-diagrams)
 
-### Subtype: EDGE OF PAVEMENT
+### Subtype: ROAD EDGE
 
 |     |     |
 | --- | --- |
@@ -1116,7 +1139,7 @@ The following attribute information applies to all feature classes.  Additional 
 |     |     |
 | --- | --- |
 | **Attribute** | **Description** |
-| **BLOCKFACEID** | Field indicates the Unique ID generated automatically. This ID was conflated to the corresponding L/R BLOCKFACEID in <a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about">CSCL</a>. See [Pavement Edge Diagrams](#pavement-edge-diagrams) for more details on conflation with special/complex scenarios. |
+| **BLOCKFACEID (BLOCKF_ID)** | Field indicates the Unique ID generated automatically. This ID was conflated to the corresponding L/R BLOCKFACEID in <a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about">CSCL</a>. See [Pavement Edge Diagrams](#pavement-edge-diagrams) for more details on conflation with special/complex scenarios. |
 | **CONFLATED** | Field indicates whether or not the BLOCKFACEID value was conflated to a CSCL segment. Values are Y or N. |
 
 [Back to Table of Contents](#table-of-contents)
@@ -1198,6 +1221,35 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 **The screenshot below is the same intersection, but showing only the “at grade” centerlines and Pavement Edgs/Median features. Arrows have been included to depict the assignment of L/R BlockfaceIDs for the “at grade” segments in this intersection.**
 
 ![PE_Diagram_5_2](Images/FeatureViews/PE_Diagram_5_2.png)
+
+[Back to Table of Contents](#table-of-contents)
+
+
+# PAVEMENT EDGE CARTO
+
+**Geometry Type:** Polyline
+
+|     |     |
+| --- | --- |
+| **Sources** | Current imagery - see intro for specific dates.  New capture.  |
+| **Features Captured** | This feature class will be a copy of PAVEMENTEDGE that has segments broken where they cross a building footprint or another pavement edge feature. It will be used for creating basemap symbology to show or hide lines depending on their visibility from above. Each segment shall be broken where these features cross a building footprint or another pavement edge feature.|
+| **Capture Notes** | n/a |
+| **Features Excluded** | n/a |
+| **Feature Views** |  |
+
+
+[Back to Table of Contents](#table-of-contents)
+
+
+#### Pavement Edge Carto Attributes
+
+|     |     |
+| --- | --- |
+| **Attribute** | **Description** |
+| **Z CENTER** |  |
+| **Z START** |  |
+| **Z END** |  |
+| **POS YITZ** |  |
 
 [Back to Table of Contents](#table-of-contents)
 
@@ -1456,7 +1508,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | Walls built to retain earth from falling on transportation features with a height of ten (10) feet or greater. |
 | **Capture Notes** | n/a |
-| **Features Excluded** | Walls in backyards used for landscape were not captured.Walls in areas under construction (excavation) were not captured. |
+| **Features Excluded** | Walls in backyards used for landscape were not captured.  Walls in areas under construction (excavation) were not captured. |
 | **Feature View** | ![Retaining_Wall_1](Images/FeatureViews/Retaining_Wall_1.png) |
 
 
@@ -1496,7 +1548,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | Roadbed represents the interior polygon of pavement edge. The edges of these features are coincident with the linear feature class [Pavement Edge](#pavement-edge). |
-| **Capture Notes** | Converging roadbeds were not split when it crossing one another at different elevations (e.g. on ramps that cross each other). Roadbed was usually cut by [Median](#median) features (e.g., curb & grass) with the exception of painted, barrier and fence medians.Special care was applied to ensure that highway shoulders were not confused as sidewalk features. |
+| **Capture Notes** | Converging roadbeds were not split when it crossing one another at different elevations (e.g. on ramps that cross each other). Roadbed was usually cut by [Median](#median) features (e.g., curb & grass) with the exception of painted, barrier and fence medians.  Special care was applied to ensure that highway shoulders were not confused as sidewalk features. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Roadbed](Images/FeatureViews/Roadbed.JPG) |
 
@@ -1594,7 +1646,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database, <a href="https://data.cityofnewyork.us/Housing-Development/Map-of-NYCHA-Developments/i9rv-hdr5/about"> NYCHA Development,</a><a href="https://data.cityofnewyork.us/City-Government/Parks-Properties/rjaj-zgq7/about"> DPR Parks Properties,</a><a href="https://data.ny.gov/City-Government/NYC-Street-Centerline-CSCL-/exjm-f27b/about"> CSCL,</a> Forts,<a href="https://data.cityofnewyork.us/Health/NYC-Health-and-Hospitals-Corporation-Facilities/ymhw-9cz9/about"> Hospitals,</a> School |
 | **Features Captured** | All paved sidewalks that are located outside of the ROW. |
 | **Capture Notes** | Interior sidewalks followed the same general capture rules as other sidewalk features. These features were captured in the following areas:<br>1. NYC Parks<br>2.  NYCHA Properties<br>3.  Other Residential areas<br>4.  Hospital campuses<br>5.  School campuses<br>6.  Federal Forts<br><br>The business use of this feature is to identify potential areas, outside of the public Right of Way (ROW), that could permit emergency vehicles through travel. |
-| **Features Excluded** | Openings in sidewalk (for landscaping and trees) were ignored.Since the intended purpose of such features is to support emergency through travel, any spurs or dead-ends (e.g., walkways leading to a building) were not captured.These features were not captured in office parks or other similar commercial areas. |
+| **Features Excluded** | Openings in sidewalk (for landscaping and trees) were ignored.  Since the intended purpose of such features is to support emergency through travel, any spurs or dead-ends (e.g., walkways leading to a building) were not captured.  These features were not captured in office parks or other similar commercial areas. |
 | **Feature View** | ![Sidewalk_2](Images/FeatureViews/Sidewalk_2.png) |
 
 
@@ -1616,6 +1668,39 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 
 [Back to Table of Contents](#table-of-contents)
 
+# STREET CENTERLINE
+
+**Geometry Type:** Polyline
+
+|     |     |
+| --- | --- |
+| **Sources** | Current imagery - see intro for specific dates. Latest CSCL.Centerline features in GDB feature class format. SEGMENTID will be used as a key to transfer tabular data updates to the production CSCL.Centerline features. |
+| **Features Captured** | These featuers represent street centerlines. |
+| **Capture Notes** | CSCL geometry will not be edited; edits made to CSCL (Centerline) will be limited to attributes. As a general rule, no attributes will be assigned to the “generic” or “faux” CSCL centerline segments.  SEGMENT_TYPE NOT IN (‘F’, ‘G’) All other types of segments will get attributes when they have corresponding PavementEdge/Roadbed features. In some cases this will include adding attributes to driveways, alleys, etc If no roadbed exists, these attributes will not be captured. |
+| **Features Excluded** |  |
+| **Feature View** | |
+
+
+[Back to Table of Contents](#table-of-contents)
+
+
+#### Street Centerline Attributes
+
+|     |     |
+| --- | --- |
+| **Attribute** | **Description** |
+| **SEGMENTID** | SEGMENTID column from CSCL.Centerline will be used as a key so that DoITT can transfer the attribute updates back to the production CSCL database. |
+| **L_BLOCKFACEID** | Left Blockface ID will be conflated from the corresponding pavement edge EOPID field. The determination of “left” will be made based on the digitized direction of CSCL rather than any visual “left”. In cases where the CSCL is broken into smaller segments along the blockface, than each of these segments will be assigned the same blockface ID. (see [Pavement Edge](#pavement-edge) for more details on BlockfaceID conflation rules). |
+| **R_BLOCKFACEID** | Right Blockface ID will be conflated from the corresponding pavement edge EOPID field. The determination n of “right” will be made based on the digitized direction of CSCL rather than any visual “right”. In cases where the CSCL is broken into smaller segments along the blockface, than each of these segments will be assigned the same blockface ID. (see [Pavement Edge](#pavement-edge) for more details on BlockfaceID conflation rules).|
+| **STNAME_LABEL** | The name of the corresponding street. |
+| **RW_TYPE** | Type of roadway. |
+| **NUMBER_TRAVEL_LANES** | The total number of travel lanes. |
+| **NUMBER_PARK_LANES** | The total number of parking lanes. |
+| **NUMBER_TOTAL_LANES** | NUMBER_TRAVEL_LANES plus NUMBER_PARK_LANES. |
+| **STREETWIDTH_MAX** | The maximum measured street width. |
+| **STREETWIDTH_MIN** | The minimum measured street width. |
+
+[Back to Table of Contents](#table-of-contents)
 
 
 # SWIMMING POOL
@@ -1627,7 +1712,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | All in-ground swimming pools, regardless of the shape, on the inside (water) of the pool. |
 | **Capture Notes** | n/a |
-| **Features Excluded** | Round above-ground swimming pools and pools on buildings were not captured.Fish ponds,  landscape ponds of irregular shape, and low-sided kiddie pools were not collected.  |
+| **Features Excluded** | Round, above-ground swimming pools, and pools on buildings were not captured.  Fish ponds, landscape ponds of irregular shape, and low-sided kiddie pools were not collected.  |
 | **Feature View** | ![Swimming_Pool](Images/FeatureViews/Swimming_Pool.png) |
 
 
@@ -1644,7 +1729,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **[Bridge](#subtype-bridge)** | 2300 |
 | **[Tunnel](#subtype-tunnel)** | 2310 |
 | **[Rail Bridge](#subtype-rail-bridge)** | 2320 |
-| **[Pedestrian/Bike Bridge](#subtype-pedestrianbike-bridge)** | 2330 |
+| **[Pedestrian Bridge](#subtype-pedestrian-bridge)** | 2330 |
 | **[Railroad Viaduct](#subtype-railroad-viaduct)** | 2340 |
 | **[Overpass](#subtype-overpass)** | 2350 |
 
@@ -1692,7 +1777,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 [Back to Table of Contents](#table-of-contents)
 
 
-### Subtype: PEDESTRIAN/BIKE BRIDGE
+### Subtype: PEDESTRIAN BRIDGE
 
 |     |     |
 | --- | --- |
@@ -1758,3 +1843,34 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 
 
 [Back to Table of Contents](#table-of-contents)
+
+
+# WATER TANK
+
+**Geometry Type:** Polygon
+
+|     |     |
+| --- | --- |
+| **Sources** | Current imagery - see intro for specific dates.  New capture  |
+| **Features Captured** | Capture all rooftop water tanks as polygon features. All buildings over 6 stories are required to have a water tank. |
+| **Capture Notes** | n/a |
+| **Features Excluded** | n/a  |
+| **Feature View** | |
+
+
+[Back to Table of Contents](#table-of-contents)
+
+
+#### Water Tank Attributes
+
+|     |     |
+| --- | --- |
+| **Attribute** | **Description** |
+| **BIN** | Building Information Number of the structure the water tank is located on. Obtain from building footprints polygon feature that contains the water tank shape. |
+| **BASE ELEVATION (BASE_ELEV)** | Elevation at the base of the water tank, taken at the lowest point along the tank’s circumference. |
+| **TOP ELEVATION (TOP_ELEV)** | Elevation at the top of the tank, taken at the highest point along the tank’s circumference. |
+| **HEIGHT** | TOP ELEVATION minus BASE ELEVATION |
+
+[Back to Table of Contents](#table-of-contents)
+
+
