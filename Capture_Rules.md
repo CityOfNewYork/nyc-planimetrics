@@ -6,11 +6,13 @@ Looking for older capture rules? See the [2014 rules](https://github.com/CityOfN
 The purpose of this document is twofold. First, it is intended to define the capture rules for each planimetric feature collected as part of the planimetric update project. As such, this document is meant to clarify questions regarding how the features were captured, provide feature descriptions, and illustrate any exceptions that may apply. Second, since this document provides a wealth of information that would benefit users working with the data, we decided to make it accessible as a secondary source of documentation. This document is not intended to replace the metadata included with the planimetric features but rather to function as an additional source of information. Lastly, the documentation originated from previous planimetric updates. The documentation has evolved and has been refined over each successive planimetric update cycle; and will continue to be extended and maintained over the course of future updates.
 
 #### Introduction
-One of the core functions of the NYC Department of Information Technology and Telecommunications (DoITT) GIS group is to maintain and distribute an accurate 'basemap' for NYC. Collectively, the basemap includes the digital orthophotography and planimetric features. The basemap provides the foundation upon which virtually all other geospatial data within New York government is registered. Ensuring its completeness and accuracy is fundamental to the Group’s core mission.
+One of the core functions of the NYC Office of Technology and Innovation (OTI, formerly DoITT) GIS group is to maintain and distribute an accurate 'basemap' for NYC. Collectively, the basemap includes the digital orthophotography and planimetric features. The basemap provides the foundation upon which virtually all other geospatial data within New York government is registered. Ensuring its completeness and accuracy is fundamental to the Group’s core mission.
+
+As part of a reorganization of New York City government agencies, The Department of Information Technology and Telecommunications (DoITT) was renamed as "Office of Technology & Innovation (OTI)". DoITT and OTI are equivalent terms for the same city agency.
 
 #### Background
 Planimetric mapping is the capture of geographic features from aerial survey (i.e., capture of aerial photography) that are traditionally mapped in two dimensions and are therefore exclusive of elevation. Quite simply these are the visible features that can be digitized from aerial photography. Often referred to as planimetric features or simply planimetics, these geographic features in their sum total essentially represent the base map data (i.e., layers) for a specific area.
-NYC DoITT first developed a planimetric database in 2000. The data was captured from the first ‘modern’ aerial survey of the New York City that took place in 1996. Referred to at that time as the NYC Landbase, components of this effort were the establishment of:
+NYC  first developed a planimetric database in 2000. The data was captured from the first ‘modern’ aerial survey of the New York City that took place in 1996. Referred to at that time as the NYC Landbase, components of this effort were the establishment of:
 
 * a ‘database design’ (the delivery was ArcInfo coverages)
 * coverage parameters (e.g., scale, projection, precision, fuzzy tolerance and dangle length)
@@ -93,7 +95,7 @@ For more information on the coordinate reference system used, see the following 
 
 The following attribute information applies to all feature classes.  Additional attributes specific to a given feature class are listed within the details for that feature class. 
 
-NYC DoITT publishes multiple file formats of the planimetric data where different formats might have abbreviated attributes due to file format restraints.  Where applicable, these abbreviated attributes are provided below in parentheses.
+NYC Office of Technology and Innovation publishes multiple file formats of the planimetric data where different formats might have abbreviated attributes due to file format restraints.  Where applicable, these abbreviated attributes are provided below in parentheses.
 
 |     |     |
 | --- | --- |
