@@ -1703,7 +1703,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Features Captured** | Capture all rooftop water tanks as polygon features. All buildings over 6 stories are required to have a water tank. |
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a  |
-| **Feature View** | |
+| **Feature View** | ![Water Tank](Images/FeatureViews/water_tank.png) |
 
 
 [Back to Table of Contents](#table-of-contents)
