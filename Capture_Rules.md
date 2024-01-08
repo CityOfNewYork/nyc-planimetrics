@@ -1116,7 +1116,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Features Captured** | This feature class will be a copy of PAVEMENTEDGE that has segments broken where they cross a building footprint or another pavement edge feature. It will be used for creating basemap symbology to show or hide lines depending on their visibility from above. Each segment shall be broken where these features cross a building footprint or another pavement edge feature.|
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
-| **Feature Views** |  |
+| **Feature Views** | ![Pavement Edge Carto](Images/FeatureViews/pavement_edge_carto.png) |
 
 
 [Back to Table of Contents](#table-of-contents)
