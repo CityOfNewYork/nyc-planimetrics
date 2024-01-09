@@ -822,7 +822,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 | **Features Captured** | Outline of individual courts. |
 | **Capture Notes** |  Varoius kinds of courts are captured within Court :<br>a) Basketball courts- These features can be represented as full or half courts. <br>b) Handball courts - The hard surface wall was incorporated witin each court. When multiple courts are adjacent to one another, a division line was digitized to partition individual courts.<br>c) Hockey - Outline of hockey court. <br> d) Multipurpose courts - These features are composed of mostly hard surface areas with different markings for different activities.<br>e) Tennis court - Outline of tennis courts (hard surface only).In cases of multiple courts, a division line was digitized along outer painted line (baseline and sideline) to partition individual courts. The extent of these features only includes "in-bounds areas", they do not extend to the fence surrounding the tennis court area (or related "out-of-bounds areas").<br>f) Volleyball - Outline of volleyball courts using distinct markings on observed hard surface.|
 | **Features Excluded** | Tennis courts - Individual tennis courts within NYC Parks were not captured. Private tennis courts (e.g., on roofs or hotels, etc.) were not captured. |
-| **Feature View** | ![Basketball](Images/FeatureViews/Basketball.JPG) <br>Basketball court<br> <br>![Handball](Images/FeatureViews/Handball.JPG) <br>Handball court<br> <br>![Court_Multipurpose](Images/FeatureViews/Court_Multipurpose.JPG) <br>Multipurpose court<br> <br> ![Tennis](Images/FeatureViews/Tennis.JPG) <br>Tennis Court<br> <br>![Volleyball](Images/FeatureViews/Volleyball.JPG) <br> Volleyball court|
+| **Feature View** | ![Basketball](Images/FeatureViews/Basketball.JPG) <br>Basketball court<br> <br>![Handball](Images/FeatureViews/Handball.JPG) <br>Handball court<br> <br>![Hockey](Images/FeatureViews/hockey.png) <br> Hockey<br> <br>![Court_Multipurpose](Images/FeatureViews/Court_Multipurpose.JPG) <br>Multipurpose court<br> <br> ![Tennis](Images/FeatureViews/Tennis.JPG) <br>Tennis Court<br> <br>![Volleyball](Images/FeatureViews/Volleyball.JPG) <br> Volleyball court|
 
 
 [Back to Table of Contents](#table-of-contents)
@@ -1116,7 +1116,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Features Captured** | This feature class will be a copy of PAVEMENTEDGE that has segments broken where they cross a building footprint or another pavement edge feature. It will be used for creating basemap symbology to show or hide lines depending on their visibility from above. Each segment shall be broken where these features cross a building footprint or another pavement edge feature.|
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
-| **Feature Views** |  |
+| **Feature Views** | ![Pavement Edge Carto](Images/FeatureViews/pavement_edge_carto.png) |
 
 
 [Back to Table of Contents](#table-of-contents)
@@ -1703,7 +1703,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Features Captured** | Capture all rooftop water tanks as polygon features. All buildings over 6 stories are required to have a water tank. |
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a  |
-| **Feature View** | |
+| **Feature View** | ![Water Tank](Images/FeatureViews/water_tank.png) |
 
 
 [Back to Table of Contents](#table-of-contents)
