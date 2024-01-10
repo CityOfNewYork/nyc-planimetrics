@@ -148,7 +148,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 | --- | --- |
 | **Attribute** | **Description** |
 | **SUB_FEATURE_CODE (SUB_CODE)** | Field that indicates where the structure is located::<br>a) Roof level -  located on the building roof<br>b) Ground level - located on the ground at street grade level |
-| **BIN** | Building Information Number of the structure the water tank is located on. Obtain from building footprints polygon feature that contains the water tank shape |
+| **BIN** | Building Information Number of the structure the cooling tower is located on. Obtain from building footprints polygon feature that contains the cooling tower shape |
 
 [Back to Table of Contents](#table-of-contents)
 
