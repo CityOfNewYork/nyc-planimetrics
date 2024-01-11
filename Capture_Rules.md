@@ -1127,9 +1127,9 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 |     |     |
 | --- | --- |
 | **Attribute** | **Description** |
-| **Z CENTER** |  |
-| **Z START** |  |
-| **Z END** |  |
+| **Z CENTER** | Elevation of the midpoint of the feature |
+| **Z START** | Elevation at the start of the feature |
+| **Z END** | Elevation at the end of the feature |
 
 [Back to Table of Contents](#table-of-contents)
 
