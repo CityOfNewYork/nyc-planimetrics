@@ -685,7 +685,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 [Back to Table of Contents](#table-of-contents)
 
 
-#### Misc Struct Poly Attributes
+#### Misc Structure Poly Attributes
 
 |     |     |
 | --- | --- |
