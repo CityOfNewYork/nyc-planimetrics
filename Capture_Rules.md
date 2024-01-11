@@ -62,23 +62,23 @@ Using this orthoimagery, the planimetric base layers were updated city wide star
 * [**Hydro Structure**](#hydro-structure)
 * [**Hydrography**](#hydrography)
 * [**Median**](#median)
-* [**Misc Struct Poly**](#misc-struct-poly)
+* [**Misc Structure Poly**](#misc-structure-poly)
 * [**Open Space**](#open-space)
 * [**Park**](#park)
 * [**Parking Lot**](#parking-lot)
 * [**Pavement Edge**](#pavement-edge)
-* [**Pavement Edge Carto**](#pavement-edge-carto)
+* [**Pavementedge Carto**](#pavementedge-carto)
 * [**Plaza**](#plaza)
 * [**Railroad**](#railroad)
 * [**Railroad Structure**](#railroad-structure)
-* [**Retaining Wall**](#retaining-wall)
+* [**Retainingwall**](#retainingwall)
 * [**Roadbed**](#roadbed)
 * [**Shoreline**](#shoreline)
 * [**Sidewalk**](#sidewalk)
-* [**Sidewalk Centerline**](#sidewalk-centerline)
+* [**Sidewalk Line**](#sidewalk-line)
 * [**Swimming Pool**](#swimming-pool)
 * [**Transport Structure**](#transport-structure)
-* [**Under Construction**](#under-construction)
+* [**Under Construction Unknown**](#under-construction-unknown)
 * [**Water Tank**](#water-tank)
 
 
@@ -630,7 +630,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 [Back to Table of Contents](#table-of-contents)
 
 
-# MISC STRUCT POLY
+# MISC STRUCTURE POLY
 
 **Geometry Type:** Polygon
 
@@ -641,7 +641,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 | **[Sign Gantry](#subtype-sign-gantry)** | 4110 |
 | **[Toll Area](#subtype-toll-area)** | 4200 |
 
-[**Attributes**](#misc-struct-poly-attributes)
+[**Attributes**](#misc-structure-poly-attributes)
 
 ### Subtype: LARGE BILLBOARD AND SIGNS
 
@@ -685,7 +685,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 [Back to Table of Contents](#table-of-contents)
 
 
-#### Misc Struct Poly Attributes
+#### Misc Structure Poly Attributes
 
 |     |     |
 | --- | --- |
@@ -1106,7 +1106,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 [Back to Table of Contents](#table-of-contents)
 
 
-# PAVEMENT EDGE CARTO
+# PAVEMENTEDGE CARTO
 
 **Geometry Type:** Polyline
 
@@ -1116,13 +1116,13 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Features Captured** | This feature class will be a copy of PAVEMENTEDGE that has segments broken where they cross a building footprint or another pavement edge feature. It will be used for creating basemap symbology to show or hide lines depending on their visibility from above. Each segment shall be broken where these features cross a building footprint or another pavement edge feature.|
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
-| **Feature Views** | ![Pavement Edge Carto](Images/FeatureViews/pavement_edge_carto.png) |
+| **Feature Views** | ![PavementEdge Carto](Images/FeatureViews/pavement_edge_carto.png) |
 
 
 [Back to Table of Contents](#table-of-contents)
 
 
-#### Pavement Edge Carto Attributes
+#### PavementEdge Carto Attributes
 
 |     |     |
 | --- | --- |
@@ -1371,7 +1371,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 [Back to Table of Contents](#table-of-contents)
 
 
-# RETAINING WALL
+# RETAININGWALL
 
 **Geometry Type:** Polyline
 
@@ -1534,7 +1534,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 [Back to Table of Contents](#table-of-contents)
 
 
-# SIDEWALK CENTERLINE
+# SIDEWALK LINE
 
 **Geometry Type:** Polyline
 
@@ -1677,7 +1677,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 [Back to Table of Contents](#table-of-contents)
 
 
-# UNDER CONSTRUCTION
+# UNDER CONSTRUCTION UNKNOWN
 
 **Geometry Type:** Polygon
 
