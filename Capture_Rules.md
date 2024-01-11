@@ -1130,7 +1130,6 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | **Z CENTER** |  |
 | **Z START** |  |
 | **Z END** |  |
-| **POS YITZ** |  |
 
 [Back to Table of Contents](#table-of-contents)
 
