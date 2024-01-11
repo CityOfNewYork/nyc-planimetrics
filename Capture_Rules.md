@@ -932,9 +932,9 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 | --- | --- |
 | **Attribute** | **Description** |
 | **PARK_NAME** | Name of Park |
-| **LANDUSE** | Land use type. |
+| **LANDUSE** | Not edited in planimetrics. Carried over from source NYC Dept of Parks and Recreation data. |
 | **PARKNUM** | Unique park identification number corresponding with PARK_NAME. |
-| **SYSTEM** | Park identification number. |
+| **SYSTEM** | Not edited in planimetrics. Carried over from source NYC Dept of Parks and Recreation data. |
 
 
 [Back to Table of Contents](#table-of-contents)
@@ -1127,10 +1127,9 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 |     |     |
 | --- | --- |
 | **Attribute** | **Description** |
-| **Z CENTER** |  |
-| **Z START** |  |
-| **Z END** |  |
-| **POS YITZ** |  |
+| **Z CENTER** | Elevation of the midpoint of the feature |
+| **Z START** | Elevation at the start of the feature |
+| **Z END** | Elevation at the end of the feature |
 
 [Back to Table of Contents](#table-of-contents)
 
