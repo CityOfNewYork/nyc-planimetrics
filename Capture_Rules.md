@@ -290,6 +290,8 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 
 # HYDRO STRUCTURE
 
+**NYC Open Data Name:** Hydrography Structures
+
 **Geometry Type:** Polygon
 
 |     |     |
@@ -697,6 +699,8 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 
 # OPEN SPACE
 
+**NYC Open Data Name:** Open Space Other
+
 **Geometry Type:** Polygon
 
 |     |     |
@@ -761,6 +765,8 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 
 
 # PARK
+
+**NYC Open Data Name:** Open Space (Parks)
 
 **Geometry Type:** Polygon
 
@@ -1136,6 +1142,8 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 
 # PLAZA
 
+**NYC Open Data Name:** Public Plazas
+
 **Geometry Type:** Polygon
 
 |     |     |
@@ -1151,6 +1159,8 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 
 
 # RAILROAD
+
+**NYC Open Data Name:** Railroad Line
 
 **Geometry Type:** Polyline
 
@@ -1552,6 +1562,8 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 
 # SWIMMING POOL
 
+**NYC Open Data Name:** Swimming Pools
+
 **Geometry Type:** Polygon
 
 |     |     |
@@ -1567,6 +1579,8 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 
 
 # TRANSPORT STRUCTURE
+
+**NYC Open Data Name:** Transportation Structures
 
 **Geometry Type:** Polygon
 
