@@ -40,13 +40,13 @@ Using this orthoimagery, the planimetric base layers were updated city wide star
 #### Previous Captures
 |     |     |     |
 | --- | --- | --- |
-| **Planimetric Delivery** | **Year of Imagery** | **Download Link** |
+| **Planimetric Delivery** | **Year of Imagery** | **NYC Open Data Download Link** |
 | 2000 | 1996 | [download](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics-Historic-2000-/xd8h-7j2h) |
 | 2004 | 2001, 2002 | [download](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics-Historic-2004-/49mj-4gmb) |
 | 2008 | 2006 | [download](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics-2008/dja4-zgtf) |
 | 2012 | 2010 | [download](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics-2012/3nr6-bnks) |
-| 2016 | 2014 | [download](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics/wt4d-p43d) |
-| 2022 | 2022 | [download](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics/wt4d-p43d) Update URL|
+| 2016 | 2014 | [download](https://data.cityofnewyork.us/browse?q=NYC+Planimetrics) (work in progress)|
+| 2022 | 2022 | [download](https://data.cityofnewyork.us/browse?q=NYC+Planimetrics) (work in progress)|
 
 #### Table of Contents
 * [Imagery and Data Specifications](#imagery-and-data-specifications)
