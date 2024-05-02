@@ -155,7 +155,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 
 # CURB
 
-**Geometry Type:** Polyline
+**Geometry Type:** Polyline Z
 
 |     |     |
 | --- | --- |
@@ -172,7 +172,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 
 # CURB CUT
 
-**Geometry Type:** Polyline
+**Geometry Type:** Polyline Z
 
 |     |     |
 | --- | --- |
@@ -199,7 +199,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 
 # ELEVATION
 
-**Geometry Type:** Point
+**Geometry Type:** Point Z
 
 |     |     |
 | --- | --- |
@@ -966,7 +966,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 
 # PAVEMENT EDGE
 
-**Geometry Type:** Polyline
+**Geometry Type:** Polyline Z
 
 |     |     |
 | --- | --- |
@@ -1114,7 +1114,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 
 # PAVEMENTEDGE CARTO
 
-**Geometry Type:** Polyline
+**Geometry Type:** Polyline ZM
 
 |     |     |
 | --- | --- |
@@ -1162,7 +1162,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 
 **NYC Open Data Name:** Railroad Line
 
-**Geometry Type:** Polyline
+**Geometry Type:** Polyline Z
 
 |     |     |
 | --- | --- |
@@ -1287,7 +1287,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 
 # RAILROAD STRUCTURE
 
-**Geometry Type:** Polygon
+**Geometry Type:** Polygon Z
 
 |     |     |
 | --- | --- |
@@ -1382,7 +1382,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 
 # RETAININGWALL
 
-**Geometry Type:** Polyline
+**Geometry Type:** Polyline Z
 
 |     |     |
 | --- | --- |
@@ -1582,7 +1582,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 
 **NYC Open Data Name:** Transportation Structures
 
-**Geometry Type:** Polygon
+**Geometry Type:** Polygon Z
 
 |     |     |
 | --- | --- |
