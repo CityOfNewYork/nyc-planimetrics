@@ -3,7 +3,7 @@ New York City Planimetrics Data.
 
 [Documentation and links to all data](https://github.com/CityOfNewYork/nyc-planimetrics/blob/main/Capture_Rules.md) 
 
-The most recent planimetrics:
+Get the latest data:
 
 | **Planimetric Delivery** | **Year of Imagery** | **NYC Open Data** | **NYCMapHub** | **File Geodatabase** |   
 | --- | --- | --- | --- |  --- | 
