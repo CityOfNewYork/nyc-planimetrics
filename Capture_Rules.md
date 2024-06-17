@@ -39,21 +39,14 @@ Using this orthoimagery, the planimetric base layers were updated city wide star
 
 #### History of Captures
 
-Current
-
-| **Planimetric Delivery** | **Year of Imagery** | **NYC Open Data** | **NYCMapHub** | **File Geodatabase** |   
-| --- | --- | --- | --- |  --- | 
-| 2022 | 2022 | [download](https://data.cityofnewyork.us/browse?Data-Collection_Data-Collection=NYC+Planimetric+Database) | [download](https://nycmaps-nyc.hub.arcgis.com/search?collection=Dataset&tags=planimetric%25202022) | [download](https://nyc.maps.arcgis.com/home/item.html?id=4b01b78d9eda44819f6c757ec00d0669) | 
-
-Historical
-
-| **Planimetric Delivery** | **Year of Imagery** | **NYC Open Open Data File Geodatabase** | **NYCMapHub** | 
-| --- | --- | --- | --- |  
-| 2000 | 1996 | [download](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics-Historic-2000-/xd8h-7j2h/about_data) | | 
-| 2004 | 2001, 2002 | [download all years](https://data.cityofnewyork.us/api/views/anc7-97cy/files/bfa14e89-565c-4bb5-a7b2-f39cb0d7af20?download=true&filename=NYC_Planimetrics_Historical_Data.zip) | | 
-| 2008 | 2006 | [download](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics-Historic-2008-/dja4-zgtf/about_data) | | 
-| 2012 | 2010 | [download all years](https://data.cityofnewyork.us/api/views/anc7-97cy/files/bfa14e89-565c-4bb5-a7b2-f39cb0d7af20?download=true&filename=NYC_Planimetrics_Historical_Data.zip)  | | 
-| 2016 | 2014 | [download all years](https://data.cityofnewyork.us/api/views/anc7-97cy/files/bfa14e89-565c-4bb5-a7b2-f39cb0d7af20?download=true&filename=NYC_Planimetrics_Historical_Data.zip)  | |  
+| **Planimetrics Delivery** | **Year of Imagery** | **NYC Open Data** | **NYCMapHub** | **NYCMaps File Geodatabase** | 
+| --- | --- | --- | --- | --- |  
+| 2000 | 1996 | [NYC Planimetrics 2000](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics-Historic-2000-/xd8h-7j2h/about_data) | Not available | Not available |
+| 2004 | 2001, 2002 | [download zip of all history](https://data.cityofnewyork.us/api/views/anc7-97cy/files/bfa14e89-565c-4bb5-a7b2-f39cb0d7af20?download=true&filename=NYC_Planimetrics_Historical_Data.zip) | Not available | Not available |
+| 2008 | 2006 | [NYC Planimetrics 2008](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics-Historic-2008-/dja4-zgtf/about_data) | [Planimetrics 2008 datasets](https://nycmaps-nyc.hub.arcgis.com/search?collection=Dataset&q=2008&tags=planimetrics) | Not available |
+| 2012 | 2010 | [download zip of all history](https://data.cityofnewyork.us/api/views/anc7-97cy/files/bfa14e89-565c-4bb5-a7b2-f39cb0d7af20?download=true&filename=NYC_Planimetrics_Historical_Data.zip)  | [Planimetrics 2012 datasets](https://nycmaps-nyc.hub.arcgis.com/search?collection=Dataset&q=2012&tags=planimetrics) | Not available |
+| 2016 | 2014 | [download zip of all history](https://data.cityofnewyork.us/api/views/anc7-97cy/files/bfa14e89-565c-4bb5-a7b2-f39cb0d7af20?download=true&filename=NYC_Planimetrics_Historical_Data.zip)  | [Planimetrics 2016 datasets](https://nycmaps-nyc.hub.arcgis.com/search?collection=Dataset&q=2016&tags=planimetrics) | Not available |
+| 2022 | 2022 | [NYC Planimetrics ](https://data.cityofnewyork.us/browse?Data-Collection_Data-Collection=NYC+Planimetric+Database) | [Planimetrics 2022 datasets](https://nycmaps-nyc.hub.arcgis.com/search?collection=Dataset&tags=planimetric%25202022) | [NYC 2022 Planimetrics](https://nyc.maps.arcgis.com/home/item.html?id=4b01b78d9eda44819f6c757ec00d0669) (requires login) | 
 
 
 #### Table of Contents
