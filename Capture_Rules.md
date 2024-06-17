@@ -39,6 +39,8 @@ Using this orthoimagery, the planimetric base layers were updated city wide star
 
 #### History of Captures
 
+Be advised that organizations define spatial data to be valid using different sets of rules.  The links below lead to spatial data formats that may not be fully compatible with some software. QGIS users, for example, may prefer to download shapefiles from NYC Open Data.
+
 | **Planimetrics Delivery** | **Year of Imagery** | **NYC Open Data** | **NYCMapHub** | **NYCMaps File Geodatabase** | 
 | --- | --- | --- | --- | --- |  
 | 2000 | 1996 | [NYC Planimetrics 2000](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics-Historic-2000-/xd8h-7j2h/about_data) | Not available | Not available |
