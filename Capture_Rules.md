@@ -11,7 +11,7 @@ One of the core functions of the NYC Office of Technology and Innovation (OTI, f
 As part of a reorganization of New York City government agencies, The Department of Information Technology and Telecommunications (DoITT) was renamed as "Office of Technology & Innovation (OTI)". DoITT and OTI are equivalent terms for the same city agency.
 
 #### Background
-Planimetric mapping is the capture of geographic features from aerial survey (i.e., capture of aerial photography) that are traditionally mapped in two dimensions and are therefore exclusive of elevation. Quite simply these are the visible features that can be digitized from aerial photography. Often referred to as planimetric features or simply planimetics, these geographic features in their sum total essentially represent the base map data (i.e., layers) for a specific area.
+Planimetric mapping is the capture of geographic features from aerial survey (i.e., capture of aerial photography) that are traditionally mapped in two dimensions and are therefore exclusive of elevation. Quite simply these are the visible features that can be digitized from aerial photography. Often referred to as planimetric features or simply planimetrics, these geographic features in their sum total essentially represent the base map data (i.e., layers) for a specific area.
 NYC  first developed a planimetric database in 2000. The data was captured from the first ‘modern’ aerial survey of the New York City that took place in 1996. Referred to at that time as the NYC Landbase, components of this effort were the establishment of:
 
 * a ‘database design’ (the delivery was ArcInfo coverages)
@@ -48,7 +48,7 @@ Be advised that organizations define spatial data to be valid using different se
 | 2008 | 2006 | [NYC Planimetrics 2008](https://data.cityofnewyork.us/Transportation/NYC-Planimetrics-Historic-2008-/dja4-zgtf/about_data) | [Planimetrics 2008 datasets](https://nycmaps-nyc.hub.arcgis.com/search?collection=Dataset&q=2008&tags=planimetrics) | Not available |
 | 2012 | 2010 | [download zip of all history](https://data.cityofnewyork.us/api/views/anc7-97cy/files/bfa14e89-565c-4bb5-a7b2-f39cb0d7af20?download=true&filename=NYC_Planimetrics_Historical_Data.zip)  | [Planimetrics 2012 datasets](https://nycmaps-nyc.hub.arcgis.com/search?collection=Dataset&q=2012&tags=planimetrics) | Not available |
 | 2016 | 2014 | [download zip of all history](https://data.cityofnewyork.us/api/views/anc7-97cy/files/bfa14e89-565c-4bb5-a7b2-f39cb0d7af20?download=true&filename=NYC_Planimetrics_Historical_Data.zip)  | [Planimetrics 2016 datasets](https://nycmaps-nyc.hub.arcgis.com/search?collection=Dataset&q=2016&tags=planimetrics) | Not available |
-| 2022 | 2022 | [NYC Planimetrics ](https://data.cityofnewyork.us/browse?Data-Collection_Data-Collection=NYC+Planimetric+Database) | [Planimetrics 2022 datasets](https://nycmaps-nyc.hub.arcgis.com/search?collection=Dataset&tags=planimetric%25202022) | [NYC 2022 Planimetrics](https://nyc.maps.arcgis.com/home/item.html?id=4b01b78d9eda44819f6c757ec00d0669) (requires login) | 
+| 2022 | 2022 | [NYC Planimetrics ](https://data.cityofnewyork.us/browse?Data-Collection_Data-Collection=NYC+Planimetric+Database) | [Planimetrics 2022 datasets](https://nycmaps-nyc.hub.arcgis.com/search?collection=Dataset&tags=planimetric%25202022) | [NYC 2022 Planimetrics](https://nyc.maps.arcgis.com/home/item.html?id=4b01b78d9eda44819f6c757ec00d0669) | 
 
 
 #### Table of Contents
