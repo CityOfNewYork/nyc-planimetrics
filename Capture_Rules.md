@@ -91,8 +91,8 @@ Digital planimetrics were derived using the imagery products delivered with the 
 Planimetrics are delivered via an ESRI geodatabase in New York State Plane Coordinates, Long Island East Zone, NAD83, US foot. The vertical datum for all features is NAVD88.  
 
 For more information on the coordinate reference system used, see the following EPSG definition pages:
-[Planimetrics](https://spatialreference.org/ref/epsg/2263/)
-[Orthoimagery](https://spatialreference.org/ref/epsg/6539/)
+* [Planimetrics](https://spatialreference.org/ref/epsg/2263/)
+* [Orthoimagery](https://spatialreference.org/ref/epsg/6539/)
 
 # General Attribute Information
 
