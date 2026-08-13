@@ -90,7 +90,7 @@ Digital planimetrics were derived using the imagery products delivered with the 
 
 Planimetrics are delivered via an ESRI geodatabase in New York State Plane Coordinates, Long Island East Zone, NAD83, US foot. The vertical datum for all features is NAVD88.  
 
-For more information on the coordinate reference system used, see the following EPSG definition pages:
+For more information on the coordinate reference system used, see the following EPSG code definition pages:
 * [Planimetrics](https://spatialreference.org/ref/epsg/2263/)
 * [Orthoimagery](https://spatialreference.org/ref/epsg/6539/)
 
@@ -253,7 +253,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | Spot elevations were captured on paved, unpaved, and alley subtypes in [CSCL centerline](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_StreetCenterline.md) and all interior sidewalk feature classes.  Elevation points were placed in the center of the roadbed (coincident with CSCL features).  These points were captured at the beginning, middle, and end of length of visible roadbed.  Additional elevation points were added at 200’ spacing when the distance between the beginning, middle, or end was greater than 200 linear feet. |
-| **Capture Notes** | In areas where the [PAVEMENT_EDGE](#pavement_edge) feature class has been updated, any existing Spot elevations were updated.For new streets, new spot elevations were created in the center of the roadbed according to the following rules:<br>1) Placed at Intersections (might not necessarily be at the same location as the node from the centerline, one point per intersection even on complex intersections).<br>2) Placed Every 200 feet when midpoint of bridge or city block exceeds distance.<br>3) Placed on paved, unpaved, alley subtypes in [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_StreetCenterline.md) centerline features class and all of the Interior Sidewalk Centerline feature class.  Spot elevation were not added to a CSCL feature if no roadbed exists (e,g, area is under construction).<br>4) Mid-Street segment – at the approximate mid-point of a street segment. |
+| **Capture Notes** | In areas where the [Pavement Edge](#pavement-edge) feature class has been updated, any existing Spot elevations were updated.For new streets, new spot elevations were created in the center of the roadbed according to the following rules:<br>1) Placed at Intersections (might not necessarily be at the same location as the node from the centerline, one point per intersection even on complex intersections).<br>2) Placed Every 200 feet when midpoint of bridge or city block exceeds distance.<br>3) Placed on paved, unpaved, alley subtypes in [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_StreetCenterline.md) centerline features class and all of the Interior Sidewalk Centerline feature class.  Spot elevation were not added to a CSCL feature if no roadbed exists (e,g, area is under construction).<br>4) Mid-Street segment – at the approximate mid-point of a street segment. |
 | **Features Excluded** | Spot elevations were not captured on a [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_StreetCenterline.md) feature if no roadbed exists. |
 | **Feature View** | ![Elevation_Spot](Images/FeatureViews/Elevation_Spot.png) |
 
@@ -1029,7 +1029,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 |     |     |
 | --- | --- |
 | **Attribute** | **Description** |
-| **BLOCKFACEID (BLOCKF_ID)** | Field indicates the Unique ID generated automatically. This ID was conflated to the corresponding L/R BLOCKFACEID in [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_StreetCenterline.md). See [Pavement Edge Diagrams](#pavement-edge-diagrams) for more details on conflation with special/complex scenarios. |
+| **BLOCKFACEID (BLOCKF_ID)** | Field indicates the Unique ID generated automatically. This ID was conflated to the corresponding L/R BLOCKFACEID in [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/CSCL.md). See [Pavement Edge Diagrams](#pavement-edge-diagrams) for more details on conflation with special/complex scenarios. |
 | **CONFLATED** | Field indicates whether or not the BLOCKFACEID value was conflated to a CSCL segment. Values are Y or N. |
 
 [Back to Table of Contents](#table-of-contents)
@@ -1037,7 +1037,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 
 #### Pavement Edge Diagrams
 
-This section includes the following capture rules pertaining to BlockfaceID conflation from Pavement Edge to [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_StreetCenterline.md) for these special/complex cases:
+This section includes the following capture rules pertaining to BlockfaceID conflation from Pavement Edge to [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/CSCL.md) for these special/complex cases:
 1. [Capture Rule for missing CSCL](#1-blockfaceid-conflation-from-pavement-edge-to-cscl---rule-for-missing-cscl)
 2. [Capture Rule for Medians](#2-blockfaceid-conflation-from-pavement-edge-to-cscl---rules-for-medians)
 3. [Capture Rule for Multiple CSCL with Single Pavement Edge](#3-blockfaceid-conflation-from-pavement-edge-to-cscl----rule-for-multiple-cscl-segments-with-a-single-pavement-edge)
@@ -1047,7 +1047,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 
 ##### 1. BlockfaceID conflation from Pavement Edge to CSCL - Rule for missing CSCL
 
-• If no [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_StreetCenterline.md) feature existed on an existing roadbed with Pavement Edge, the production team broke down the Pavement Edge as needed on the approximated center of where a CSCL Centerline theoretically might go.  The team then assigned Left and Right (L/R) BlockfaceIDs to the Pavement Edge.  However, these BlockfaceIDs were not conflated to any CSCL segments (and these Pavement Edge features were flagged as having a BlockfaceID that was not conflated to CSCL).
+• If no [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/CSCL.md) feature existed on an existing roadbed with Pavement Edge, the production team broke down the Pavement Edge as needed on the approximated center of where a CSCL Centerline theoretically might go.  The team then assigned Left and Right (L/R) BlockfaceIDs to the Pavement Edge.  However, these BlockfaceIDs were not conflated to any CSCL segments (and these Pavement Edge features were flagged as having a BlockfaceID that was not conflated to CSCL).
 
 **The following are examples of where CSCL is missing and PavementEdge exists.**
 
@@ -1153,7 +1153,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | Plazas are hard surfaced "parks" adjacent to public sidewalks or pavement edges. |
-| **Capture Notes** | All public space plazas were captured or updated.  Where a plaza is connected to a sidewalk by steps, the steps were considered to be part of the plaza polygon. Planters at the edge of plaza were included as part of the plaza boundary.  Plazas cannot overlap medians or sidewalks. Walkways within the plaza were captured as part of the overall plaza polygon and were not considered a separate polygon. Additionally, potential plazas were also identified using [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_StreetCenterline.md/) (TRAFDIR=NV and BIKE_LANE<>1), to find plazas in and around greenways. |
+| **Capture Notes** | All public space plazas were captured or updated.  Where a plaza is connected to a sidewalk by steps, the steps were considered to be part of the plaza polygon. Planters at the edge of plaza were included as part of the plaza boundary.  Plazas cannot overlap medians or sidewalks. Walkways within the plaza were captured as part of the overall plaza polygon and were not considered a separate polygon. Additionally, potential plazas were also identified using [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_StreetCenterline.md) (TRAFDIR=NV and BIKE_LANE<>1), to find plazas in and around greenways. |
 | **Features Excluded** | Private plazas were not captured using maps showing [Privately Owned Public Space ("POPS")](http://www1.nyc.gov/assets/planning/download/pdf/plans/pops-inventory/pops-inventory.pdf). |
 | **Feature View** | ![Plaza_2](Images/FeatureViews/Plaza_2.JPG)<p>Example of Plaza showing vegetated area captured – adjacent to sidewalk.</p>![Plaza_3](Images/FeatureViews/Plaza_3.JPG)<p>Example of large Pedestrian Plaza that was formerly a roadbed.</p> |
 
@@ -1455,7 +1455,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | Portion of roadbed where three (3) or more roadways meet up with one another.  Intersections were composed using features compiled and updated in [Pavement Edge](#pavement-edge). |
-| **Capture Notes** | Special care was applied at intersections with a slight offset to ensure that such areas were captured and attributed as an intersection. The location where two alleys meet is considered an intersection and was captured as intersection roadbed. Intersection polygons were created by establishing the shortest distance from the intersection node to [**Pavement Edge**](#pavement-edge). |
+| **Capture Notes** | Special care was applied at intersections with a slight offset to ensure that such areas were captured and attributed as an intersection. The location where two alleys meet is considered an intersection and was captured as intersection roadbed. Intersection polygons were created by establishing the shortest distance from the intersection node to [Pavement Edge](#pavement-edge). |
 | **Features Excluded** | When two (2) roadways form a “T”, the ending road was closed off so that the continuing roadbed edge forms a straight line (in [Pavement Edge](#pavement-edge)). Note, these "T" locations were not captured as intersection roadbed. |
 | **Feature View** | ![Intersection](Images/FeatureViews/Intersection.JPG)<p>The image above represents a typical, four (4) way intersection.</p>![Intersection_3way](Images/FeatureViews/Intersection_3way.JPG)<p>The image above represents a three (3) way intersection.</p> |
 
@@ -1536,7 +1536,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 
 |     |     |
 | --- | --- |
-| **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database, NYCHA Development,[ DPR Parks Properties,](https://data.cityofnewyork.us/Recreation/Parks-Properties/enfh-gkve/about_data)[ CSCL,](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/CSCL.md) Forts, Hospitals, School |
+| **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database, NYCHA Development, [DPR Parks Properties](https://data.cityofnewyork.us/Recreation/Parks-Properties/enfh-gkve/about_data), [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/CSCL.md) Forts, Hospitals, School |
 | **Features Captured** | All paved sidewalks that are located outside of the ROW. |
 | **Capture Notes** | Interior sidewalks followed the same general capture rules as other sidewalk features. These features were captured in the following areas:<br>1. NYC Parks<br>2.  NYCHA Properties<br>3.  Other Residential areas<br>4.  Hospital campuses<br>5.  School campuses<br>6.  Federal Forts<br><br>The business use of this feature is to identify potential areas, outside of the public Right of Way (ROW), that could permit emergency vehicles through travel. |
 | **Features Excluded** | Openings in sidewalk (for landscaping and trees) were ignored.  Since the intended purpose of such features is to support emergency through travel, any spurs or dead-ends (e.g., walkways leading to a building) were not captured.  These features were not captured in office parks or other similar commercial areas. |
