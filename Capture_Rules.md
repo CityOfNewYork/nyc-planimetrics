@@ -164,7 +164,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database |
 | **Features Captured** | All curbs between roadbed pavement and other surfaces (i.e., within the street right-of-way) were captured. |
-| **Capture Notes** | This was a new feature class in the 2016 collection.  Prior to the 2016 capture, Curbs were a subset of the Pavement Edge feature class but were broken out into a seperate feature class in 2016. |
+| **Capture Notes** | This was a new feature class in the 2016 collection.  Prior to the 2016 capture, Curbs were a subset of the Pavement Edge feature class but were broken out into a separate feature class in 2016. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Curb](Images/FeatureViews/Curb.png) |
 
