@@ -22,7 +22,7 @@ NYC  first developed a planimetric database in 2000. The data was captured from 
 The delivery of the data was by 2,500′ x 2,500′ tiles, which directly corresponded to the orthophotography tiles.
 
 #### Updates
-A subsequent ad-hoc update to the planimetric database was done in 2004. This update was based on aerial surveys from 2001 (Manhattan and Staten Island) and 2002 (Bronx, Brooklyn and Queens). This update conformed to the previous database design. In 2006, DoITT formalized the update frequency of the planimetric database and aerial surveys. The aerial photography would be captured on a two-year cycle and the planimetrics a four-year cycle. The first regularly-scheduled planimetric update was based on the 2006 aerial photography and delieverd in 2008.
+A subsequent ad-hoc update to the planimetric database was done in 2004. This update was based on aerial surveys from 2001 (Manhattan and Staten Island) and 2002 (Bronx, Brooklyn and Queens). This update conformed to the previous database design. In 2006, DoITT formalized the update frequency of the planimetric database and aerial surveys. The aerial photography would be captured on a two-year cycle and the planimetrics a four-year cycle. The first regularly-scheduled planimetric update was based on the 2006 aerial photography and delivered in 2008.
 
 With each subsequent update, refinements have been made. New features and domains have been added, obsolete features have been removed, features have been captured in three dimensions, a seamless database has been produced and the time between aerial capture and delivery of the planimetrics has been shortened. For a complete list of the captures, see below.
 
@@ -252,7 +252,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | Spot elevations were captured on paved, unpaved, and alley subtypes in [CSCL centerline](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_StreetCenterline.md) and all interior sidewalk feature classes.  Elevation points were placed in the center of the roadbed (coincident with CSCL features).  These points were captured at the beginning, middle, and end of length of visible roadbed.  Additional elevation points were added at 200’ spacing when the distance between the beginning, middle, or end was greater than 200 linear feet. |
-| **Capture Notes** | In areas where the [Pavement Edge](#pavement-edge) feature class has been updated, any existing Spot elevations were updated.For new streets, new spot elevations were created in the center of the roadbed according to the following rules:<br>1) Placed at Intersections (might not necessarily be at the same location as the node from the centerline, one point per intersection even on complex intersections).<br>2) Placed Every 200 feet when midpoint of bridge or city block exceeds distance.<br>3) Placed on paved, unpaved, alley subtypes in [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_StreetCenterline.md) centerline features class and all of the Interior Sidewalk Centerline feature class.  Spot elevation were not added to a CSCL feature if no roadbed exists (e,g, area is under construction).<br>4) Mid-Street segment – at the approximate mid-point of a street segment. |
+| **Capture Notes** | In areas where the [Pavement Edge](#pavement-edge) feature class has been updated, any existing Spot elevations were updated. For new streets, new spot elevations were created in the center of the roadbed according to the following rules:<br>1) Placed at Intersections (might not necessarily be at the same location as the node from the centerline, one point per intersection even on complex intersections).<br>2) Placed Every 200 feet when midpoint of bridge or city block exceeds distance.<br>3) Placed on paved, unpaved, alley subtypes in [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_StreetCenterline.md) centerline feature class and all of the Interior Sidewalk Centerline feature class. Spot elevations were not added to a CSCL feature if no roadbed exists (e.g., area is under construction).<br>4) Mid-Street segment – at the approximate mid-point of a street segment. |
 | **Features Excluded** | Spot elevations were not captured on a [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_StreetCenterline.md) feature if no roadbed exists. |
 | **Feature View** | ![Elevation_Spot](Images/FeatureViews/Elevation_Spot.png) |
 
@@ -498,14 +498,14 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 | **[Median_Barrier](#subtype-median_barrier)** | 360060 |
 | **[Median_Other](#subtype-median_other)** | 360070 |
 
-*Rule: Medians were not intersected by [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_StreetCenterline.md) on the same road except in some rare occasions (e.g. at street intersections with medians). Median type hierarchy is as follows: barrier, rail, fence, curb, grass and painted.*
+*Rule: Medians were not intersected by [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_StreetCenterline.md) on the same road except in some rare occasions (e.g., at street intersections with medians). Median type hierarchy is as follows: barrier, rail, fence, curb, grass and painted.*
 
 ### General Guidelines for Medians
 
 |     |     |
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
-| **Features Captured** | All medians that physically divide a roadbed were collected; which includes medians, traffic islands, "Jersey Barriers", and painted areas that are used to separate traffic flow. |
+| **Features Captured** | All medians that physically divide a roadbed were collected, including medians, traffic islands, "Jersey Barriers", and painted areas used to separate traffic flow. |
 | **Capture Notes** | Medians are sometimes paved, are normally elevated (have a curb), or have dirt or grass. Medians can have sidewalks crossing them. In those cases, the outline of the largest area was incorporated into a single median feature. The NYC online [Bike Routes](https://data.cityofnewyork.us/dataset/New-York-City-Bike-Routes/mzxg-pwib/about_data) data was used as a reference to identify potential new medians. Areas where the column ALLCLASSES is equal to I and "I,II" most often contained new medians. New Medians exist throughout the City regardless of these bike lane classifications. Thus, this was considered a supplemental source only. |
 | **Features Excluded** | The following features were not captured as medians:<br>• Barriers in front of buildings<br>• Jersey Barriers used to regulate traffic in construction areas, or<br>• Jersey Barriers used to block-off road access. |
 
@@ -517,7 +517,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 |     |     |
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
-| **Features Captured** | Medians occuring at an intersection |
+| **Features Captured** | Medians occurring at an intersection |
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Median_Traffic Island](Images/FeatureViews/Median_TrafficIsland.png) |
@@ -533,7 +533,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | Medians having white paved marking (fishbone or striped pattern). |
 | **Capture Notes** | n/a |
-| **Features Excluded** | Double yellow lines in the middle of a road were not captured as median.Single independent white medians hatching used to direct traffic were not captured as median. |
+| **Features Excluded** | Double yellow lines in the middle of a road were not captured as median. Single independent white medians hatching used to direct traffic were not captured as median. |
 | **Feature View** | ![Median_Painted](Images/FeatureViews/Median_Painted.png) |
 
 
@@ -733,7 +733,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 |     |     |
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
-| **Features Captured** | Outline of recreational areas which may be used for picnic or other recreational activities. Recreational areas must contain at least one of the following: a) Benches, b) Swings, or c) Play area. Hardscape recreational areas were collected differently than softscape recreational areas, as follows:<br>  • Hardscape recreational areas have either hard surfaces or sand. These areas were captured as discrete polygons following the edges of these areas precisely.<br>  • Softscape recreational areas are grassy areas for football/baseball/other. These areas were captured as a single polygon (i.e., not discrete polygons) and snapped to other features (e.g. sidewalks, roadbed, hydro, etc.) where applicable.<br>  • When hardscapes and softscapes exists adjacent to one another, the entire area was captured by a single polygon. |
+| **Features Captured** | Outline of recreational areas which may be used for picnics or other recreational activities. Recreational areas must contain at least one of the following: a) Benches, b) Swings, or c) Play area. Hardscape recreational areas were collected differently than softscape recreational areas, as follows:<br>  • Hardscape recreational areas have either hard surfaces or sand. These areas were captured as discrete polygons following the edges of these areas precisely.<br>  • Softscape recreational areas are grassy areas for football/baseball/other. These areas were captured as a single polygon (i.e., not discrete polygons) and snapped to other features (e.g., sidewalks, roadbed, hydro, etc.) where applicable.<br>  • When hardscapes and softscapes exist adjacent to one another, the entire area was captured by a single polygon. |
 | **Capture Notes** | These features are entirely outside of NYC designated parks. |
 | **Features Excluded** | Medians with either benches, swings, or play areas were captured as a median and not a recreational area. |
 | **Feature Views** | ![Recreation_Area_2](Images/FeatureViews/Recreation_Area_2.JPG "This screenshot represents a hardscape recreational area.")<p>This screenshot represents a hardscape recreational area.</p>![Recreation_Area_3](Images/FeatureViews/Recreation_Area_3.JPG)<p>This screenshot represents a softscape recreational area.</p>![Recreation_Area](Images/FeatureViews/Recreation_Area.JPG)<p>This screenshot represents a combined hardscape / softscape recreational area.</p> |
@@ -748,7 +748,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database DOF Digital Tax Map |
 | **Features Captured** | These features represent a vacant lot where a building could potentially be built and is associated with a tax lot polygon. |
-| **Capture Notes** | "Vacant" is defined herein as an area containing no structures. The Digital Tax Map (DTM) and currently captured planimetrics ([Building Footprints](unpublished_capture_rules.md#building-footprint)) were used to determine the location of the vacant areas. The actual shape of each vacant aras was captured using physical features that typically form the boundary of a property such as fences, hedgerow, etc. Vacant Areas extend to sidewalk or roadbed edge. As a general rule of thumb, vacant lots were required to have roadway frontage, and not actively used for private or public entities (e.g., backyard or commmunity garden). |
+| **Capture Notes** | "Vacant" is defined herein as an area containing no structures. The Digital Tax Map (DTM) and currently captured planimetrics ([Building Footprints](unpublished_capture_rules.md#building-footprint)) were used to determine the location of the vacant areas. The actual shape of each vacant area was captured using physical features that typically form the boundary of a property such as fences, hedgerow, etc. Vacant Areas extend to sidewalk or roadbed edge. As a general rule of thumb, vacant lots were required to have roadway frontage, and not actively used for private or public entities (e.g., backyard or community garden). |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Vacant_Area](Images/FeatureViews/Vacant_Area.JPG) |
 
@@ -800,7 +800,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  Department of Parks and Recreation (DPR) Parks Properties |
 | **Features Captured** | Outline the outer perimeter of any park from [DPR Parks Properties](https://data.cityofnewyork.us/Recreation/Parks-Properties/enfh-gkve/about_data). The boundary encompasses the entire park as a single polygon feature, regardless of special features such as baseball diamonds or tennis courts. The delineation of the outer edge of each park boundary is coincident with the “intended” boundary feature, as determined by the Parks Department. Intended boundary feature are curbs, green areas, sidewalks, etc. and vary from park to park.  At times, the intended boundary feature varies within the same park.  |
-| **Capture Notes** | When the source data had a single boundary polygon extending across other planimetric features (e.g. roads), the planimetric park boundary follows the source data. When there was no apparent physical boundary feature to delineate the Park boundary, the feature was copied “as is” from the source database. Park names (SIGNNAME and source column) and park numbers (GISPROPNUM source column) were transferred from source databases to park boundaries and special features. Interior road systems and special features within parks were not partitioned. |
+| **Capture Notes** | When the source data had a single boundary polygon extending across other planimetric features (e.g., roads), the planimetric park boundary follows the source data. When there was no apparent physical boundary feature to delineate the Park boundary, the feature was copied “as is” from the source database. Park names (SIGNNAME and source column) and park numbers (GISPROPNUM source column) were transferred from source databases to park boundaries and special features. Interior road systems and special features within parks were not partitioned. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Park](Images/FeatureViews/Park.JPG) |
 
@@ -828,7 +828,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database DPR Parks Properties |
 | **Features Captured** | Outline of individual courts. |
-| **Capture Notes** |  Varoius kinds of courts are captured within Court :<br>a) Basketball courts- These features can be represented as full or half courts. <br>b) Handball courts - The hard surface wall was incorporated witin each court. When multiple courts are adjacent to one another, a division line was digitized to partition individual courts.<br>c) Hockey - Outline of hockey court. <br> d) Multipurpose courts - These features are composed of mostly hard surface areas with different markings for different activities.<br>e) Tennis court - Outline of tennis courts (hard surface only).In cases of multiple courts, a division line was digitized along outer painted line (baseline and sideline) to partition individual courts. The extent of these features only includes "in-bounds areas", they do not extend to the fence surrounding the tennis court area (or related "out-of-bounds areas").<br>f) Volleyball - Outline of volleyball courts using distinct markings on observed hard surface.|
+| **Capture Notes** | Various kinds of courts are captured in the Court feature class:<br>a) Basketball courts - These features can be represented as full or half courts.<br>b) Handball courts - The hard surface wall was incorporated within each court. When multiple courts are adjacent to one another, a division line was digitized to partition individual courts.<br>c) Hockey - Outline of hockey court.<br>d) Multipurpose courts - These features are composed of mostly hard surface areas with different markings for different activities.<br>e) Tennis court - Outline of tennis courts (hard surface only). In cases of multiple courts, a division line was digitized along the outer painted line (baseline and sideline) to partition individual courts. The extent of these features includes only the "in-bounds areas"; they do not extend to the fence surrounding the tennis court area (or related "out-of-bounds areas").<br>f) Volleyball - Outline of volleyball courts using distinct markings on observed hard surface. |
 | **Features Excluded** | Tennis courts - Individual tennis courts within NYC Parks were not captured. Private tennis courts (e.g., on roofs or hotels, etc.) were not captured. |
 | **Feature View** | ![Basketball](Images/FeatureViews/Basketball.JPG) <br>Basketball court<br> <br>![Handball](Images/FeatureViews/Handball.JPG) <br>Handball court<br> <br>![Hockey](Images/FeatureViews/hockey.png) <br> Hockey<br> <br>![Court_Multipurpose](Images/FeatureViews/Court_Multipurpose.JPG) <br>Multipurpose court<br> <br> ![Tennis](Images/FeatureViews/Tennis.JPG) <br>Tennis Court<br> <br>![Volleyball](Images/FeatureViews/Volleyball.JPG) <br> Volleyball court|
 
@@ -841,7 +841,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 |     |     |
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database DPR Parks Properties |
-| **Features Captured** | Outline of football fields.The extent of these features only includes "in-bounds areas", they do not extend to the turf surrounding the playing field (or related "out-of-bounds areas"). |
+| **Features Captured** | Outline of football fields. The extent of these features includes only the "in-bounds areas"; they do not extend to the turf surrounding the playing field (or related "out-of-bounds areas"). |
 | **Capture Notes** | n/a |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Football](Images/FeatureViews/Football.JPG) |
@@ -959,7 +959,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | All parking lots (paved or unpaved) greater than 2,000 sq. feet. Parking areas adjacent to the travel-way and separated from the travel-way by a curb or other obstruction were captured as parking lots. In these cases, the [Roadbed](#roadbed) and [Pavement Edge](#pavement-edge) end or wrap around the parking lot. The parking lot is not included as part of the Roadbed. |
 | **Capture Notes** | These features connect to road edge ([Curb](#curb) or [Road Edge](#subtype-road-edge)) only at entrances and exits. |
-| **Features Excluded** | Traffic islands within parking lot were not captured.When a building of > 400 sq. feet was present, the building area was excluded from the parking lot polygon. Parking areas adjacent to the travel-way, but not separated from the travel-way by a curb or other obstruction, were not captured. Instead, those parking areas were included as part of the Roadbed and the Pavement Edge extends to the outside edge of such area. Gas stations, private parking areas (e.g., for condos), and storage areas (e.g., for boats) were not captured.  |
+| **Features Excluded** | Traffic islands within parking lots were not captured. When a building of > 400 sq. feet was present, the building area was excluded from the parking lot polygon. Parking areas adjacent to the travel-way, but not separated from the travel-way by a curb or other obstruction, were not captured. Instead, those parking areas were included as part of the Roadbed and the Pavement Edge extends to the outside edge of such area. Gas stations, private parking areas (e.g., for condos), and storage areas (e.g., for boats) were not captured. |
 | **Feature View** | ![Parking_Lot](Images/FeatureViews/Parking_Lot.png) |
 
 
@@ -986,8 +986,8 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 |     |     |
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
-| **Features Captured** | Updated all segments between pavement and other surfaces or features (i.e. Curbs, sidewalks, or grass).  |
-| **Capture Notes** | Each segment was captured as a continuous feature across a blockface (typically from one intersection to the next – along that side of the road). The vertex between two segments was often located at the street corner. Edge of Pavement features are continuous across driveways, alleys, or access to parking. The one exception to this rule is where a street segment changes names (as determined by [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_StreetCenterline.md) Centerline names) outside of any street intersections.  In these cases, the existing CSCL break (node) was used to create corresponding breaks in Pavement Edge segments.For cul-de-sacs, two segments were created. The CSCL centerline was used to define the breakpoints of the Pavement Edge segments.Dead end streets were terminatde where the tax map crosses the road.  Two segments were created on left and right sides of CSCL.On highways, Pavement Edge corresponds to the ‘roadbed’ sub-feature class in [Roadbed](#roadbed), and does not include the shoulder. |
+| **Features Captured** | Updated all segments between pavement and other surfaces or features (i.e., curbs, sidewalks, or grass). |
+| **Capture Notes** | Each segment was captured as a continuous feature across a blockface (typically from one intersection to the next along that side of the road). The vertex between two segments was often located at the street corner. Edge of Pavement features are continuous across driveways, alleys, or access to parking. The one exception to this rule is where a street segment changes names (as determined by [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_StreetCenterline.md) Centerline names) outside of any street intersections. In these cases, the existing CSCL break (node) was used to create corresponding breaks in Pavement Edge segments. For cul-de-sacs, two segments were created. The CSCL centerline was used to define the breakpoints of the Pavement Edge segments. Dead-end streets were terminated where the tax map crosses the road. Two segments were created on the left and right sides of CSCL. On highways, Pavement Edge corresponds to the ‘roadbed’ sub-feature class in [Roadbed](#roadbed), and does not include the shoulder. |
 | **Features Excluded** | n/a |
 | **Feature Views** | ![Road_Edge](Images/FeatureViews/Road_Edge.JPG)<p>This screenshot represents pavement edges at a large intersection.</p>![PE_culdesac](Images/FeatureViews/PE_culdesac.JPG)<p>In a cul-de-sac, two segments would be required for the edge of pavement. One on either side of the roadbed assigned a left or right side based on the CSCL.</p>![PE_T_int](Images/FeatureViews/PE_T_int.JPG)<p>Example of a 'T' intersection, one segment would be captured for edge at the top of 'T'.</p>![PE_name_change](Images/FeatureViews/PE_name_change.JPG)<p>For roadbeds whose street name changes, the edge of pavement should be broken/split. The Node features from CSCL can be used as a guide.</p>![PE_interchange](Images/FeatureViews/PE_interchange.JPG)<p>For interchanges, one segment that runs between the intersections would be captured for the edge of pavement. Note that one roadbed crosses over the other as it does in reality.</p>![PE_Alley](Images/FeatureViews/PE_Alley.JPG)<p>In the image above there are two alleys. The edge of pavement is captured as one segment between the intersections, extending over the alleys in question.</p> |
 
@@ -1015,7 +1015,7 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | These features represent a narrow unnamed street that allows access to buildings/garages other than from the road. When captured, these features were snapped to the road edge. |
-| **Capture Notes** | These feature typically allow access to the interior of a block or to the back of a house.  As a general rule of thumb, the [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_StreetCenterline.md) value of: RW_TYPE=10 was used to determine the alley pavement edge.  However, there were still alleys captured that did not have this field attribute value from the CSCL. |
+| **Capture Notes** | These features typically allow access to the interior of a block or to the back of a house. As a general rule of thumb, the [CSCL](https://github.com/CityOfNewYork/nyc-geo-metadata/blob/main/Metadata/Metadata_StreetCenterline.md) value RW_TYPE=10 was used to determine the alley pavement edge. However, some alleys did not have this field attribute value in the CSCL. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Alley](Images/FeatureViews/Alley.JPG) |
 
@@ -1440,7 +1440,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
 | **Features Captured** | Roadbed represents the interior polygon of pavement edge. The edges of these features are coincident with the linear feature class [Pavement Edge](#pavement-edge). |
-| **Capture Notes** | Converging roadbeds were not split when it crossing one another at different elevations (e.g. on ramps that cross each other). Roadbed was usually cut by [Median](#median) features (e.g., curb & grass) with the exception of painted, barrier and fence medians.  Special care was applied to ensure that highway shoulders were not confused as sidewalk features. |
+| **Capture Notes** | Converging roadbeds were not split when they crossed one another at different elevations (e.g., on ramps that cross each other). Roadbed was usually cut by [Median](#median) features (e.g., curb and grass), with the exception of painted, barrier, and fence medians. Special care was taken to ensure that highway shoulders were not confused with sidewalk features. |
 | **Features Excluded** | n/a |
 | **Feature View** | ![Roadbed](Images/FeatureViews/Roadbed.JPG) |
 
@@ -1522,7 +1522,7 @@ This section includes the following capture rules pertaining to BlockfaceID conf
 |     |     |
 | --- | --- |
 | **Sources** | Current imagery - see intro for specific dates.  Previous planimetric database  |
-| **Features Captured** | All paved sidewalks that are located within the ROW (i.e. building to building). |
+| **Features Captured** | All paved sidewalks that are located within the ROW (i.e., from building to building). |
 | **Capture Notes** | In areas of construction, sidewalks were collected along an imaginary line to complete polygon. In areas where equipment is stored or installed on sidewalk, the full extent of sidewalk was approximated. In areas where protection or scaffolding (pedestrian protection from overhead construction) is placed over sidewalk, sidewalk remained unchanged from existing data (not updated). Sidewalks were collected when crossing large medians or traffic islands. Sidewalks overlap the exit and entrance portion(s) of parking lot features. Sidewalks overlap driveways, but not alleys. Sidewalk will be continued under bridges and overpasses if they are visible on both sides of the structure. |
 | **Features Excluded** | Openings in sidewalk (for landscaping and trees) were ignored. Large, paved open spaces in front of buildings and outside of the public ROW (may have trees and landscaping) will be included in [Plaza](#plaza) and were not captured as sidewalk. |
 | **Feature View** | ![Sidewalk_1](Images/FeatureViews/Sidewalk_1.png) |
