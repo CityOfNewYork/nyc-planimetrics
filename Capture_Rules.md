@@ -772,25 +772,27 @@ NYC Office of Technology and Innovation publishes multiple file formats of the p
 
 **Geometry Type:** Polygon
 
-|     |     |
-| --- | --- |
-| **Subtype** | **Feature Code** |
-| **[Park Boundary](#subtype-park-boundary)** | 4980 |
-| **[Baseball/Softball Field](#subtype-baseballsoftball-field)** | 4900 |
-| **[Court](#subtype-court)** | 491000 |
-| **[Court, Basketball](#subtype-court)** | 491010 |
-| **[Court, Handball](#subtype-court)** | 491030 |
-| **[Court, Hockey](#subtype-court)** | 491040 |
-| **[Court, Multipurpose](#subtype-court)** | 491050 |
-| **[Court, Tennis](#subtype-court)** | 491060 |
-| **[Court, Volleyball](#subtype-court)** | 491070 |
-| **[Football Field](#subtype-football-field)** | 4920 |
-| **[Soccer Field](#subtype-soccer-field)** | 4930 |
-| **[Golf Course](#subtype-golf-course)** | 4940 |
-| **[Pool](#subtype-pool)** | 4950 |
-| **[Running Track](#subtype-running-track)** | 4960 |
-| **[Skating Rink](#subtype-skating-rink)** | 4970 |
-| **[Greenstreets](#subtype-greenstreets)** | 4985 |
+| `feature_code` | Esri subtype name | `sub_feature_code` | Esri domain description |
+| --- | --- | --- | --- |
+| 4900 | [Baseball/Softball Field](#subtype-baseballsoftball-field) | 490000 | Baseball/Softball Fields |
+| 4900 | [Baseball/Softball Field](#subtype-baseballsoftball-field) | 490010 | Baseball/Softball Fields, Hard Surface |
+| 4900 | [Baseball/Softball Field](#subtype-baseballsoftball-field) | 490020 | Baseball/Softball Fields, Grassy Surface |
+| 4910 | [Court](#subtype-court) | 491000 | Courts, General |
+| 4910 | [Court](#subtype-court) | 491010 | Courts, Basketball Full Court |
+| 4910 | [Court](#subtype-court) | 491020 | Courts, Basketball Half Court |
+| 4910 | [Court](#subtype-court) | 491030 | Courts, Handball |
+| 4910 | [Court](#subtype-court) | 491040 | Courts, Hockey |
+| 4910 | [Court](#subtype-court) | 491050 | Courts, Multipurpose |
+| 4910 | [Court](#subtype-court) | 491060 | Courts, Tennis |
+| 4910 | [Court](#subtype-court) | 491070 | Courts, Volleyball |
+| 4920 | [Football Field](#subtype-football-field) | 492000 | Football Fields |
+| 4930 | [Soccer Field](#subtype-soccer-field) | 493000 | Soccer Fields |
+| 4940 | [Golf Course](#subtype-golf-course) | 494000 | Golf Courses |
+| 4950 | [Pool](#subtype-pool) | 495000 | Pools |
+| 4960 | [Running Track](#subtype-running-track) | 496000 | Running Tracks |
+| 4970 | [Skating Rink](#subtype-skating-rink) | 497000 | Skating Rinks |
+| 4980 | [Park Boundary](#subtype-park-boundary) | 498000 | Park Boundary |
+| 4985 | [Greenstreets](#subtype-greenstreets) | 498500 | Greenstreets |
 
 [**Attributes**](#park-attributes)
 
